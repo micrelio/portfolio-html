@@ -1,4 +1,3 @@
-/* ---------------hovers--------------*/
 .biografia {
   padding: 0rem 5rem 0rem 5rem;
   display: -webkit-box;
@@ -280,7 +279,6 @@
   }
   .biografia .contenido .historia {
     margin: 1rem 1rem 0rem 1rem;
-    width: 100%;
   }
   .biografia .contenido .biografiaCurriculum {
     width: 100%;

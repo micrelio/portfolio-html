@@ -21,42 +21,66 @@
     <meta name="robots" content="index,follow">
     <meta property="og:url" content="https://microdeveloper.es/">
     <meta property="og:site_name" content="Micro | Developer">
-
     <link rel="icon" type="image/x-icon" href="https://i.ibb.co/sHmt0XZ/00001361.jpg">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
+    <!-- <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-    <?php 
+    <?php
     include('./php/envio.php');
     include('./php/configuracion.php');
     ?>
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./font-awesome/font-awesome.min.css">
-    <link rel="stylesheet" href="./font-awesome/fontawesome-webfont.svg">
-    <link rel="stylesheet" href="./font-awesome/fontawersome.js">
-    <link rel="stylesheet" href="./font-awesome/fontawersome-webfont.eot">
-    <link rel="stylesheet" href="./font-awesome/fontawersome-webfont.ttf">
-    <link rel="stylesheet" href="./font-awesome/fontawersome-webfont.woff">
-    <link rel="stylesheet" href="./font-awesome/fontawersome-webfont.woff2">
+    <link rel="stylesheet" href="./styles/contacto.css">
+    <link rel="text/html" href="../../../assets/fonts/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../assets/fonts/font-awesome/fontawesome-webfont.svg">
+    <link rel="stylesheet" href="../../../assets/fonts/font-awesome/fontawesome-webfont.eot">
+    <link rel="stylesheet" href="../../../assets/fonts/font-awesome/fontawesome-webfont.ttf">
+    <link rel="stylesheet" href="../../../assets/fonts/font-awesome/fontawesome-webfont.woff">
+    <link rel="stylesheet" href="../../../assets/fonts/font-awesome/fontawesome-webfont.woff2">
+    <script type="text/javascript" src=" ../../../assets/fonts/font-awesome/fontawesome.js"></script>
 
+    <!--  -->
+    <link rel="stylesheet" href="../../../assets/style/styles/style.css" media="screen" />
+
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="./styles/normalize.min.css">
     <!-- <script type="text/javascript" src="./script.js" ></script> -->
 
     <link rel="stylesheet" href="./styles/googleApis.css" type="text/css">
-    <script type="text/javascript" src="./font-awesome/fontawersome.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-    <!-- <script src="jquery.min.js"></script> -->
-    <script type="text/javascript" src="/js/botonEnvio.js"></script>
+
+
+     <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="/src/assets/boxicons/css/boxicons.min.css" >
+    <!-- transiciiones -->
+    <script type="text/javascript" src="/src/assets/transiciones/aos.js"></script>
+    <link rel="stylesheet" href="/src/assets/transiciones/aos.css" media="screen" />
+    <!-- Función cokies -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+
+
 </head>
+<div class="separador5">
+    <!-- CAMBIO DE ESTILOS -->
+<link id="modo" href="" rel="stylesheet" media="screen" />
+<link id="color" href="" rel="stylesheet" media="screen" />
+<script type="text/javascript">
+    modoNoche();
+</script>
+
+
 
 <body id="body">
     <div id="preloader"></div>
+    <div id="panelEstilos" class="panelEstilos"></div>
+  
+    <mi-button></mi-button>
+    <div class="separador5">
+
     <div class="container">
         <!-- partial:index.partial.html -->
         <div class='form-overlay'></div>
@@ -93,7 +117,7 @@
                         <span class="check"><i class="fa fa-check"></i></span>
                         <span class="bad"><i class="fas fa-close"></i></span>
                     </button>
-                    <button class='borrar ' type="reset" value=''><span><i class="fa fa-eraser"></i></span></button>
+                    <button class='borrar ' type="button" name="limpiar" id="limpiar"><span><i class="fa fa-eraser"></i></span></button>
                 </form>
             </div>
         </div>
@@ -106,13 +130,12 @@
             ?>
         </div>
 
-        <?php 
-    include('./php/envio.php');
-    ?>
+        <?php
+        include('./php/envio.php');
+        ?>
         <script async type="text/javascript" src="./script.js"></script>
         <!-- partial -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- <script src="jquery.min.js"></script> -->
 </body>
-
 </html>

@@ -2,85 +2,78 @@
 @import "../variables/variables.scss";
 @import "../funciones/funciones.scss";
 
-
 @font-face {
   font-family: "supercell";
-  src: url(../../../fuentes/supercell-magic-webfont.ttf) format("truetype");
+  src: url(../../fuentes/supercell-magic-webfont.ttf) format("truetype");
 }
 @font-face {
   font-family: "FontAwesome";
-  src: url("fontawesome-webfont.woff");
+  src: url("../../fonts/font-awesome/fontawesome-webfont.woff");
+}
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../../fonts/font-awesome/fontawesome-webfont.woff2");
 }
 @font-face {
   font-family: "titanium";
-  src: url(../../../fuentes/pricedow.ttf) format("truetype");
+  src: url(../../fuentes/pricedow.ttf) format("truetype");
 }
 @font-face {
   font-family: "Bad Script";
-  src: url(../../../fuentes/letrasEfectos/BadScript-Regular.ttf)
-    format("truetype");
+  src: url(../../fuentes/letrasEfectos/BadScript-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "Sriracha";
-  src: url(../../../fuentes/letrasEfectos/Sriracha-Regular.ttf)
-    format("truetype");
+  src: url(../../fuentes/letrasEfectos/Sriracha-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "Kumar One outline";
-  src: url(../../../fuentes/letrasEfectos/KumarOneOutline-Regular.ttf)
+  src: url(../../fuentes/letrasEfectos/KumarOneOutline-Regular.ttf)
     format("truetype");
 }
 @font-face {
   font-family: "Gruppo";
-  src: url(../../../fuentes/letrasEfectos/Gruppo-Regular.ttf)
-    format("truetype");
+  src: url(../../fuentes/letrasEfectos/Gruppo-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "Yellowtail";
-  src: url(../../../fuentes/letrasEfectos/Yellowtail-Regular.ttf)
+  src: url(../../fuentes/letrasEfectos/Yellowtail-Regular.ttf)
     format("truetype");
 }
 @font-face {
   font-family: "Londrina";
-  src: url(../../../fuentes/letrasEfectos/Yellowtail-Regular.ttf)
+  src: url(../../fuentes/letrasEfectos/Yellowtail-Regular.ttf)
     format("truetype");
 }
 @font-face {
   font-family: "Londrina Outline";
-  src: url(../../../fuentes/letrasEfectos/LondrinaOutline-Regular.ttf)
+  src: url(../../fuentes/letrasEfectos/LondrinaOutline-Regular.ttf)
     format("truetype");
 }
 @font-face {
   font-family: "Monoton";
-  src: url(../../../fuentes/letrasEfectos/Monoton-Regular.ttf)
-    format("truetype");
+  src: url(../../fuentes/letrasEfectos/Monoton-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "frozen";
-  src: url(../../../fuentes/letrasEfectos/Ice-kingdomKustren.woff)
+  src: url(../../fuentes/letrasEfectos/Ice-kingdomKustren.woff);
 }
-
-
-
-
 @font-face {
   font-family: "Monoton";
   font-style: normal;
   font-weight: 400;
   src: local("Monoton"), local("Monoton-Regular"),
-   src url(../../assets/fuentes/letrasEfectos/Monoton-Regular.ttf)
+    src url(../../assets/fuentes/letrasEfectos/Monoton-Regular.ttf)
       format("woff");
 }
-
 @font-face {
   font-family: "Iceland";
   font-style: normal;
   font-weight: 400;
   src: local("Iceland"), local("Iceland-Regular"),
-  src url(../../assets/fuentes/letrasEfectos/Iceland-Regular.woff)
+    src url(../../assets/fuentes/letrasEfectos/Iceland-Regular.woff)
       format("woff");
 }
-
 @font-face {
   font-family: "Pacifico";
   font-style: normal;
@@ -89,7 +82,6 @@
     url(http://themes.googleusercontent.com/static/fonts/pacifico/v5/yunJt0R8tCvMyj_V4xSjafesZW2xOQ-xsNqO47m55DA.woff)
       format("woff");
 }
-
 @font-face {
   font-family: "PressStart";
   font-style: normal;
@@ -98,7 +90,6 @@
     url(http://themes.googleusercontent.com/static/fonts/pressstart2p/v2/8Lg6LX8-ntOHUQnvQ0E7o3dD2UuwsmbX3BOp4SL_VwM.woff)
       format("woff");
 }
-
 @font-face {
   font-family: "Audiowide";
   font-style: normal;
@@ -107,7 +98,6 @@
     url(http://themes.googleusercontent.com/static/fonts/audiowide/v2/8XtYtNKEyyZh481XVWfVOj8E0i7KZn-EPnyo3HZu7kw.woff)
       format("woff");
 }
-
 @font-face {
   font-family: "Vampiro One";
   font-style: normal;
@@ -119,7 +109,6 @@
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
-
 #preloader {
   content: "";
   position: fixed;
@@ -151,15 +140,11 @@
     transform: rotate(360deg);
   }
 }
-
-
-
-
 .head {
   @include head;
   border-bottom: 0.05rem solid $corporativo;
 }
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -171,13 +156,12 @@ body {
   font: inherit;
   vertical-align: baseline;
   width: 100%;
- min-height: 100%;
-  background-image: url("../../../images/backgrounds/0.jpg")  ;
+  min-height: 100%;
+  background-image: url("../../images/backgrounds/0.jpg");
   // background-image: url("../../../images/gifs/liquido.gif")  ;
   background: {
     attachment: fixed;
     size: cover;
-    
     color: $gris;
   }
   .separador5 {
@@ -195,11 +179,9 @@ body {
   .separador1 {
     @include separador1;
   }
- 
-
   font: {
     // family: Arial;
-    family:Audiowide;
+    family: Audiowide;
     size: 62.5%;
   }
   h1 {

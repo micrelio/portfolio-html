@@ -19,13 +19,10 @@ class miBotonera extends HTMLElement {
     //CON ESTE OCUPAMOS MENOS RAM, YA QUE SOLO CREA UN EVENTO
     var elementos = document.querySelector("#menuGaleria");
     elementos.addEventListener("click", function (e) {
-      console.log(e.target.value);
       if (e.target !== this) {
         // Código que se ejecuta al hacer click.
-        console.log(e.target.value);
         var valor = e.target.value;
         //  document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-        console.log(valor);
         cargar(valor);
       }
     });
@@ -43,12 +40,9 @@ customElements.define("mi-botonera", miBotonera);
 function cargaBoton() {
   //---imagenes en Galeria------------------------
   var llaves = Object.keys(Galeria);
-  //console.log(llaves.length);
   //---Leemos las claves
   for (let index = 0; index < llaves.length; index++) {
     tipo = llaves[index];
-    //  console.log('tipo', tipo);
-    //   console.log('dato', dato);
     var boto = document.createElement("button");
     var p = document.createElement("p");
     //---CREAMOS UN TEXTO---
@@ -61,9 +55,6 @@ function cargaBoton() {
     boto.setAttribute("class", "boton");
     boto.setAttribute("type", "button");
     boto.setAttribute("value", tipo);
-    //console.log(boto)
-    // console.log(boto);
-    // console.log(p);
     //---RENDERIZAMOS TODO
     document.getElementById("menuGaleria").appendChild(boto);
     //   document.getElementById('boton'+tipo).appendChild(p);
@@ -73,12 +64,10 @@ function cargaBoton() {
 //---mirar aqui
 //    https://abalozz.es/optimiza-el-manejo-de-eventos-del-dom-en-javascript/
 //   https://es.stackoverflow.com/questions/98239/c%C3%B3mo-agregar-un-event-listener-para-varios-elementos
-
 //---- OPCION PARA CREAR UNA ALERTA
 // var seleccion= 'boton'+ tipo;
 //       document.getElementById(seleccion).addEventListener('click',function() {
 //         document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-//         console.log(seleccion);
 //        cambiar(seleccion);
 //                });
 //------------------------------------------------
@@ -95,6 +84,4 @@ function cargaBoton() {
 //---LEEMOS EL ARRAY DENTRO DE CADA CLAVE---
 // for (let index2 = 0; index2 < dato.length; index2++) {
 // }
-//console.log(tipo)
-//console.log(dato)
 function cambio() {}

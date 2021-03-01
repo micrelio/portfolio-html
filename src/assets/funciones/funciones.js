@@ -1,6 +1,5 @@
 //---preloader------------------------------------------------------------------------------
 $(document).ready(function () {
-  console.log("inicio");
   // espera();
   if ($("#preloader").length) {
     $("#preloader")
@@ -10,32 +9,7 @@ $(document).ready(function () {
       });
   }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function fondoPantalla(fondo) {
-  console.log("fondo");
   switch (fondo) {
     case "blanco":
       document.getElementById("body").style = "background-color:#eeeeee";
@@ -52,7 +26,6 @@ function fondoPantalla(fondo) {
       // document.body.style.backgroundImage = "url('/src/assets/images/gifs/liquido.gif')";
       // document.getElementById("body").style = "background-repeat: no-repeat";
       // document.getElementById("body").style = "background-size: cover";
-
       break;
     default:
       // document.getElementById("nav").style = "background-color:white";
@@ -63,12 +36,11 @@ function resetEstilos() {
   document.getElementById("nav").style = "background-color:#";
   document.getElementById("footer").style = "background-color:#";
   document.getElementById("color").href =
-    "/src/assets/style/sass/styles/colores/style.css";
+    "/src/assets/style/styles/colores/style.css";
   modoNoche();
   fecha("stop");
 }
 function colorMenu(color) {
-  console.log("nav");
   switch (color) {
     case "blanco":
       document.getElementById("nav").style = "background-color:#eeeeee";
@@ -158,64 +130,58 @@ function color(color) {
   switch (color) {
     case "blanco":
       document.getElementById("color").href =
-        "/src/assets/style/sass/styles/colores/blanco.css";
+        "/src/assets/style/styles/colores/blanco.css";
       break;
     case "amarillo":
       document.getElementById("color").href =
-        "/src/assets/style/sass/styles/colores/amarillo.css";
+        "/src/assets/style/styles/colores/amarillo.css";
       break;
     case "naranja":
       document.getElementById("color").href =
-        "/src/assets/style/sass/styles/colores/naranja.css";
+        "/src/assets/style/styles/colores/naranja.css";
       break;
     case "oro":
       document.getElementById("color").href =
-        "/src/assets/style/sass/styles/colores/oro.css";
+        "/src/assets/style/styles/colores/oro.css";
       break;
     case "marron":
       document.getElementById("color").href =
-        "/src/assets/style/sass/styles/colores/marron.css";
+        "/src/assets/style/styles/colores/marron.css";
       break;
     case "rojo":
       document.getElementById("color").href =
-        "/src/assets/style/sass/styles/colores/rojo.css";
+        "/src/assets/style/styles/colores/rojo.css";
       break;
     case "rosa":
       document.getElementById("color").href =
-        "/src/assets/style/sass/styles/colores/rosa.css";
+        "/src/assets/style/styles/colores/rosa.css";
       break;
     case "morado":
       document.getElementById("color").href =
-        "/src/assets/style/sass/styles/colores/morado.css";
+        "/src/assets/style/styles/colores/morado.css";
       break;
     case "azul":
       document.getElementById("color").href =
-        "/src/assets/style/sass/styles/colores/azul.css";
+        "/src/assets/style/styles/colores/azul.css";
       break;
     case "verde":
       document.getElementById("color").href =
-        "/src/assets/style/sass/styles/colores/verde.css";
+        "/src/assets/style/styles/colores/verde.css";
       break;
     case "gris":
       document.getElementById("color").href =
-        "/src/assets/style/sass/styles/colores/gris.css";
+        "/src/assets/style/styles/colores/gris.css";
       break;
     case "negro":
       document.getElementById("color").href =
-        "/src/assets/style/sass/styles/colores/negro.css";
+        "/src/assets/style/styles/colores/negro.css";
       break;
     default:
       document.getElementById("color").href =
-        "/src/assets/style/sass/styles/colores/style.css";
+        "/src/assets/style/styles/colores/style.css";
       break;
   }
 }
-
-
-
-
-
-
 function modoNoche(id) {
   //   getDate(): devuelve el día del mes (1 a 31).
   // getDay(): devuelve el número del día de la semana: desde 0 (domingo) hasta 6 (sábado).
@@ -227,8 +193,6 @@ function modoNoche(id) {
   // getSeconds(): devuelve el número de segundos (0 a 59).
   // toLocaleDateString(): devuelve una cadena con la fecha completa, en formato de fecha local.
   // toLocaleTimeString(): devuelve una cadena con la hora completa, en formato de hora local.
-
-  console.log(id);
   var objFecha = new Date();
   var mes = 1 + objFecha.getMonth();
   var hora = objFecha.getHours();
@@ -237,9 +201,7 @@ function modoNoche(id) {
   if (id != undefined) {
     var hora = "";
   }
-  console.log(hora);
   if ((hora >= 8 && hora < 20) || id == "noche") {
-    console.log("modo dia");
     estilo = "dia";
   } else if (
     (hora >= 20 && hora < 26) ||
@@ -250,37 +212,26 @@ function modoNoche(id) {
   }
   switch (estilo) {
     case "dia":
-      console.log("dia");
-      console.log("final", estilo);
-
-     document.getElementById("dia").classList.add("efectoModoNoche");
-  
-     
-        setTimeout(function () {
-          document.getElementById("dia").classList.remove("efectoModoNoche");
-          document.getElementById("noche").style = "display:block";
-          document.getElementById("dia").style = "display:none;";
-          document.getElementById("modo").href = "/src/assets/style/sass/styles/styleDia.css";        
-        }, 1000); // 1000ms = 3s
+      document.getElementById("dia").classList.add("efectoModoNoche");
+      setTimeout(function () {
+        document.getElementById("dia").classList.remove("efectoModoNoche");
+        document.getElementById("noche").style = "display:block";
+        document.getElementById("dia").style = "display:none;";
+        document.getElementById("modo").href =
+          "/src/assets/style/styles/styleDia.css";
+      }, 1000); // 1000ms = 3s
       // function mostrarAviso() {
       //   alert("Han pasado los tres segundos");
       // }
-
-     
       break;
-
-
     case "noche":
       document.getElementById("noche").classList.add("efectoModoNoche");
-
       setTimeout(function () {
         document.getElementById("noche").classList.remove("efectoModoNoche");
-
-      document.getElementById("dia").style = "display:block";
-      document.getElementById("noche").style = "display:none";
-      document.getElementById("modo").href = "";
-    }, 2000); // 1000ms = 3s
-
+        document.getElementById("dia").style = "display:block";
+        document.getElementById("noche").style = "display:none";
+        document.getElementById("modo").href = "";
+      }, 2000); // 1000ms = 3s
       break;
     default:
       break;
@@ -371,9 +322,9 @@ function fecha(id) {
       break;
     case "halloween":
       document.getElementById("cssArchivo").href =
-        "/src/assets/style/sass/styles/festivos/styleHalloween.css";
+        "/src/assets/style/styles/festivos/styleHalloween.css";
       document.getElementById("color").href =
-        "/src/assets/style/sass/styles/colores/naranja.css";
+        "/src/assets/style/styles/colores/naranja.css";
       document.getElementById("adorno").src =
         "/src/assets/images/gifs/calabaza2.gif";
       document.getElementById("stop").style = "display:block";
@@ -384,9 +335,9 @@ function fecha(id) {
       break;
     case "reyes":
       document.getElementById("cssArchivo").href =
-        "/src/assets/style/sass/styles/festivos/styleReyes.css";
+        "/src/assets/style/styles/festivos/styleReyes.css";
       document.getElementById("color").href =
-        "/src/assets/style/sass/styles/colores/amarillo.css";
+        "/src/assets/style/styles/colores/amarillo.css";
       document.getElementById("adorno").src =
         "/src/assets/images/gifs/reyes.gif";
       document.getElementById("stop").style = "display:block";
@@ -397,9 +348,9 @@ function fecha(id) {
       break;
     case "sanValentin":
       document.getElementById("cssArchivo").href =
-        "/src/assets/style/sass/styles/festivos/styleSanValentin.css";
+        "/src/assets/style/styles/festivos/styleSanValentin.css";
       document.getElementById("color").href =
-        "/src/assets/style/sass/styles/colores/rosa.css";
+        "/src/assets/style/styles/colores/rosa.css";
       document.getElementById("adorno").src =
         "/src/assets/images/gifs/sanValentin.gif";
       document.getElementById("stop").style = "display:block";
@@ -410,9 +361,9 @@ function fecha(id) {
       break;
     case "pascua":
       document.getElementById("cssArchivo").href =
-        "/src/assets/style/sass/styles/festivos/stylePascua.css";
+        "/src/assets/style/styles/festivos/stylePascua.css";
       document.getElementById("color").href =
-        "/src/assets/style/sass/styles/colores/rojo.css";
+        "/src/assets/style/styles/colores/rojo.css";
       document.getElementById("adorno").src =
         "/src/assets/images/gifs/pascua.gif";
       document.getElementById("stop").style = "display:block";
@@ -423,9 +374,9 @@ function fecha(id) {
       break;
     case "navidad":
       document.getElementById("cssArchivo").href =
-        "/src/assets/style/sass/styles/festivos/styleNavidad.css";
+        "/src/assets/style/styles/festivos/styleNavidad.css";
       document.getElementById("color").href =
-        "/src/assets/style/sass/styles/colores/rojo.css";
+        "/src/assets/style/styles/colores/rojo.css";
       document.getElementById("adorno").src =
         "/src/assets/images/gifs/noelbailando.gif";
       document.getElementById("stop").style = "display:block";
@@ -435,9 +386,9 @@ function fecha(id) {
       break;
     case "inocente":
       document.getElementById("cssArchivo").href =
-        "/src/assets/style/sass/styles/festivos/styleAnoNuevo.css";
+        "/src/assets/style/styles/festivos/styleAnoNuevo.css";
       document.getElementById("color").href =
-        "/src/assets/style/sass/styles/colores/blanco.css";
+        "/src/assets/style/styles/colores/blanco.css";
       document.getElementById("adorno").src =
         "/src/assets/images/gifs/inocente.gif";
       document.getElementById("stop").style = "display:block";
@@ -447,9 +398,9 @@ function fecha(id) {
       break;
     case "anoNuevo":
       document.getElementById("cssArchivo").href =
-        "/src/assets/style/sass/styles/festivos/styleAnoNuevo.css";
+        "/src/assets/style/styles/festivos/styleAnoNuevo.css";
       document.getElementById("color").href =
-        "/src/assets/style/sass/styles/colores/oro.css";
+        "/src/assets/style/styles/colores/oro.css";
       document.getElementById("adorno").src =
         "/src/assets/images/gifs/brindis.gif";
       document.getElementById("stop").style = "display:block";

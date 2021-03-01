@@ -20,7 +20,6 @@
     }
   }
 }
-
 /* ------------------------------------------
          menu
 ------------------------------------------ */
@@ -121,8 +120,8 @@ html,
 body {
   background: {
     color: $amarillento;
-      }
-  background-image: url("../../../images/backgrounds/papelTexturadoClaro.jpg")  ;
+  }
+  background-image: url("../../images/backgrounds/papelTexturadoClaro.jpg");
   h1 {
     color: $negro;
     -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
@@ -184,7 +183,6 @@ body {
     color: $amarillento;
   }
 }
-
 /*-------------------
    footer
    -----------------*/
