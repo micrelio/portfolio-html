@@ -1,0 +1,287 @@
+@import "../mixins/mixins.scss";
+@import "../variables/variables.scss";
+@import "../funciones/funciones.scss";
+
+
+@font-face {
+  font-family: "supercell";
+  src: url(../../../fuentes/supercell-magic-webfont.ttf) format("truetype");
+}
+@font-face {
+  font-family: "FontAwesome";
+  src: url("fontawesome-webfont.woff");
+}
+@font-face {
+  font-family: "titanium";
+  src: url(../../../fuentes/pricedow.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Bad Script";
+  src: url(../../../fuentes/letrasEfectos/BadScript-Regular.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Sriracha";
+  src: url(../../../fuentes/letrasEfectos/Sriracha-Regular.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Kumar One outline";
+  src: url(../../../fuentes/letrasEfectos/KumarOneOutline-Regular.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Gruppo";
+  src: url(../../../fuentes/letrasEfectos/Gruppo-Regular.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Yellowtail";
+  src: url(../../../fuentes/letrasEfectos/Yellowtail-Regular.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Londrina";
+  src: url(../../../fuentes/letrasEfectos/Yellowtail-Regular.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Londrina Outline";
+  src: url(../../../fuentes/letrasEfectos/LondrinaOutline-Regular.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Monoton";
+  src: url(../../../fuentes/letrasEfectos/Monoton-Regular.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "frozen";
+  src: url(../../../fuentes/letrasEfectos/Ice-kingdomKustren.woff)
+}
+
+
+
+
+@font-face {
+  font-family: "Monoton";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Monoton"), local("Monoton-Regular"),
+   src url(../../assets/fuentes/letrasEfectos/Monoton-Regular.ttf)
+      format("woff");
+}
+
+@font-face {
+  font-family: "Iceland";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Iceland"), local("Iceland-Regular"),
+  src url(../../assets/fuentes/letrasEfectos/Iceland-Regular.woff)
+      format("woff");
+}
+
+@font-face {
+  font-family: "Pacifico";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Pacifico Regular"), local("Pacifico-Regular"),
+    url(http://themes.googleusercontent.com/static/fonts/pacifico/v5/yunJt0R8tCvMyj_V4xSjafesZW2xOQ-xsNqO47m55DA.woff)
+      format("woff");
+}
+
+@font-face {
+  font-family: "PressStart";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Press Start 2P"), local("PressStart2P-Regular"),
+    url(http://themes.googleusercontent.com/static/fonts/pressstart2p/v2/8Lg6LX8-ntOHUQnvQ0E7o3dD2UuwsmbX3BOp4SL_VwM.woff)
+      format("woff");
+}
+
+@font-face {
+  font-family: "Audiowide";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Audiowide"), local("Audiowide-Regular"),
+    url(http://themes.googleusercontent.com/static/fonts/audiowide/v2/8XtYtNKEyyZh481XVWfVOj8E0i7KZn-EPnyo3HZu7kw.woff)
+      format("woff");
+}
+
+@font-face {
+  font-family: "Vampiro One";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Vampiro One"), local("VampiroOne-Regular"),
+    url(http://themes.googleusercontent.com/static/fonts/vampiroone/v3/Ho2Xld8UbQyBA8XLxF1_NYbN6UDyHWBl620a-IRfuBk.woff)
+      format("woff");
+}
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+
+#preloader {
+  content: "";
+  position: fixed;
+  z-index: 9999;
+  top: calc(50% - 3rem);
+  left: calc(50% - 3rem);
+  border: 6px solid orangered;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+.head {
+  @include head;
+  border-bottom: 0.05rem solid $corporativo;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  margin: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  width: 100%;
+ min-height: 100%;
+  background-image: url("../../../images/backgrounds/0.jpg")  ;
+  // background-image: url("../../../images/gifs/liquido.gif")  ;
+  background: {
+    attachment: fixed;
+    size: cover;
+    
+    color: $gris;
+  }
+  .separador5 {
+    @include separador5;
+  }
+  .separador4 {
+    @include separador4;
+  }
+  .separador3 {
+    @include separador3;
+  }
+  .separador2 {
+    @include separador2;
+  }
+  .separador1 {
+    @include separador1;
+  }
+ 
+
+  font: {
+    // family: Arial;
+    family:Audiowide;
+    size: 62.5%;
+  }
+  h1 {
+    font-size: 4rem;
+    color: $blanco;
+    text-align: center;
+    -webkit-text-stroke: 0.05rem rgb(0, 0, 0);
+    text-shadow: 0.3rem 0.3rem 0.3rem gray;
+  }
+  h2 {
+    font-size: 3rem;
+    color: $blanco;
+    -webkit-text-stroke: 0.05rem rgb(0, 0, 0);
+    text-shadow: 0.3rem 0.3rem 0.2rem gray;
+  }
+  h3 {
+    font-size: 2rem;
+    color: $blanco;
+    -webkit-text-stroke: 0.04rem rgb(0, 0, 0);
+    text-shadow: 0.3rem 0.3rem 0.1rem gray;
+  }
+  h4 {
+    font-size: 1.5rem;
+    color: $blanco;
+    -webkit-text-stroke: 0.03rem rgb(0, 0, 0);
+    text-shadow: 0.3rem 0.3rem 0.1rem gray;
+  }
+  a {
+    color: $azul;
+  }
+  p {
+    font-size: 1.5rem;
+    color: blanchedalmond;
+  }
+  ul {
+    margin: 2rem 0rem 2rem 2rem;
+    li {
+      color: $blanco;
+      font-size: 1.5rem;
+      margin: 0rem 0rem 0rem 1rem;
+      a {
+        strong {
+          color: blue;
+        }
+      }
+      a > p {
+        //color: $corporativo;
+      }
+    }
+  }
+  .primera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    // padding: 5%;
+    img {
+      width: 50vh;
+    }
+  }
+  .fa-arrow-alt-circle-up {
+    opacity: 0.5;
+    z-index: 1000;
+    color: $corporativo;
+    font-size: 5rem;
+    display: block;
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 15rem;
+    right: 2rem;
+    border-radius: 10rem;
+    -webkit-text-stroke: 0.1rem gray;
+    text-shadow: 0.2rem 0.2rem 0.5rem black;
+    background: {
+      color: white;
+    }
+  }
+}
+/*----------------------
+      responsive
+----------------------*/
+@media only screen and (max-width: 700px) {
+}

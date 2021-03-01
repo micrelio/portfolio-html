@@ -1,0 +1,1356 @@
+@charset "UTF-8";
+/* ---------------hovers--------------*/
+@font-face {
+  font-family: "Londrina Outline";
+  src: url(../../assets/fuentes/letrasEfectos/LondrinaOutline-Regular.ttf) format("truetype");
+}
+
+/* -----------------------------------------
+         social media menu
+------------------------------------------ */
+.social-media {
+  padding: 0.1rem 1rem 0.1rem 1rem;
+  background-color: #3c97bf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-media .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  flex-direction: row-reverse;
+  /* background-color: orangered; */
+}
+
+.social-media p {
+  color: #0a0a0a;
+}
+
+.social-media .social-links a {
+  font-size: 2.4rem;
+  display: inline-block;
+  color: black;
+  line-height: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.social-media .social-links a:visited {
+  color: black;
+}
+
+.social-media .social-links a:hover {
+  color: black;
+}
+
+/* ------------------------------------------
+         menu
+------------------------------------------ */
+.movil {
+  display: none;
+}
+
+.stick {
+  top: 0;
+  width: 100%;
+}
+
+.stick .nav {
+  -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+  background-color: black;
+}
+
+.stick .nav .navbar {
+  padding: 0rem 3rem 0rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.stick .nav .navbar .foto {
+  position: relative;
+  cursor: pointer;
+}
+
+.stick .nav .navbar .foto img {
+  height: 100%;
+  margin-left: calc(10px + 1vw);
+  border-radius: 75%;
+  border: 0.05rem solid #3c97bf;
+  width: calc(3vw + 3rem);
+}
+
+.stick .nav .navbar .foto img:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  overflow: hidden;
+  overflow: hidden;
+}
+
+.stick .nav .navbar .logotipo {
+  /* Other styles */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 100%;
+  margin: 0rem 0rem 0rem 1rem;
+  height: 5rem;
+  color: #3c97bf;
+}
+
+.stick .nav .navbar .logotipo #palabras {
+  position: relative;
+}
+
+.stick .nav .navbar .logotipo .palabras {
+  font-size: 3rem;
+  letter-spacing: -5px;
+  --interval: 1s;
+  display: block;
+  text-shadow: 0 0 1rem var(--color1), 0 0 2rem var(--color2), 0 0 4rem var(--color3), 0 0 8rem var(--color4);
+  will-change: filter, color;
+  -webkit-filter: saturate(60%);
+          filter: saturate(60%);
+  -webkit-animation: flicker steps(100) var(--interval) 1s infinite;
+          animation: flicker steps(100) var(--interval) 1s infinite;
+  color: tomato;
+  --color1: orangered;
+  --color2: firebrick;
+  --color3: maroon;
+  --color4: darkred;
+  font-family: Yellowtail;
+  font-family: Londrina Outline;
+  font-family: Kumar One Outline;
+  font-family: Bad Script;
+}
+
+@-webkit-keyframes flicker {
+  50% {
+    color: white;
+    -webkit-filter: saturate(200%) hue-rotate(20deg);
+            filter: saturate(200%) hue-rotate(20deg);
+  }
+}
+
+@keyframes flicker {
+  50% {
+    color: white;
+    -webkit-filter: saturate(200%) hue-rotate(20deg);
+            filter: saturate(200%) hue-rotate(20deg);
+  }
+}
+
+.stick .nav .navbar .logotipo .palabras span {
+  cursor: pointer;
+  display: inline-block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  line-height: 0.8;
+}
+
+.stick .nav .navbar .logotipo span:nth-child(1):hover {
+  -webkit-animation: balance 1.5s ease-out;
+          animation: balance 1.5s ease-out;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.stick .nav .navbar .logotipo span:nth-child(2):hover {
+  -webkit-animation: shrinkjump 1s ease-in-out;
+          animation: shrinkjump 1s ease-in-out;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+}
+
+.stick .nav .navbar .logotipo span:nth-child(3):hover {
+  -webkit-animation: falling 2s ease-out;
+          animation: falling 2s ease-out;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+}
+
+.stick .nav .navbar .logotipo span:nth-child(4):hover {
+  -webkit-animation: rotate 1s ease-out;
+          animation: rotate 1s ease-out;
+}
+
+.stick .nav .navbar .logotipo span:nth-child(5):hover {
+  -webkit-animation: toplong 1.5s linear;
+          animation: toplong 1.5s linear;
+}
+
+.stick .nav .navbar .logotipo .palabras span:nth-child(1).active {
+  -webkit-animation: balance 1.5s ease-out;
+          animation: balance 1.5s ease-out;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+@-webkit-keyframes balance {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  30%,
+  60% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+}
+
+@keyframes balance {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  30%,
+  60% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+}
+
+.stick .nav .navbar .logotipo .palabras span:nth-child(2).active {
+  -webkit-animation: shrinkjump 1s ease-in-out;
+          animation: shrinkjump 1s ease-in-out;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+}
+
+.stick .nav .navbar .logotipo .fixed {
+  position: fixed;
+  top: 4rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.stick .nav .navbar .logotipo .logotipo {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+
+.stick .nav .navbar .logotipo .logotipo i {
+  color: red;
+}
+
+.stick .nav .navbar .logotipo .logotipo a {
+  color: #3c97bf;
+  text-decoration: none;
+}
+
+@-webkit-keyframes shrinkjump {
+  10%,
+  35% {
+    -webkit-transform: scale(2, 0.2) translate(0, 0);
+            transform: scale(2, 0.2) translate(0, 0);
+  }
+  45%,
+  50% {
+    -webkit-transform: scale(1) translate(0, -2rem);
+            transform: scale(1) translate(0, -2rem);
+  }
+  80% {
+    -webkit-transform: scale(1) translate(0, 0);
+            transform: scale(1) translate(0, 0);
+  }
+}
+
+@keyframes shrinkjump {
+  10%,
+  35% {
+    -webkit-transform: scale(2, 0.2) translate(0, 0);
+            transform: scale(2, 0.2) translate(0, 0);
+  }
+  45%,
+  50% {
+    -webkit-transform: scale(1) translate(0, -2rem);
+            transform: scale(1) translate(0, -2rem);
+  }
+  80% {
+    -webkit-transform: scale(1) translate(0, 0);
+            transform: scale(1) translate(0, 0);
+  }
+}
+
+.stick .nav .navbar .logotipo .palabras span:nth-child(3).active {
+  -webkit-animation: falling 2s ease-out;
+          animation: falling 2s ease-out;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+}
+
+@-webkit-keyframes falling {
+  12% {
+    -webkit-transform: rotateX(240deg);
+            transform: rotateX(240deg);
+  }
+  24% {
+    -webkit-transform: rotateX(150deg);
+            transform: rotateX(150deg);
+  }
+  36% {
+    -webkit-transform: rotateX(200deg);
+            transform: rotateX(200deg);
+  }
+  48% {
+    -webkit-transform: rotateX(175deg);
+            transform: rotateX(175deg);
+  }
+  60%,
+  85% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+}
+
+@keyframes falling {
+  12% {
+    -webkit-transform: rotateX(240deg);
+            transform: rotateX(240deg);
+  }
+  24% {
+    -webkit-transform: rotateX(150deg);
+            transform: rotateX(150deg);
+  }
+  36% {
+    -webkit-transform: rotateX(200deg);
+            transform: rotateX(200deg);
+  }
+  48% {
+    -webkit-transform: rotateX(175deg);
+            transform: rotateX(175deg);
+  }
+  60%,
+  85% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+}
+
+.stick .nav .navbar .logotipo .palabras span:nth-child(4).active {
+  -webkit-animation: rotate 1s ease-out;
+          animation: rotate 1s ease-out;
+}
+
+@-webkit-keyframes rotate {
+  20%,
+  80% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotate {
+  20%,
+  80% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+.stick .nav .navbar .logotipo .palabras span:nth-child(5).active {
+  -webkit-animation: toplong 1.5s linear;
+          animation: toplong 1.5s linear;
+}
+
+@-webkit-keyframes toplong {
+  10%,
+  40% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  90% {
+    -webkit-transform: scaleX(4);
+            transform: scaleX(4);
+  }
+}
+
+@keyframes toplong {
+  10%,
+  40% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  90% {
+    -webkit-transform: scaleX(4);
+            transform: scaleX(4);
+  }
+}
+
+.stick .nav .navbar .logotipo:hover {
+  -webkit-animation: squiggly-anim 0.34s linear infinite;
+  animation: squiggly-anim 0.34s linear infinite;
+}
+
+@-webkit-keyframes squiggly-anim {
+  0% {
+    -webkit-filter: url("#squiggly-0");
+            filter: url("#squiggly-0");
+  }
+  25% {
+    -webkit-filter: url("#squiggly-1");
+            filter: url("#squiggly-1");
+  }
+  50% {
+    -webkit-filter: url("#squiggly-2");
+            filter: url("#squiggly-2");
+  }
+  75% {
+    -webkit-filter: url("#squiggly-3");
+            filter: url("#squiggly-3");
+  }
+  100% {
+    -webkit-filter: url("#squiggly-4");
+            filter: url("#squiggly-4");
+  }
+}
+
+@keyframes squiggly-anim {
+  0% {
+    -webkit-filter: url("#squiggly-0");
+            filter: url("#squiggly-0");
+  }
+  25% {
+    -webkit-filter: url("#squiggly-1");
+            filter: url("#squiggly-1");
+  }
+  50% {
+    -webkit-filter: url("#squiggly-2");
+            filter: url("#squiggly-2");
+  }
+  75% {
+    -webkit-filter: url("#squiggly-3");
+            filter: url("#squiggly-3");
+  }
+  100% {
+    -webkit-filter: url("#squiggly-4");
+            filter: url("#squiggly-4");
+  }
+}
+
+.stick .nav .navbar .menu {
+  padding: 3rem 0 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+}
+
+.stick .nav .navbar .menu .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  /* ANIMATIONS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+}
+
+.stick .nav .navbar .menu .links a {
+  text-decoration: none;
+}
+
+.stick .nav .navbar .menu .links a:hover span:first-child {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.stick .nav .navbar .menu .links a:hover span:last-child,
+.stick .nav .navbar .menu .links .links[data-animation] a:hover span:last-child {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.stick .nav .navbar .menu .links .links[data-animation="to-top"] a span:last-child {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.stick .nav .navbar .menu .links .menuCSS3 {
+  list-style: none;
+  /* Rounded Corners */
+  border-radius: 1rem;
+}
+
+.stick .nav .navbar .menu .links .menuCSS3 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-left: -1rem;
+  list-style: none;
+}
+
+.stick .nav .navbar .menu .links .menuCSS3 ul li ul {
+  display: none;
+}
+
+.stick .nav .navbar .menu .links .menuCSS3 ul li a:hover + ul,
+.stick .nav .navbar .menu .links .menuCSS3 ul li ul:hover {
+  display: block;
+  position: absolute;
+}
+
+.stick .nav .navbar .menu .links .enlace {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  margin: 0rem 0.4rem 0rem 0.4rem;
+  color: #3c97bf;
+  padding: 0rem 0.1rem 0rem 0.1rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.stick .nav .navbar .menu .links .enlace span {
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  transition: -webkit-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+}
+
+.stick .nav .navbar .menu .links .enlace span:first-child {
+  display: inline-block;
+  padding: 1rem 0rem 1rem 0rem;
+}
+
+.stick .nav .navbar .menu .links .enlace span:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.stick .nav .navbar .menu .links .enlace i {
+  font-size: 3rem;
+}
+
+.stick .nav .navbar .menu .links .enlace p {
+  color: #3c97bf;
+}
+
+.stick .nav .navbar .menu .links .active span:first-child {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  color: #eeeeee;
+}
+
+.stick .nav .navbar .menu .links .active span:last-child {
+  color: #eeeeee;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.stick .nav .navbar .menu .links .mode .noche {
+  -webkit-animation: amplia 1s linear;
+          animation: amplia 1s linear;
+  display: none;
+  font-size: 3rem;
+}
+
+.stick .nav .navbar .menu .links .mode .dia {
+  -webkit-animation: amplia 1s linear;
+          animation: amplia 1s linear;
+  display: none;
+  font-size: 3rem;
+}
+
+.stick .nav .navbar .menu .links .efectoModoNoche {
+  -webkit-animation: reduce 2s linear;
+          animation: reduce 2s linear;
+}
+
+@-webkit-keyframes reduce {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0) rotate(360deg);
+            transform: scale(0) rotate(360deg);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes reduce {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0) rotate(360deg);
+            transform: scale(0) rotate(360deg);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@-webkit-keyframes amplia {
+  0% {
+    -webkit-transform: scale(0) rotate(-360deg);
+            transform: scale(0) rotate(-360deg);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes amplia {
+  0% {
+    -webkit-transform: scale(0) rotate(-360deg);
+            transform: scale(0) rotate(-360deg);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes rotate1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.stick .nav .navbar .menu .links .brushEstilos .selecEstilosDesplegar {
+  font-size: 3rem;
+}
+
+.stick .nav .navbar .menu .links .brushEstilos .selecEstilosPlegar {
+  font-size: 3rem;
+}
+
+.stick .nav .navbar .menu .links .brushEstilos:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+}
+
+.stick .nav .navbar .menu .links .irInicio:hover,
+.stick .nav .navbar .menu .links .irBiografia:hover,
+.stick .nav .navbar .menu .links .irWebs:hover,
+.stick .nav .navbar .menu .links .irGaleria:hover,
+.stick .nav .navbar .menu .links .irCurriculum:hover,
+.stick .nav .navbar .menu .links .irContacto:hover,
+.stick .nav .navbar .menu .links .irDisenos:hover,
+.stick .nav .navbar .menu .links .irHover:hover,
+.stick .nav .navbar .menu .links .irInicio:focus,
+.stick .nav .navbar .menu .links .irBiografia:focus,
+.stick .nav .navbar .menu .links .irWebs:focus,
+.stick .nav .navbar .menu .links .irGaleria:focus,
+.stick .nav .navbar .menu .links .irCurriculum:focus,
+.stick .nav .navbar .menu .links .irDisenos:focus,
+.stick .nav .navbar .menu .links .irHover:focus,
+.stick .nav .navbar .menu .links .irContacto:focus {
+  background-color: rgba(78, 78, 32, 0.582);
+}
+
+.stick .movil img {
+  display: none;
+}
+
+.stick .mnav-link {
+  display: none;
+}
+
+.stick .desplegable {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .nav {
+    display: none;
+  }
+  .stick {
+    margin: 0rem 0rem 5rem 0rem;
+  }
+  .stick .movil {
+    border-bottom: 0.05rem solid #3c97bf;
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.438);
+  }
+  .stick .movil .imagenes {
+    padding: calc(0.5rem + 0.5vw);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .stick .movil .imagenes svg {
+    display: none;
+  }
+  .stick .movil .imagenes .foto {
+    cursor: pointer;
+  }
+  .stick .movil .imagenes .foto img {
+    display: block;
+    width: 1rem;
+    margin-right: 6rem;
+  }
+  .stick .movil .imagenes .logotipo {
+    /* Other styles */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #3c97bf;
+  }
+  .stick .movil .imagenes .logotipo .palabras {
+    font-size: 3rem;
+    letter-spacing: -5px;
+    --interval: 1s;
+    display: block;
+    text-shadow: 0 0 1rem var(--color1), 0 0 2rem var(--color2), 0 0 4rem var(--color3), 0 0 8rem var(--color4);
+    will-change: filter, color;
+    -webkit-filter: saturate(60%);
+            filter: saturate(60%);
+    -webkit-animation: flicker steps(100) var(--interval) 1s infinite;
+            animation: flicker steps(100) var(--interval) 1s infinite;
+    color: tomato;
+    --color1: orangered;
+    --color2: firebrick;
+    --color3: maroon;
+    --color4: darkred;
+    font-family: Yellowtail;
+    font-family: Londrina Outline;
+    font-family: Kumar One Outline;
+    font-family: Bad Script;
+  }
+  @-webkit-keyframes flicker {
+    50% {
+      color: white;
+      -webkit-filter: saturate(200%) hue-rotate(20deg);
+              filter: saturate(200%) hue-rotate(20deg);
+    }
+  }
+  @keyframes flicker {
+    50% {
+      color: white;
+      -webkit-filter: saturate(200%) hue-rotate(20deg);
+              filter: saturate(200%) hue-rotate(20deg);
+    }
+  }
+  .stick .movil .imagenes .logotipo .palabras span {
+    cursor: pointer;
+    display: inline-block;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    line-height: 0.8;
+  }
+  .stick .movil .imagenes .logotipo span:nth-child(1):hover {
+    -webkit-animation: balance 1.5s ease-out;
+            animation: balance 1.5s ease-out;
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left;
+  }
+  .stick .movil .imagenes .logotipo span:nth-child(2):hover {
+    -webkit-animation: shrinkjump 1s ease-in-out;
+            animation: shrinkjump 1s ease-in-out;
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+  .stick .movil .imagenes .logotipo span:nth-child(3):hover {
+    -webkit-animation: falling 2s ease-out;
+            animation: falling 2s ease-out;
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+  .stick .movil .imagenes .logotipo span:nth-child(4):hover {
+    -webkit-animation: rotate 1s ease-out;
+            animation: rotate 1s ease-out;
+  }
+  .stick .movil .imagenes .logotipo span:nth-child(5):hover {
+    -webkit-animation: toplong 1.5s linear;
+            animation: toplong 1.5s linear;
+  }
+  .stick .movil .imagenes .logotipo .palabras span:nth-child(1).active {
+    -webkit-animation: balance 1.5s ease-out;
+            animation: balance 1.5s ease-out;
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left;
+  }
+  @-webkit-keyframes balance {
+    0%,
+    100% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    30%,
+    60% {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+    }
+  }
+  @keyframes balance {
+    0%,
+    100% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    30%,
+    60% {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+    }
+  }
+  .stick .movil .imagenes .logotipo .palabras span:nth-child(2).active {
+    -webkit-animation: shrinkjump 1s ease-in-out;
+            animation: shrinkjump 1s ease-in-out;
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+  .stick .movil .imagenes .logotipo .fixed {
+    position: fixed;
+    top: 4rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .stick .movil .imagenes .logotipo .logotipo {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    letter-spacing: 0.1rem;
+  }
+  .stick .movil .imagenes .logotipo .logotipo i {
+    color: red;
+  }
+  .stick .movil .imagenes .logotipo .logotipo a {
+    color: #3c97bf;
+    text-decoration: none;
+  }
+  @-webkit-keyframes shrinkjump {
+    10%,
+    35% {
+      -webkit-transform: scale(2, 0.2) translate(0, 0);
+              transform: scale(2, 0.2) translate(0, 0);
+    }
+    45%,
+    50% {
+      -webkit-transform: scale(1) translate(0, -2rem);
+              transform: scale(1) translate(0, -2rem);
+    }
+    80% {
+      -webkit-transform: scale(1) translate(0, 0);
+              transform: scale(1) translate(0, 0);
+    }
+  }
+  @keyframes shrinkjump {
+    10%,
+    35% {
+      -webkit-transform: scale(2, 0.2) translate(0, 0);
+              transform: scale(2, 0.2) translate(0, 0);
+    }
+    45%,
+    50% {
+      -webkit-transform: scale(1) translate(0, -2rem);
+              transform: scale(1) translate(0, -2rem);
+    }
+    80% {
+      -webkit-transform: scale(1) translate(0, 0);
+              transform: scale(1) translate(0, 0);
+    }
+  }
+  .stick .movil .imagenes .logotipo .palabras span:nth-child(3).active {
+    -webkit-animation: falling 2s ease-out;
+            animation: falling 2s ease-out;
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+  @-webkit-keyframes falling {
+    12% {
+      -webkit-transform: rotateX(240deg);
+              transform: rotateX(240deg);
+    }
+    24% {
+      -webkit-transform: rotateX(150deg);
+              transform: rotateX(150deg);
+    }
+    36% {
+      -webkit-transform: rotateX(200deg);
+              transform: rotateX(200deg);
+    }
+    48% {
+      -webkit-transform: rotateX(175deg);
+              transform: rotateX(175deg);
+    }
+    60%,
+    85% {
+      -webkit-transform: rotateX(180deg);
+              transform: rotateX(180deg);
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+    }
+  }
+  @keyframes falling {
+    12% {
+      -webkit-transform: rotateX(240deg);
+              transform: rotateX(240deg);
+    }
+    24% {
+      -webkit-transform: rotateX(150deg);
+              transform: rotateX(150deg);
+    }
+    36% {
+      -webkit-transform: rotateX(200deg);
+              transform: rotateX(200deg);
+    }
+    48% {
+      -webkit-transform: rotateX(175deg);
+              transform: rotateX(175deg);
+    }
+    60%,
+    85% {
+      -webkit-transform: rotateX(180deg);
+              transform: rotateX(180deg);
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+    }
+  }
+  .stick .movil .imagenes .logotipo .palabras span:nth-child(4).active {
+    -webkit-animation: rotate 1s ease-out;
+            animation: rotate 1s ease-out;
+  }
+  @-webkit-keyframes rotate {
+    20%,
+    80% {
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+    }
+    100% {
+      -webkit-transform: rotateY(360deg);
+              transform: rotateY(360deg);
+    }
+  }
+  @keyframes rotate {
+    20%,
+    80% {
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+    }
+    100% {
+      -webkit-transform: rotateY(360deg);
+              transform: rotateY(360deg);
+    }
+  }
+  .stick .movil .imagenes .logotipo .palabras span:nth-child(5).active {
+    -webkit-animation: toplong 1.5s linear;
+            animation: toplong 1.5s linear;
+  }
+  @-webkit-keyframes toplong {
+    10%,
+    40% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+    }
+    90% {
+      -webkit-transform: scaleY(4);
+              transform: scaleY(4);
+    }
+  }
+  @keyframes toplong {
+    10%,
+    40% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+    }
+    90% {
+      -webkit-transform: scaleY(4);
+              transform: scaleY(4);
+    }
+  }
+  .stick .movil .imagenes .logotipo:hover {
+    -webkit-animation: squiggly-anim 0.34s linear infinite;
+    animation: squiggly-anim 0.34s linear infinite;
+  }
+  @-webkit-keyframes squiggly-anim {
+    0% {
+      -webkit-filter: url("#squiggly-0");
+              filter: url("#squiggly-0");
+    }
+    25% {
+      -webkit-filter: url("#squiggly-1");
+              filter: url("#squiggly-1");
+    }
+    50% {
+      -webkit-filter: url("#squiggly-2");
+              filter: url("#squiggly-2");
+    }
+    75% {
+      -webkit-filter: url("#squiggly-3");
+              filter: url("#squiggly-3");
+    }
+    100% {
+      -webkit-filter: url("#squiggly-4");
+              filter: url("#squiggly-4");
+    }
+  }
+  @keyframes squiggly-anim {
+    0% {
+      -webkit-filter: url("#squiggly-0");
+              filter: url("#squiggly-0");
+    }
+    25% {
+      -webkit-filter: url("#squiggly-1");
+              filter: url("#squiggly-1");
+    }
+    50% {
+      -webkit-filter: url("#squiggly-2");
+              filter: url("#squiggly-2");
+    }
+    75% {
+      -webkit-filter: url("#squiggly-3");
+              filter: url("#squiggly-3");
+    }
+    100% {
+      -webkit-filter: url("#squiggly-4");
+              filter: url("#squiggly-4");
+    }
+  }
+  .stick .movil .imagenes .botones {
+    border: 0;
+    outline: 0 none;
+    background-color: transparent;
+  }
+  .stick .movil .imagenes .botones .botonMenu {
+    margin: 1rem;
+  }
+  .stick .movil .imagenes .botones .botonMenu #pull {
+    cursor: pointer;
+    position: relative;
+    padding: 1rem 4rem 1.5rem 0rem;
+  }
+  .stick .movil .imagenes .botones .botonMenu #pull span,
+  .stick .movil .imagenes .botones .botonMenu #pull span:after,
+  .stick .movil .imagenes .botones .botonMenu #pull span:before {
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    border-radius: 0.1rem;
+    height: 0.5rem;
+    width: 4rem;
+    background: white;
+    position: absolute;
+    display: block;
+    content: "";
+    background: #3c97bf;
+  }
+  .stick .movil .imagenes .botones .botonMenu #pull span:before {
+    top: -1rem;
+  }
+  .stick .movil .imagenes .botones .botonMenu #pull span:after {
+    bottom: -1rem;
+  }
+  .stick .movil .imagenes .botones .botonMenu #pull.active span {
+    background-color: transparent;
+  }
+  .stick .movil .imagenes .botones .botonMenu #pull.active span:before,
+  .stick .movil .imagenes .botones .botonMenu #pull.active span:after {
+    top: 0;
+  }
+  .stick .movil .imagenes .botones .botonMenu #pull.active span:after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .stick .movil .imagenes .botones .botonMenu #pull.active span:before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .stick .movil .desplegable a {
+    text-decoration: none;
+  }
+  .stick .movil .desplegable .brushMode {
+    margin: 0rem 0rem 1rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .stick .movil .desplegable .brushMode .mode {
+    cursor: pointer;
+  }
+  .stick .movil .desplegable .brushMode .mode:hover {
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  .stick .movil .desplegable .brushMode p {
+    color: #3c97bf;
+    font-size: 5rem;
+  }
+  .stick .movil .desplegable .brushMode .noche {
+    display: none;
+    color: #3c97bf;
+    font-size: 5rem;
+  }
+  .stick .movil .desplegable .brushMode .dia {
+    display: block;
+    color: #3c97bf;
+    font-size: 5rem;
+  }
+  .stick .movil .desplegable .brushMode .brushEstilos:hover {
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+  }
+  .stick .movil .desplegable .brushMode .selecEstilosDesplegar {
+    margin: 0;
+    -webkit-animation-name: parpadeo;
+            animation-name: parpadeo;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    font-size: 5rem;
+    color: #3c97bf;
+  }
+  .stick .movil .desplegable .brushMode .selecEstilosPlegar {
+    -webkit-animation-name: none;
+            animation-name: none;
+    color: #3c97bf;
+  }
+  .stick .movil .desplegable .brushMode img {
+    position: absolute;
+    width: calc(0.1rem + 3vw);
+  }
+  .stick .movil .desplegable .enlace {
+    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: 1rem;
+    border: 0;
+    color: #3c97bf;
+    cursor: pointer;
+    font-size: 3rem;
+    font-color: #3c97bf;
+  }
+}
+
+@media (max-width: 800px) {
+  section #links {
+    display: none;
+  }
+}
+
+/* Y finalmente las animaciones */
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=nav.css.map */

@@ -1,0 +1,403 @@
+@import "../../mixins/mixins.scss";
+@import "../../variables/variables.scss";
+@import "../../funciones/funciones.scss";
+
+.head {
+  @include head;
+  border-bottom: 0.05rem solid $gris;
+}
+html,
+body {
+  //  h1 {
+  //   color: $gris;
+  //   -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
+  //   text-shadow: 0.2em 0.2em 0.3em black;
+  // }
+  // h2 {
+  //   color: $gris;
+  //   -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
+  //   text-shadow: 0.2rem 0.2rem 0.3rem black;
+  // }
+  // h3 {
+  //   color: $gris;
+  //   -webkit-text-stroke: 0.04rem rgb(221, 216, 216);
+  //   text-shadow: 0.2em 0.2em 0.3em black;
+  // }
+  // h4 {
+  //   color: $gris;
+  //   -webkit-text-stroke: 0.03rem rgb(221, 216, 216);
+  //   text-shadow: 0.2em 0.2em 0.3em black;
+  // }
+  // a{
+  //   color:$azul
+  // }
+  // p {
+  //   color: blanchedalmond;
+  // }
+  // ul {
+  //   li {
+  //     color: $gris;
+  //       p {
+  //          strong{
+  //       color: $azul;
+  //          }
+  //     }
+  //     a > p {
+  //       color: $gris;
+  //     }
+  //   }
+  // }
+  .fa-arrow-alt-circle-up {
+    color: $gris;
+    -webkit-text-stroke: 0.1rem gray;
+    text-shadow: 0.2rem 0.2rem 0.5rem black;
+    background: {
+      color: $blanco;
+    }
+  }
+  .fiestas {
+    .stop {
+      color: $negro;
+      background-color: $gris;
+      border: 0.05rem solid $negro;
+      border-radius: 0.9rem;
+    }
+    .stop:hover {
+      color: $negro;
+      background-color: $blanco;
+      border: 0.05rem solid $negro;
+    }
+  }
+}
+
+/* ------------------------------------------
+         social media menu
+ ------------------------------------------ */
+.social-media {
+  background-color: $gris;
+  .social-links {
+    //padding: 0.01rem;
+    // background-color: orangered;
+  }
+  p {
+    color: $blanco;
+  }
+  .social-links a {
+    font-size: 2.4rem;
+    display: inline-block;
+    color: $blanco;
+    line-height: 1;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  .social-links a:visited {
+    color: $blanco;
+  }
+  .social-links a:hover {
+    color: $blanco;
+  }
+}
+/* ------------------------------------------
+         menu
+------------------------------------------ */
+.stick {
+  .nav {
+    border-bottom: 0.05rem solid $gris;
+    .navbar {
+      .foto {
+        img {
+          // border: 0.05rem solid $gris; //$blanco;
+        }
+      }
+      .menu {
+        .links {
+          .enlace {
+            color: $blanco; //gray
+            p {
+              color: $blanco;
+            }
+          }
+          .irInicio:hover,
+          .irBiografia:hover,
+          .irWebs:hover,
+          .irGaleria:hover,
+          .irCurriculum:hover,
+          .irContacto:hover,
+          .irInicio:focus,
+          .irBiografia:focus,
+          .irWebs:focus,
+          .irGaleria:focus,
+          .irCurriculum:focus,
+          .irContacto:focus {
+            // background-color: rgba(78, 78, 32, 0.582);
+          }
+        }
+      }
+      .mode {
+        background: {
+          // color: pink;
+        }
+        .noche {
+          color: $gris;
+        }
+        .dia {
+          color: $gris;
+        }
+      }
+    }
+  }
+}
+//------------------------\\
+//  footer  \\
+//------------------------\\
+* {
+  footer {
+    border-top: 0.1rem solid $gris;
+    background: {
+      color: black;
+    }
+    .footerContainer {
+      color: $blanco;
+      .contacto,
+      .direccion,
+      .paginas {
+        h2 {
+          color: $gris;
+          -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
+          // text-shadow: 0.05em 0.05em 0.1em $blanco;
+        }
+        p {
+        }
+        a {
+          // color: blanchedalmond;
+        }
+        input[type="email"] {
+          border: 0.1rem solid $gris;
+        }
+        input[type="submit"] {
+          background: $gris;
+          color: $blanco;
+
+          border: 0.1rem solid $gris;
+
+          border: 0.05rem solid $blanco;
+        }
+        input[type="submit"]:hover {
+          background-color: rgba(78, 78, 32, 0.582);
+        }
+        .fa {
+          color: $rojo;
+        }
+        .datos {
+          p {
+          }
+        }
+        .diseños {
+          p {
+          }
+        }
+      }
+    }
+    .redes {
+      background: #000;
+      border-top: 0.1rem solid $gris;
+      .propiedad {
+        .socialmedia {
+          .iconSocial {
+            img {
+            }
+          }
+        }
+      }
+      .copy {
+        color: $blanco;
+        border-bottom: 0.1rem solid $gris;
+      }
+      .politicas {
+        //background-color: blue;
+        p {
+        }
+        a {
+        }
+      }
+    }
+  }
+}
+/*------------------------
+             galeria
+------------------------*/
+.miniaturas {
+  .repertorio {
+    h3 {
+      color: $gris;
+      // font-size: 3rem;
+      // color: $blanco;
+      // margin: 1rem 0rem 0.5rem 0rem;
+      // -webkit-text-stroke: 0.04rem rgb(221, 216, 216);
+      // text-shadow: 0.2em 0.2em 0.3em black;
+    }
+    .title {
+    }
+    .raya {
+      border-color: $gris;
+    }
+    .fila {
+      .imagenPresentacion {
+        // border: 0.4rem solid #eeeeee;
+      }
+    }
+  }
+}
+.menuGaleria {
+  background-color: $gris;
+  .boton {
+    color: $negro;
+  }
+}
+/*------------------------
+             webs
+------------------------*/
+.web {
+  .primeroscoc,
+  .guerrasOnline,
+  .tiendaTitanium,
+  .titaniumGamers,
+  .portfolio {
+    border-color: $gris;
+  }
+}
+/*----------------
+     curriculum
+-----------------*/
+.descripcion {
+  .año {
+    color: $gris;
+  }
+  h1,
+  strong {
+    color: $gris;
+  }
+}
+.datos {
+  .datosPersonales {
+    border: 0.2rem solid $gris;
+    h2 {
+      color: $gris;
+    }
+    h3{
+      color:$gris;
+    }
+  }
+  .experiencia {
+    border: 0.2rem solid $gris;
+  }
+  .interes {
+    border: 0.1rem solid $gris;
+  }
+}
+//------------------------\\
+//  RESPONSIVE  \\
+//------------------------\\
+@media screen and (max-width: 650px) {
+  footer {
+    .footerContainer {
+      flex-wrap: wrap;
+
+      .contacto {
+        width: 90%;
+      }
+      .direccion {
+        margin-top: 5rem;
+
+        width: 90%;
+      }
+      .paginas {
+        margin-top: 5rem;
+        width: 90%;
+      }
+    }
+  }
+}
+//------------------------\\
+//  nav RESPONSIVE  \\
+//------------------------\\
+@media only screen and (max-width: 800px) {
+  .nav {
+  }
+  .stick {
+    .movil {
+      border-bottom: 0.05rem solid $gris;
+      box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+      background: {
+        color: rgba(0, 0, 0, 0.438);
+      }
+      .imagenes {
+        background: {
+          // color: blue;
+        }
+        .foto {
+          background: {
+            // color: green;
+          }
+          img {
+            // border: 3px double $gris;
+            // box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+          }
+        }
+        .botones {
+          background: {
+          }
+          .botonMenu {
+            color: $gris;
+          }
+
+          #boton1 {
+            background-color: Transparent;
+            p {
+            }
+          }
+        }
+      }
+      .desplegable {
+        .mode {
+          background: {
+          }
+          .noche {
+            color: $gris;
+          }
+          .dia {
+            color: $gris;
+          }
+          .selecEstilosDesplegar {
+            color: $gris;
+          }
+          .selecEstilosPlegar {
+            color: $gris;
+          }
+          img {
+          }
+        }
+        .enlace {
+          color: $gris;
+          font: {
+            color: $gris;
+          }
+        }
+        .mnav-link {
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    .fiestas {
+      img {
+      }
+      .stop {
+        font-size: calc(1rem + 0.3vw);
+      }
+    }
+  }
+}

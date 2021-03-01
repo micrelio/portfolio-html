@@ -1,0 +1,233 @@
+@import "../mixins/mixins.scss";
+@import "../variables/variables.scss";
+@import "../funciones/funciones.scss";
+
+/* ------------------------------------------
+         div stilos
+------------------------------------------ */
+.panelEstilos {
+  .botonesEstilo {
+    background-color: white;
+    .selecModo {
+      .mode {
+        .noche {
+          display: block;
+        }
+        .dia {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+/* ------------------------------------------
+         menu
+------------------------------------------ */
+.movil {
+}
+.stick {
+  background: {
+  }
+  .nav {
+    background: {
+      color: rgba(0, 0, 0, 0.5);
+      // color:$blanco
+    }
+    .navbar {
+      .foto {
+        img {
+          // border: 0.05rem solid $corporativo;
+          //box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+        }
+      }
+      .menu {
+        .links {
+          .enlace {
+            // -webkit-text-stroke: 0.005rem black;
+
+            p {
+              // -webkit-text-fill-color: yellowgreen;
+              // -webkit-text-fill-color: #e3e4e5;
+              // -webkit-text-stroke: 0.5rem black;
+              //  border: 0.05rem solid $corporativo;
+            }
+          }
+          .mode {
+            .noche {
+              // display: block;
+            }
+            .dia {
+              // display: none;
+            }
+          }
+          .brushEstilos {
+            .selecEstilosDesplegar {
+            }
+            .selecEstilosPlegar {
+            }
+          }
+          .irInicio:hover,
+          .irBiografia:hover,
+          .irWebs:hover,
+          .irGaleria:hover,
+          .irCurriculum:hover,
+          .irContacto:hover,
+          .irInicio:focus,
+          .irBiografia:focus,
+          .irWebs:focus,
+          .irGaleria:focus,
+          .irCurriculum:focus,
+          .irContacto:focus {
+            // background-color: rgba(78, 78, 32, 0.582);
+          }
+        }
+      }
+    }
+  }
+  .movil img {
+  }
+  .mnav-link {
+  }
+  .desplegable {
+  }
+}
+/*-----------------
+ menu responsive
+ ------------*/
+@media only screen and (max-width: 800px) {
+  .movil {
+    .desplegable {
+      .mode {
+        margin: 0rem 0rem 1rem 1rem;
+        .noche {
+          display: block;
+        }
+        .dia {
+          display: none;
+        }
+        img {
+          position: absolute;
+          width: calc(0.1rem + 3vw);
+        }
+      }
+    }
+  }
+}
+/*--------------------
+          html
+  -----------------*/
+html,
+body {
+  background: {
+    color: $amarillento;
+      }
+  background-image: url("../../../images/backgrounds/papelTexturadoClaro.jpg")  ;
+  h1 {
+    color: $negro;
+    -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
+    text-shadow: 0.5rem 0.5rem 0.3rem gray;
+  }
+  h2 {
+    color: $negro;
+    -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
+    text-shadow: 0.2rem 0.2rem 0.3rem gray;
+  }
+  h3 {
+    color: $negro;
+    -webkit-text-stroke: 0.04rem rgb(221, 216, 216);
+    text-shadow: 0.2rem 0.2rem 0.1rem gray;
+  }
+  h4 {
+    color: $negro;
+    -webkit-text-stroke: 0.03rem rgb(221, 216, 216);
+    text-shadow: 0.2rem 0.2rem 0.3rem gray;
+  }
+  p {
+    color: $negro; /*blanchedalmond;*/
+  }
+  a {
+    color: $azul;
+  }
+  ul {
+    li {
+      // color: $negro;
+      p {
+        strong {
+          color: blue;
+        }
+      }
+    }
+  }
+  .fa-arrow-alt-circle-up {
+    //color: $corporativo;
+    -webkit-text-stroke: 0.1rem gray;
+    text-shadow: 0.2rem 0.2rem 0.5rem black;
+    background: {
+      color: white;
+    }
+  }
+  .fiestas {
+    .stop {
+      border: 0.05rem solid $negro;
+    }
+    .stop:hover {
+      border: 0.05rem solid $negro;
+    }
+  }
+}
+/*-------------------
+   curriculum
+   -----------------*/
+.datos {
+  p {
+    color: $amarillento;
+  }
+}
+
+/*-------------------
+   footer
+   -----------------*/
+footer {
+  // border-top: 0.1rem solid $corporativo;
+  background: {
+    // color: $negro;
+  }
+  .footerContainer {
+    //color: #fff;
+    .contacto,
+    .direccion,
+    .paginas {
+      h2 {
+        // -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
+        // text-shadow: 0.05em 0.05em 0.1em white;
+      }
+      a {
+        // color: $negro;
+      }
+    }
+    .datos {
+      p {
+        // color: $negro;
+      }
+    }
+    .diseños {
+      p {
+        color: $blanco;
+      }
+    }
+  }
+  .redes {
+    // border-top: 0.1rem solid $corporativo;
+    //background-color: $blanco;
+  }
+  .copy {
+    // color:black;
+    // border-bottom: 0.1rem solid $corporativo;
+  }
+  .politicas {
+    p {
+      color: $blanco;
+    }
+  }
+}

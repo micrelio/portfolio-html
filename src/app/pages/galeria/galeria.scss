@@ -1,0 +1,12 @@
+@import "../../../assets/style/sass/mixins/mixins.scss";
+@import "../../../assets/style/sass/variables/variables.scss";
+
+#t {
+  color: white;
+}
+.galeria {
+  overflow: auto;
+}
+.head {
+  @include head;
+}

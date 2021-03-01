@@ -1,0 +1,385 @@
+@import "../../mixins/mixins.scss";
+@import "../../variables/variables.scss";
+@import "../../funciones/funciones.scss";
+
+.head {
+  @include head;
+  border-bottom: 0.05rem solid $rojo;
+}
+html,
+body {
+  //  h1 {
+  //   color: $rojo;
+  //   -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
+  //   text-shadow: 0.2em 0.2em 0.3em black;
+  // }
+  // h2 {
+  //   color: $rojo;
+  //   -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
+  //   text-shadow: 0.2rem 0.2rem 0.3rem black;
+  // }
+  // h3 {
+  //   color: $rojo;
+  //   -webkit-text-stroke: 0.04rem rgb(221, 216, 216);
+  //   text-shadow: 0.2em 0.2em 0.3em black;
+  // }
+  // h4 {
+  //   color: $rojo;
+  //   -webkit-text-stroke: 0.03rem rgb(221, 216, 216);
+  //   text-shadow: 0.2em 0.2em 0.3em black;
+  // }
+  // a{
+  //   color:$azul
+  // }
+  // p {
+  //   color: $blanco;
+  // }
+  // ul {
+  //   li {
+  //     color: $rojo;
+  //       p {
+  //          strong{
+  //       color: $azul;
+  //          }
+  //     }
+  //     a > p {
+  //       color: $rojo;
+  //     }
+  //   }
+  // }
+  .fa-arrow-alt-circle-up {
+    color: $rojo;
+    -webkit-text-stroke: 0.1rem gray;
+    text-shadow: 0.2rem 0.2rem 0.5rem black;
+    background: {
+      color: $blanco;
+    }
+  }
+  .fiestas {
+    .stop {
+      color: $blanco;
+      background-color: $rojo;
+      border-color: $blanco;
+    }
+    .stop:hover {
+      color: $rojo;
+      background-color: $blanco;
+      border-color: $rojo;
+    }
+  }
+}
+
+/* ------------------------------------------
+         social media menu
+ ------------------------------------------ */
+.social-media {
+  background-color: $rojo;
+}
+
+/* ------------------------------------------
+         menu
+------------------------------------------ */
+.stick {
+  background: {
+  }
+  .nav {
+    border-bottom: 0.05rem solid $rojo;
+    .navbar {
+      .foto {
+        img {
+          // border-color: $rojo;
+        }
+      }
+      .menu {
+        .links {
+          .enlace {
+            color: $rojo;
+            border-color: $rojo;
+            p{
+              color: $rojo;
+            }
+          }
+          .irInicio:hover,
+          .irBiografia:hover,
+          .irWebs:hover,
+          .irGaleria:hover,
+          .irCurriculum:hover,
+          .irContacto:hover,
+          .irInicio:focus,
+          .irBiografia:focus,
+          .irWebs:focus,
+          .irGaleria:focus,
+          .irCurriculum:focus,
+          .irContacto:focus {
+            //background-color: rgba(78, 78, 32, 0.582);
+          }
+        }
+      }
+      .mode {
+        background: {
+          // color: pink;
+        }
+        .noche {
+          color: $rojo;
+        }
+        .dia {
+          color: $rojo;
+        }
+      }
+    }
+  }
+}
+//------------------------\\
+//  footer  \\
+//------------------------\\
+* {
+  footer {
+    border-top: 0.1rem solid $rojo;
+    background: {
+      color: black;
+    }
+    .footerContainer {
+      color: $blanco;
+      .contacto,
+      .direccion,
+      .paginas {
+        h2 {
+          color: $rojo;
+          -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
+          // text-shadow: 0.05em 0.05em 0.1em $blanco;
+        }
+        p {
+        }
+        a {
+          // color: $blanco;
+        }
+        input[type="email"] {
+          border-color: solid $rojo;
+        }
+        input[type="submit"] {
+          background: $rojo;
+          color: $blanco;
+
+          border-color: solid $rojo;
+
+          border-color: $blanco;
+        }
+        input[type="submit"]:hover {
+          background-color: rgba(78, 78, 32, 0.582);
+        }
+        .fa {
+          color: $rojo;
+        }
+        .datos {
+          p {
+          }
+        }
+        .diseños {
+          p {
+          }
+        }
+      }
+    }
+    .redes {
+      background: #000;
+      border-top: 0.1rem solid $rojo;
+      .propiedad {
+        .socialmedia {
+          .iconSocial {
+            img {
+            }
+          }
+        }
+      }
+      .copy {
+        color: $blanco;
+        border-bottom: 0.1rem solid $rojo;
+      }
+      .politicas {
+        //background-color: blue;
+        p {
+        }
+        a {
+        }
+      }
+    }
+  }
+}
+/*------------------------
+             galeria
+------------------------*/
+.miniaturas {
+  .repertorio {
+    h3 {
+      color: $rojo;
+      // font-size: 3rem;
+      // color: $blanco;
+      // margin: 1rem 0rem 0.5rem 0rem;
+      // -webkit-text-stroke: 0.04rem rgb(221, 216, 216);
+      // text-shadow: 0.2em 0.2em 0.3em black;
+    }
+    .title {
+    }
+    .raya {
+      border-color: $rojo;
+    }
+    .fila {
+      .imagenPresentacion {
+        // border: 0.4rem solid #eeeeee;
+      }
+    }
+  }
+}
+.menuGaleria {
+  background-color: $rojo;
+  .boton {
+    color: $blanco;
+  }
+}
+/*------------------------
+             webs
+------------------------*/
+.web {
+  .primeroscoc,
+  .guerrasOnline,
+  .tiendaTitanium,
+  .titaniumGamers,
+  .portfolio {
+    border-color: $rojo;
+  }
+}
+/*----------------
+     curriculum
+-----------------*/
+.descripcion {
+  .año {
+    color: $rojo;
+  }
+  h1,
+  strong {
+    color: $rojo;
+  }
+}
+.datos {
+  .datosPersonales {
+    border: 0.2rem solid $rojo;
+   h2 {
+      color: $rojo;
+    }
+    h3{
+      color:$rojo;
+    }
+  }
+  .experiencia {
+    border: 0.2rem solid $rojo;
+  }
+  .interes {
+    border: 0.2rem solid $rojo;
+  }
+}
+//------------------------\\
+//  RESPONSIVE  \\
+//------------------------\\
+@media screen and (max-width: 650px) {
+  footer {
+    .footerContainer {
+      flex-wrap: wrap;
+
+      .contacto {
+        width: 90%;
+      }
+      .direccion {
+        margin-top: 5rem;
+
+        width: 90%;
+      }
+      .paginas {
+        margin-top: 5rem;
+        width: 90%;
+      }
+    }
+  }
+}
+//------------------------\\
+//  nav RESPONSIVE  \\
+//------------------------\\
+@media only screen and (max-width: 800px) {
+  .nav {
+  }
+  .stick {
+    .movil {
+      border-bottom: 0.05rem solid $rojo;
+      box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+      background: {
+        color: rgba(0, 0, 0, 0.438);
+      }
+      .imagenes {
+        background: {
+          // color: blue;
+        }
+        .foto {
+          background: {
+            // color: green;
+          }
+          img {
+            // border: 3px double $rojo;
+            // box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+          }
+        }
+        .botones {
+          background: {
+          }
+          .botonMenu {
+            color: $rojo;
+          }
+
+          #boton1 {
+            background-color: Transparent;
+            p {
+            }
+          }
+        }
+      }
+      .desplegable {
+        .mode {
+          background: {
+          }
+          .noche {
+            color: $rojo;
+          }
+          .dia {
+            color: $rojo;
+          }
+          .selecEstilosDesplegar {
+            color: $rojo;
+          }
+          .selecEstilosPlegar {
+            color: $rojo;
+          }
+          img {
+          }
+        }
+        .enlace {
+          color: $rojo;
+          font: {
+            color: $rojo;
+          }
+        }
+        .mnav-link {
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    .fiestas {
+      img {
+      }
+      .stop {
+        font-size: calc(1rem + 0.3vw);
+      }
+    }
+  }
+}

@@ -1,0 +1,316 @@
+/* ---------------hovers--------------*/
+@font-face {
+  font-family: "supercell";
+  src: url(../../../fuentes/supercell-magic-webfont.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url("fontawesome-webfont.woff");
+}
+
+@font-face {
+  font-family: "titanium";
+  src: url(../../../fuentes/pricedow.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Bad Script";
+  src: url(../../../fuentes/letrasEfectos/BadScript-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Sriracha";
+  src: url(../../../fuentes/letrasEfectos/Sriracha-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Kumar One outline";
+  src: url(../../../fuentes/letrasEfectos/KumarOneOutline-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Gruppo";
+  src: url(../../../fuentes/letrasEfectos/Gruppo-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Yellowtail";
+  src: url(../../../fuentes/letrasEfectos/Yellowtail-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Londrina";
+  src: url(../../../fuentes/letrasEfectos/Yellowtail-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Londrina Outline";
+  src: url(../../../fuentes/letrasEfectos/LondrinaOutline-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Monoton";
+  src: url(../../../fuentes/letrasEfectos/Monoton-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "frozen";
+  src: url(../../../fuentes/letrasEfectos/Ice-kingdomKustren.woff);
+}
+
+@font-face {
+  font-family: "Monoton";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Monoton"), local("Monoton-Regular"), src url(../../assets/fuentes/letrasEfectos/Monoton-Regular.ttf) format("woff");
+}
+
+@font-face {
+  font-family: "Iceland";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Iceland"), local("Iceland-Regular"), src url(../../assets/fuentes/letrasEfectos/Iceland-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Pacifico";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Pacifico Regular"), local("Pacifico-Regular"), url(http://themes.googleusercontent.com/static/fonts/pacifico/v5/yunJt0R8tCvMyj_V4xSjafesZW2xOQ-xsNqO47m55DA.woff) format("woff");
+}
+
+@font-face {
+  font-family: "PressStart";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Press Start 2P"), local("PressStart2P-Regular"), url(http://themes.googleusercontent.com/static/fonts/pressstart2p/v2/8Lg6LX8-ntOHUQnvQ0E7o3dD2UuwsmbX3BOp4SL_VwM.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Audiowide";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Audiowide"), local("Audiowide-Regular"), url(http://themes.googleusercontent.com/static/fonts/audiowide/v2/8XtYtNKEyyZh481XVWfVOj8E0i7KZn-EPnyo3HZu7kw.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Vampiro One";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Vampiro One"), local("VampiroOne-Regular"), url(http://themes.googleusercontent.com/static/fonts/vampiroone/v3/Ho2Xld8UbQyBA8XLxF1_NYbN6UDyHWBl620a-IRfuBk.woff) format("woff");
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  content: "";
+  position: fixed;
+  z-index: 9999;
+  top: calc(50% - 3rem);
+  left: calc(50% - 3rem);
+  border: 6px solid orangered;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.head {
+  width: 100%;
+  position: relative;
+  background-color: pink;
+  background-image: url("../../../assets/images/banners/vinewood.jpg");
+  background-position: center;
+  background-size: cover;
+  border-bottom: 0.05rem solid #3c97bf;
+}
+
+.head img {
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  width: 100%;
+  min-height: 100%;
+  background-image: url("../../../images/backgrounds/0.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #272727;
+  font-family: Audiowide;
+  font-size: 62.5%;
+}
+
+html .separador5,
+body .separador5 {
+  width: 100%;
+  height: 5rem;
+}
+
+html .separador4,
+body .separador4 {
+  width: 100%;
+  height: 4rem;
+}
+
+html .separador3,
+body .separador3 {
+  width: 100%;
+  height: 3rem;
+}
+
+html .separador2,
+body .separador2 {
+  width: 100%;
+  height: 2rem;
+}
+
+html .separador1,
+body .separador1 {
+  width: 100%;
+  height: 1rem;
+}
+
+html h1,
+body h1 {
+  font-size: 4rem;
+  color: #eeeeee;
+  text-align: center;
+  -webkit-text-stroke: 0.05rem black;
+  text-shadow: 0.3rem 0.3rem 0.3rem gray;
+}
+
+html h2,
+body h2 {
+  font-size: 3rem;
+  color: #eeeeee;
+  -webkit-text-stroke: 0.05rem black;
+  text-shadow: 0.3rem 0.3rem 0.2rem gray;
+}
+
+html h3,
+body h3 {
+  font-size: 2rem;
+  color: #eeeeee;
+  -webkit-text-stroke: 0.04rem black;
+  text-shadow: 0.3rem 0.3rem 0.1rem gray;
+}
+
+html h4,
+body h4 {
+  font-size: 1.5rem;
+  color: #eeeeee;
+  -webkit-text-stroke: 0.03rem black;
+  text-shadow: 0.3rem 0.3rem 0.1rem gray;
+}
+
+html a,
+body a {
+  color: #00c6ee;
+}
+
+html p,
+body p {
+  font-size: 1.5rem;
+  color: blanchedalmond;
+}
+
+html ul,
+body ul {
+  margin: 2rem 0rem 2rem 2rem;
+}
+
+html ul li,
+body ul li {
+  color: #eeeeee;
+  font-size: 1.5rem;
+  margin: 0rem 0rem 0rem 1rem;
+}
+
+html ul li a strong,
+body ul li a strong {
+  color: blue;
+}
+
+html .primera,
+body .primera {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+html .primera img,
+body .primera img {
+  width: 50vh;
+}
+
+html .fa-arrow-alt-circle-up,
+body .fa-arrow-alt-circle-up {
+  opacity: 0.5;
+  z-index: 1000;
+  color: #3c97bf;
+  font-size: 5rem;
+  display: block;
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 15rem;
+  right: 2rem;
+  border-radius: 10rem;
+  -webkit-text-stroke: 0.1rem gray;
+  text-shadow: 0.2rem 0.2rem 0.5rem black;
+  background-color: white;
+}
+
+/*----------------------
+      responsive
+----------------------*/
+/*# sourceMappingURL=style.css.map */

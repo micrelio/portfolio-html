@@ -1,0 +1,411 @@
+@import "../../mixins/mixins.scss";
+@import "../../variables/variables.scss";
+@import "../../funciones/funciones.scss";
+
+.head {
+  @include head;
+  border-bottom: 0.05rem solid $blanco;
+}
+html,
+body {
+  //  h1 {
+  //   color: $blanco;
+  //   -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
+  //   text-shadow: 0.2em 0.2em 0.3em black;
+  // }
+  // h2 {
+  //   color: $blanco;
+  //   -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
+  //   text-shadow: 0.2rem 0.2rem 0.3rem black;
+  // }
+  // h3 {
+  //   color: $blanco;
+  //   -webkit-text-stroke: 0.04rem rgb(221, 216, 216);
+  //   text-shadow: 0.2em 0.2em 0.3em black;
+  // }
+  // h4 {
+  //   color: $blanco;
+  //   -webkit-text-stroke: 0.03rem rgb(221, 216, 216);
+  //   text-shadow: 0.2em 0.2em 0.3em black;
+  // }
+  // a{
+  //   color:$blanco
+  // }
+  // p {
+  //   color: blanchedalmond;
+  // }
+  // ul {
+  //   li {
+  //     color: $blanco;
+  //       p {
+  //          strong{
+  //       color: $blanco;
+  //          }
+  //     }
+  //     a > p {
+  //       color: $blanco;
+  //     }
+  //   }
+  // }
+  .fa-arrow-alt-circle-up {
+    color: $blanco;
+    -webkit-text-stroke: 0.1rem gray;
+    text-shadow: 0.2rem 0.2rem 0.5rem black;
+    background: {
+      color: $blanco;
+    }
+  }
+  .fiestas {
+    .stop {
+      color: $negro;
+      background-color: $blanco;
+      border: 0.05rem solid $negro;
+      border-radius: 0.9rem;
+    }
+    .stop:hover {
+      color: $blanco;
+      background-color: $negro;
+      border: 0.05rem solid $blanco;
+      border-radius: 0.9rem;
+    }
+  }
+}
+
+/* ------------------------------------------
+         social media menu
+ ------------------------------------------ */
+
+.social-media {
+  background-color: $blanco;
+  .social-links {
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    //padding: 0.01rem;
+    /* background-color: orangered; */
+  }
+  p {
+    color: $negro;
+  }
+  .social-links a {
+    font-size: 2.4rem;
+    display: inline-block;
+    color: $negro;
+    line-height: 1;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  .social-links a:visited {
+    color: $negro;
+  }
+  .social-links a:hover {
+    color: $negro;
+  }
+}
+
+/* ------------------------------------------
+         menu
+------------------------------------------ */
+.stick {
+  .nav {
+    border-bottom: 0.05rem solid $blanco;
+    background-color: $negro;
+    .navbar {
+      .foto {
+        img {
+          // border: 0.05rem solid $blanco; //$blanco;
+        }
+      }
+      .menu {
+        .links {
+          .enlace {
+            color: $blanco; //gray
+            p {
+              color: $blanco;
+            }
+          }
+          .irInicio:hover,
+          .irBiografia:hover,
+          .irWebs:hover,
+          .irGaleria:hover,
+          .irCurriculum:hover,
+          .irContacto:hover,
+          .irInicio:focus,
+          .irBiografia:focus,
+          .irWebs:focus,
+          .irGaleria:focus,
+          .irCurriculum:focus,
+          .irContacto:focus {
+            // background-color: rgba(78, 78, 32, 0.582);
+          }
+        }
+      }
+      .mode {
+        background: {
+          // color: pink;
+        }
+        .noche {
+          color: $blanco;
+        }
+        .dia {
+          color: $blanco;
+        }
+      }
+    }
+  }
+}
+//------------------------\\
+//  footer  \\
+//------------------------\\
+* {
+  footer {
+    border-top: 0.1rem solid $blanco;
+    background: {
+      color: black;
+    }
+    .footerContainer {
+      color: $blanco;
+      .contacto,
+      .direccion,
+      .paginas {
+        h2 {
+          color: $blanco;
+          -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
+          // text-shadow: 0.05em 0.05em 0.1em $blanco;
+        }
+        p {
+        }
+        a {
+          // color: blanchedalmond;
+        }
+        input[type="email"] {
+          border: 0.1rem solid $blanco;
+        }
+        input[type="submit"] {
+          background: $blanco;
+          color: $blanco;
+
+          border: 0.1rem solid $blanco;
+
+          border: 0.05rem solid $blanco;
+        }
+        input[type="submit"]:hover {
+          background-color: rgba(78, 78, 32, 0.582);
+        }
+        .fa {
+          color: $rojo;
+        }
+        .datos {
+          p {
+          }
+        }
+        .diseños {
+          p {
+          }
+        }
+      }
+    }
+    .redes {
+      background: #000;
+      border-top: 0.1rem solid $blanco;
+      .propiedad {
+        .socialmedia {
+          .iconSocial {
+            img {
+            }
+          }
+        }
+      }
+      .copy {
+        color: $blanco;
+        border-bottom: 0.1rem solid $blanco;
+      }
+      .politicas {
+        //background-color: blue;
+        p {
+        }
+        a {
+        }
+      }
+    }
+  }
+}
+/*------------------------
+             galeria
+------------------------*/
+.miniaturas {
+  .repertorio {
+    h3 {
+      color: $blanco;
+      // font-size: 3rem;
+      // color: $blanco;
+      // margin: 1rem 0rem 0.5rem 0rem;
+      // -webkit-text-stroke: 0.04rem rgb(221, 216, 216);
+      // text-shadow: 0.2em 0.2em 0.3em black;
+    }
+    .title {
+    }
+    .raya {
+      border-color: $blanco;
+    }
+    .fila {
+      .imagenPresentacion {
+        // border: 0.4rem solid #eeeeee;
+      }
+    }
+  }
+}
+.menuGaleria {
+  background-color: $blanco;
+  .boton {
+    color: $negro;
+  }
+}
+/*------------------------
+             webs
+------------------------*/
+.web {
+  .primeroscoc,
+  .guerrasOnline,
+  .tiendaTitanium,
+  .titaniumGamers,
+  .portfolio {
+    border-color: $blanco;
+  }
+}
+/*----------------
+     curriculum
+-----------------*/
+.descripcion {
+  .año {
+    color: $blanco;
+  }
+  h1,
+  strong {
+    color: $blanco;
+    -webkit-text-stroke: 0.1rem $negro;
+    // text-shadow: 0.2em 0.2em 0.3em black;
+  }
+}
+.datos {
+  .datosPersonales {
+    border: 0.2rem solid $blanco;
+    h2 {
+      color: $blanco;
+    }
+    h3{
+      color:$blanco;
+    }
+  }
+  .experiencia {
+    border: 0.2rem solid $blanco;
+  }
+  .interes {
+    border: 0.1rem solid $blanco;
+  }
+}
+//------------------------\\
+//  RESPONSIVE  \\
+//------------------------\\
+@media screen and (max-width: 650px) {
+  footer {
+    .footerContainer {
+      flex-wrap: wrap;
+
+      .contacto {
+        width: 90%;
+      }
+      .direccion {
+        margin-top: 5rem;
+
+        width: 90%;
+      }
+      .paginas {
+        margin-top: 5rem;
+        width: 90%;
+      }
+    }
+  }
+}
+//------------------------\\
+//  nav RESPONSIVE  \\
+//------------------------\\
+@media only screen and (max-width: 800px) {
+  .nav {
+  }
+  .stick {
+    .movil {
+      border-bottom: 0.05rem solid $blanco;
+      box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+      background: {
+        color: rgba(0, 0, 0, 0.438);
+      }
+      .imagenes {
+        background: {
+          // color: blue;
+        }
+        .foto {
+          background: {
+            // color: green;
+          }
+          img {
+            // border: 3px double $blanco;
+            // box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+          }
+        }
+        .botones {
+          background: {
+          }
+          .botonMenu {
+            color: $blanco;
+          }
+
+          #boton1 {
+            background-color: Transparent;
+            p {
+            }
+          }
+        }
+      }
+      .desplegable {
+        .mode {
+          background: {
+          }
+          .noche {
+            color: $blanco;
+          }
+          .dia {
+            color: $blanco;
+          }
+          .selecEstilosDesplegar {
+            color: $blanco;
+          }
+          .selecEstilosPlegar {
+            color: $blanco;
+          }
+          img {
+          }
+        }
+        .enlace {
+          color: $blanco;
+          font: {
+            color: $blanco;
+          }
+        }
+        .mnav-link {
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  body {
+    .fiestas {
+      img {
+      }
+      .stop {
+        font-size: calc(1rem + 0.3vw);
+      }
+    }
+  }
+}
