@@ -10,6 +10,10 @@
 .head {
   width: 100%;
   position: relative;
+  background-color: pink;
+  background-image: url("../../../assets/images/banners/vinewood.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .head img {
