@@ -40,7 +40,7 @@ class miNav extends HTMLElement {
       <div id="links" class="links">
         <a class="enlace irInicio" href="#inicio"><span>Inicio</span><span><i class="fas fa-home"
               aria-hidden="true"></i></span></a>
-        <a class="enlace irBiografia" href="#biografia"><span>Biografía</span><span><i class="fab fa-leanpub"
+        <a class="enlace irBiografia" href="/src/app/pages/biografia/biografia.html"><span>Biografía</span><span><i class="fab fa-leanpub"
               aria-hidden="true"></i></span></a>
         <a class="enlace irWebs" href="#webs"><span>Webs</span><span><i class="fas fa-globe"
               aria-hidden="true"></i></span></a>
