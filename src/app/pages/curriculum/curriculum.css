@@ -208,6 +208,34 @@ a:visited {
   text-decoration: none;
 }
 
+/*-------------------*\
+      PARPADEO
+/*-------------------*/
+
+@-webkit-keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media only screen and (max-width: 700px) {
   .titulo {
     display: -webkit-box;

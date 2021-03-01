@@ -38,15 +38,15 @@ class miNav extends HTMLElement {
     </div>
     <div class="menu">
       <div id="links" class="links">
-        <a class="enlace irInicio" href="#inicio"><span>Inicio</span><span><i class="fas fa-home"
+        <a class="enlace irInicio" href="/"><span>Inicio</span><span><i class="fas fa-home"
               aria-hidden="true"></i></span></a>
         <a class="enlace irBiografia" href="/src/app/pages/biografia/biografia.html"><span>Biografía</span><span><i class="fab fa-leanpub"
               aria-hidden="true"></i></span></a>
-        <a class="enlace irWebs" href="#webs"><span>Webs</span><span><i class="fas fa-globe"
+        <a class="enlace irWebs" href="/src/app/pages/webs/webs.html"><span>Webs</span><span><i class="fas fa-globe"
               aria-hidden="true"></i></span></a>
         <a class="enlace irGaleria" href="#galeria"><span>Galería</span><span><i class="far fa-images"
               aria-hidden="true"></i></span></a>
-        <a class="enlace irCurriculum" href="#curriculum"><span>Currículum</span><span><i class="far fa-id-badge"
+        <a class="enlace irCurriculum" href="/src/app/pages/curriculum/curriculum.html"><span>Currículum</span><span><i class="far fa-id-badge"
               aria-hidden="true"></i></span></a>
         <a class="enlace irContacto" target="_blank" href="/src/app/pages/contacto/contacto.php"><span>Contacto</span><span><i class="far fa-envelope"
               aria-hidden="true"></i></span></a>
