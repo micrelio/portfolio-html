@@ -50,17 +50,12 @@ class miNav extends HTMLElement {
               aria-hidden="true"></i></span></a>
         <a class="enlace irContacto" target="_blank" href="/src/app/pages/contacto/contacto.php"><span>Contacto</span><span><i class="far fa-envelope"
               aria-hidden="true"></i></span></a>
-        <div class="menuCSS3">
+       <!--
+              <div class="menuCSS3">
           <ul>
             <li><a href="#" class="enlace"><span>Diseños</span><span><i class="fas fa-mouse"
                     aria-hidden="true"></i></span></a>
               <ul>
-                <li>
-                <!--
-                  <a class="enlace irDisenos" href="#disenos"><span>Diseños</span><span><i class="fas fa-mouse"
-                        aria-hidden="true"></i></span></a>
-                        -->
-                </li>
                 <li>
                   <a class="enlace irHover" href="#hover"><span>Hover</span><span><i class="fab fa-suse"
                         aria-hidden="true"></i></span></a>
@@ -73,10 +68,12 @@ class miNav extends HTMLElement {
                   <a class="enlace irgaleriaPruebas" href="#galeriaPruebas"><span>Pruebas</span><span><i
                         class="far fa-images" aria-hidden="true"></i></span></a>
                 </li>
+              
               </ul>
             </li>
           </ul>
         </div>
+        -->
         <div id="mode" class=" mode">
           <p id="noche" class="noche enlace bx bxs-moon" onclick="modoNoche('dia');"></p>
           <p id="dia" class="dia enlace bx bxs-sun" onclick="modoNoche('noche');"></p>
@@ -146,15 +143,17 @@ class miNav extends HTMLElement {
     </div>
   </div>
   <div style="display:none" class="desplegable nuevo" id="desplegable">
-    <a class="enlace" href="#inicio" onclick="seleccionado(); toggleMenu();">Inicio</a>
-    <a class="enlace" href="#biografia" onclick="seleccionado();">Biografía</a>
-    <a class="enlace" href="#webs" onclick="seleccionado();">Webs</a>
-    <a class="enlace" href="#galeria" onclick="seleccionado();">Galería</a>
-    <a class="enlace" href="#curriculum" onclick="seleccionado();">Currículum</a>
-    <a class="enlace irContacto" target="_blank" href="/src/app/pages/contacto/contacto.php"><span>Contacto</span><span><i class="far fa-envelope"
+    <a class="enlace" href="/" onclick="seleccionado(); toggleMenu();">Inicio</a>
+    <a class="enlace" href="/src/app/pages/biografia/biografia.html" onclick="seleccionado();">Biografía</a>
+    <a class="enlace" href="/src/app/pages/webs/webs.html" onclick="seleccionado();">Webs</a>
+    <a class="enlace" href="/src/app/pages/galeria/galeria.html" onclick="seleccionado();">Galería</a>
+    <a class="enlace" href="/src/app/pages/curriculum/curriculum.html" onclick="seleccionado();">Currículum</a>
+    <a class="enlace irContacto" target="_blank" href="/src/app/pages/contacto/contacto.php"><span>Contacto</span><span>
+    <!--
     <a class="enlace " href="#disenos" onclick="seleccionado();">Diseños</a>
     <a class="enlace " href="#hover" onclick="seleccionado();">Hover</a>
     <a class="enlace " href="#efectos" onclick="seleccionado();">Efectos</a>
+    -->
     <div class="brushMode">
       <div class="brushEstilos">
         <p onclick="navegar('panelEstilos');" id="selecEstilosDesplegar" class="selecEstilosDesplegar bx bxs-brush">
