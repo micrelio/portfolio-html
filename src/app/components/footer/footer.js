@@ -54,11 +54,9 @@ class miFooter extends HTMLElement {
         &copy; 2020, Todos los derechos reservados - | Micro |
       </div>
       <div class="politicas" id="politicas">
-        <a href="#politicadeprivacidad"><p class="privacidad" id="privacidad"> Política de privacidad</p></a>
-        <a href="#avisolegal"><p class="privacidad" id="aviso"> Aviso Legal</p></a>
-        <a href="#politicadecookies"><p class="privacidad" id="cookies"> Política de Cookies</p></a>
-        <p><a href="#avisolegal"><e class="privacidad" id="aviso"> Aviso Legal</e></a></p>
-
+        <a href="/src/app/pages/textosLegales/politicaDePrivacidad.html"><p class="privacidad" id="privacidad"> Política de privacidad</p></a>
+        <a href="/src/app/pages/textosLegales/avisoLegal.html"><p class="privacidad" id="aviso"> Aviso Legal</p></a>
+        <a href="/src/app/pages/textosLegales/politicaDeCookies.html"><p class="privacidad" id="cookies"> Política de Cookies</p></a>
       </div>
     </div>
   </div>
