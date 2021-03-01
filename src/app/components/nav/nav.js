@@ -44,7 +44,7 @@ class miNav extends HTMLElement {
               aria-hidden="true"></i></span></a>
         <a class="enlace irWebs" href="/src/app/pages/webs/webs.html"><span>Webs</span><span><i class="fas fa-globe"
               aria-hidden="true"></i></span></a>
-        <a class="enlace irGaleria" href="#galeria"><span>Galería</span><span><i class="far fa-images"
+        <a class="enlace irGaleria" href="/src/app/pages/galeria/galeria.html"><span>Galería</span><span><i class="far fa-images"
               aria-hidden="true"></i></span></a>
         <a class="enlace irCurriculum" href="/src/app/pages/curriculum/curriculum.html"><span>Currículum</span><span><i class="far fa-id-badge"
               aria-hidden="true"></i></span></a>

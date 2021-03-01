@@ -1,0 +1,12 @@
+//import { hello } from './module.js';
+class miImagenes extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.innerHTML = `
+           
+  `;
+  }
+}
+customElements.define("mi-imagenes", miImagenes);
