@@ -95,3 +95,11 @@ function cargaTodo() {
       document.getElementById(tipo).appendChild(imgT);
     }
   }
+
+
+
+
+
+
+
+  
