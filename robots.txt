@@ -1,0 +1,12 @@
+User-agent: *
+#permite indexar todo
+Allow: /
+#es recomendable permitir para el SEO
+#Allow: /wp-content/uploads/
+
+# Disallowed Sub-Directories
+#Disallow: /checkout/
+#Disallow: /images/
+#Disallow: /forum/
+
+#https://www.hostinger.es/tutoriales/guia-completa-robots-txt-wordpress
