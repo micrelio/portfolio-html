@@ -1,0 +1,77 @@
+
+
+# Especificar códificación de caracteres
+AddDefaultCharset utf-8
+
+
+
+
+#Carga tu propia página de error 404
+#ErrorDocument 404 /errores/tupágina404.html
+
+
+#Evitar el hotlinking
+#El hotlinking consiste en realizar un enlace directo a ficheros, generalmente imágenes y vídeos, que pertenecen a otra web.
+#Esta práctica consume la transferencia del sitio original de la imagen. Para evitar que te "roben" ancho de banda puedes configurar el .htaccess para impedir el hotlinking.
+#RewriteEngine on
+#RewriteCond %{HTTP_REFERER} !^$
+#RewriteCond %{HTTP_REFERER} !^http://(www\.)?microeveloper.es/.*$ [NC]
+#RewriteRule .*\.(jpe?g|gif|bmp|png)$ [L]
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+
+
+
+#Cache de imágenes en el navegador durante un mes
+#FilesMatch "\.(ico|jpg|jpeg|png|gif)$">
+#Header set Cache-Control "max-age=2592000, public"
+#</FilesMatch>
+
+
+#Comprimir archivos CSS, JavaScript, XML y texto
+#<ifmodule>
+#	AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/x-javascript
+#	</ifmodule>
+
+
+#No mostrar la «firma» de tu servidor
+ServerSignature Off
+
+#evitar listado de directorios
+IndexIgnore *
+#Evitar listar los contenidos de tus directorios
+Options -Indexes
+
+#prevenir acceso a los archivos .htaccess
+<files .htaccess>
+order allow,deny
+deny from all
+</files>
+
+
+#Bloquear acceso desde determinas IP
+#Order deny, allow
+#Allow from All
+#Deny from XXX.XXX.XXX.XXX
+#Deny from XXX.XXX.XXX.XXX
+
+
+#Crear URLs de uso fácil o “amigables”
+#RewriteEngine on
+#	RewriteRule ^acercade/$    /paginas/acercade.html [L]
+#	RewriteRule ^caracteristicas/$ /caracteristicas.php [L]
+#	RewriteRule ^comprar/$      /comprar.html [L]
+#	RewriteRule ^contacto/$  /paginas/contacto.htm [L]
+
+
+#Habilitar la compresión GZip
+<ifmodule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript text/javascript
+</ifmodule>

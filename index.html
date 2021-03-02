@@ -1,33 +1,49 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//ES" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml" >
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Micro | Desarrollador web</title>
+    <!-- <meta http-equiv="content-language" content="es-ES" /> -->
     <link rel="icon" href="https://i.ibb.co/sHmt0XZ/00001361.jpg" />
+    <link rel="apple-touch-icon" href="https://i.ibb.co/sHmt0XZ/00001361.jpg"/>
+
     <meta name="author" content="micro" />
     <meta name="copyright" content="micro" />
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <meta name="twitter:site" content="@">
-    <link rel="alternate" hreflang="es" href="https://micrelio.com/" />
-    <link rel="alternate" hreflang="es" href="https://micrelio.es.es/" />
-    <link rel="alternate" hreflang="es" href="https://microdeveloper.es/" />
+    <!-- <meta name="viewport" content="width=device-width, user-scalable=no"> -->
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0" />
+    <!-- <link rel="alternate" media="only screen and (max-width: 700px)" href="https://microdeveloper.es/"> -->
+    <meta name="twitter:site" content="@micrelio">
+   
     <meta name="Title" content="" />
     <meta name="Description"
         content="Portfolio y curriculum Jose Antonio Lopez Baena, Micro, Micrelio. En ella muestro mi pericia como programador y control de servidores" />
-    <meta name="Keywords" content="6 palabras" />
-    <meta http-equiv="content-language" content="es-ES" />
+    <meta name="Keywords" content="diseños, web, micro, micrelio, pagina, programador" />
     <meta name="Distribution" content="Global" />
+
+
     <meta name="googlebot" content="index, follow">
     <meta name="robots" content="index,follow">
+
+    <meta property="og:type" content="https://micrelio.com/" />
+    <meta property="og:type" content="https://micrelio.es/" />
+    <meta property="og:type" content="https://microdeveloper.es/" />
+    <meta property="og:title" content="Desarrollador web Micro Micrelio" />
+    <meta property="og:description" content="Diseños web" />
+    <meta property="og:image" content="https://i.ibb.co/sHmt0XZ/00001361.jpg" />
     <meta property="og:url" content="https://micrelio.com/">
     <meta property="og:url" content="https://micrelio.es/">
     <meta property="og:url" content="https://microdeveloper.es/">
 
-    <meta property="og:site_name" content="Micro | Developer">
+    <!-- <link rel="canonical" href="https://microdeveloper.es/index.html" /> -->
+    <!-- <link rel="alternate" hreflang="es" href="www.micrelio.com/" /> -->
+    <!-- <link rel="alternate" hreflang="es" href="www.micrelio.es.es/" /> -->
+    <!-- <link rel="alternate" hreflang="es" href="https://microdeveloper.es/" /> -->
 
-    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/sHmt0XZ/00001361.jpg">
+    <meta property="og:site_name" content="Micro | Developer">
+    <title>Micro | Desarrollador web</title>
+
+    <!-- <link rel="icon" type="image/x-icon" href="https://i.ibb.co/sHmt0XZ/00001361.jpg"> -->
 
     <!-- <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="../../../assets/fonts/font-awesome/font-awesome.min.css">
@@ -52,8 +68,8 @@
 
     <!-- para mover objetos por la pantalla -->
     <script type="text/javascript" src="/src/assets/funciones/dom-drag.js"></script>
-    <script type="text / javascript">
-        <!-- Drag.init (document.getElementById ("foto")); -->
+    <script type="text/javascript">
+        // <!-- Drag.init (document.getElementById ("foto")); -->
     </script>
 
     <!-- Para galeria nueva -->
@@ -106,17 +122,19 @@ $bg-color: #df0174;
 </script>
 
 <body id="body">
+
+    <h1>Micro Desarrollador web</h1>
     <div id="preloader"></div>
     <div id="panelEstilos" class="panelEstilos"></div>
     <div class="felicitacion">
-        <h1 id="feliz"></h1>
-        <h1 id="anio"></h1>
-        <img id="imagenFelicitacion" src="">
+        <h2 id="feliz"></h2>
+        <h2 id="anio"></h2>
+        <!-- <img id="imagenFelicitacion" src="" alt="felicitacion" /> -->
     </div>
     <mi-button></mi-button>
     <i class=" arriba fas fa-arrow-alt-circle-up"></i>
     <div class="fiestas">
-        <img id="adorno" src="">
+        <!-- <img id="adorno" src="" alt="nada" /> -->
         <button id="stop" class="stop" style="display:none;" onclick="fecha('stop')"
             type="button"><strong>Parar</strong>
         </button>
@@ -130,20 +148,21 @@ $bg-color: #df0174;
     <section class="inicio">
         <div class="separador5">
         </div>
-        <h1>Desarrollador</h1>
-        <h1>Micro</h1>
+            
         <div>
             <p>
-                Bienvenido a mi página web de presentación o portfolio, en ella mostraré mis competencias y aficiones
+                Bienvenido al rincon de Micro esta es mi página web de presentación o portfolio, en ella mostraré mis competencias y aficiones
                 frente al mundo laboral adquiridas a lo largo de la vida, una de las funciones principales es mostrar mi
-                currículum.
-                Como se puede observar esta web es SPA (simple page Application), está creada por componentes por lo que
+                currículum y trabajos realizados.
+                Como se puede observar esta web es SPA (simple page Application), está creada por componentes en javascript por lo que
                 no tiene tiempo de carga a la hora de navegar entre sus páginas. su estructura es idéntica a la de
                 Angular, pero su desarrollo es vanilla (totalmente escrita a mano) sin plugin para su funcionamiento.
                 Los estilos están creados en SASS, estructurada con técnicas novedosas como display GRID y FLEX, Cada
                 hoja de estilo es independiente y distribuida por componente.
+                El diseño de la página puede ser variado por medio de un menu desplegable, además varia el decorado en función de los días festivos.
                 La navegación se ha tratado de hacer intuitiva para el usuario donde puede distinguir entre las
-                distintas secciones sin ninguna dificultad.
+                distintas secciones sin ninguna dificultad para el usuario.
+                Mi última experiencia escomo desarrollador de paginas web.
             </p>
             <ul>
                 <li>
