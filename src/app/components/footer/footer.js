@@ -42,7 +42,7 @@ class miFooter extends HTMLElement {
   <div class="redes">
     <div class="propiedad">
       <div class="socialmedia">
-        <a target="blank" class="iconSocial" href="https://www.youtube.com/channel/UCMEv1Jj16ypsAXmZXOkKrQA" target="_blank"><img style="" src="/src/assets/images/icons/social/youtube.png"></a>
+        <a target="blank" class="iconSocial" href="https://www.youtube.com/channel/UCMEv1Jj16ypsAXmZXOkKrQA" target="_blank"><img style="" src="/src/assets/images/icons/social/youtube.png" alt="Youtube" /></a>
         <a target="blank" class="iconSocial" href="https://www.instagram.com/micrelio.dev/" target="_blank"><img style="" src="/src/assets/images/icons/social/instagram.png"></a>
         <a target="blank" class="iconSocial" href="https://twitter.com/Micrelio" target="_blank"><img style="" src="/src/assets/images/icons/social/twitter.png"></a>
         <a target="blank" class="iconSocial" title="Facebook" href="https://www.facebook.com/micro6" target="_blank"><img style="" src="/src/assets/images/icons/social/facebook.png"></a>

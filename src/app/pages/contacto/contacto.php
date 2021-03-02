@@ -2,6 +2,39 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es">
 
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" href="https://i.ibb.co/sHmt0XZ/00001361.jpg" />
+    <link rel="apple-touch-icon" href="https://i.ibb.co/sHmt0XZ/00001361.jpg" />
+    <meta name="author" content="Micro" />
+    <meta name="copyright" content="Micro" />
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, user-scalable=no"> -->
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+    <meta name="twitter:site" content="@micrelio">
+    <meta name="Title" content="Micro desrrollador" />
+    <meta name="Description"
+        content="Portfolio y curriculum Jose Antonio Lopez Baena, Micro, Micrelio. En ella muestro mi pericia como programador y control de servidores" />
+    <meta name="Keywords" content="diseños, web, micro, micrelio, pagina, programador" />
+    <meta name="Distribution" content="Global" />
+    <meta name="googlebot" content="index, follow">
+    <meta name="robots" content="index,follow">
+    <meta property="og:type" content="https://micrelio.com/" />
+    <meta property="og:type" content="https://micrelio.es/" />
+    <meta property="og:type" content="https://microdeveloper.es/" />
+    <meta property="og:title" content="Desarrollador web Micro Micrelio" />
+    <meta property="og:description" content="Diseños web" />
+    <meta property="og:image" content="https://i.ibb.co/sHmt0XZ/00001361.jpg" />
+    <meta property="og:url" content="https://micrelio.com/">
+    <meta property="og:url" content="https://micrelio.es/">
+    <meta property="og:url" content="https://microdeveloper.es/">
+    <!-- <link rel="canonical" href="https://microdeveloper.es/index.html" /> -->
+    <!-- <link rel="alternate" hreflang="es" href="www.micrelio.com/" />
+    <link rel="alternate" hreflang="es" href="www.micrelio.es.es/" />
+    <link rel="alternate" hreflang="es" href="https://www.microdeveloper.es/" /> -->
+    <meta property="og:site_name" content="Micro | Developer">
+    <title>Micro | Desarrollador web</title>
+
+
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css"> -->
