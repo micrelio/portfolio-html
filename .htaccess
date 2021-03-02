@@ -7,16 +7,16 @@ AddDefaultCharset utf-8
 
 
 #Carga tu propia página de error 404
-ErrorDocument 404 /src/errores/404.html
+#ErrorDocument 404 /src/errores/404.html
 
 
 #Evitar el hotlinking
 #El hotlinking consiste en realizar un enlace directo a ficheros, generalmente imágenes y vídeos, que pertenecen a otra web.
 #Esta práctica consume la transferencia del sitio original de la imagen. Para evitar que te "roben" ancho de banda puedes configurar el .htaccess para impedir el hotlinking.
-#RewriteEngine on
-#RewriteCond %{HTTP_REFERER} !^$
-#RewriteCond %{HTTP_REFERER} !^http://(www\.)?microeveloper.es/.*$ [NC]
-#RewriteRule .*\.(jpe?g|gif|bmp|png)$ [L]
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?microeveloper.es/.*$ [NC]
+RewriteRule .*\.(jpe?g|gif|bmp|png)$ [L]
 
 RewriteEngine On
 RewriteCond %{HTTP_HOST} !^www\. [NC]
@@ -27,11 +27,11 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 
 #Redireccionar páginas no existentes a index.php
-#Options +SymLinksIfOwnerMatch 
-#RewriteEngine On 
-#RewriteCond %{REQUEST_FILENAME} !-f 
-#RewriteCond %{REQUEST_FILENAME} !-d
-#RewriteRule . /index.html [L]
+Options +SymLinksIfOwnerMatch 
+RewriteEngine On 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
 
 #Cache de imágenes en el navegador durante un mes
 #FilesMatch "\.(ico|jpg|jpeg|png|gif)$">
