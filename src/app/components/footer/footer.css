@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* ---------------hovers--------------*/
 * {
   margin: 0rem 0rem 0rem 0rem;
   padding: 0;
@@ -8,8 +7,9 @@
 }
 
 * footer {
+  position: relative;
   display: inline-block;
-  bottom: 0;
+  bottom: 0rem;
   width: 100%;
   border-top: 0.1rem solid #3c97bf;
   background-color: black;
