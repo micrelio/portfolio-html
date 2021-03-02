@@ -7,7 +7,7 @@ AddDefaultCharset utf-8
 
 
 #Carga tu propia página de error 404
-#ErrorDocument 404 /errores/tupágina404.html
+ErrorDocument 404 /src/errores/404.html
 
 
 #Evitar el hotlinking
@@ -26,19 +26,17 @@ RewriteCond %{HTTPS} off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 
-
-
+#Redireccionar páginas no existentes a index.php
+#Options +SymLinksIfOwnerMatch 
+#RewriteEngine On 
+#RewriteCond %{REQUEST_FILENAME} !-f 
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . /index.html [L]
 
 #Cache de imágenes en el navegador durante un mes
 #FilesMatch "\.(ico|jpg|jpeg|png|gif)$">
 #Header set Cache-Control "max-age=2592000, public"
 #</FilesMatch>
-
-
-#Comprimir archivos CSS, JavaScript, XML y texto
-#<ifmodule>
-#	AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/x-javascript
-#	</ifmodule>
 
 
 #No mostrar la «firma» de tu servidor
@@ -65,10 +63,19 @@ deny from all
 
 #Crear URLs de uso fácil o “amigables”
 #RewriteEngine on
-#	RewriteRule ^acercade/$    /paginas/acercade.html [L]
+#RewriteRule ^src/app/pages/biografia/(.*)$  /biografia.html? [L,R=301]
+#Options +FollowSymLinks
+#RewriteEngine on
+#RewriteBase /
+#RewriteRule ^src/app/pages/biografia/(.*)$  /biografia? [L,R=301]
+##RewriteRule ^i/imagen.png/(.*)$ server/php/i/imagen.png
 #	RewriteRule ^caracteristicas/$ /caracteristicas.php [L]
 #	RewriteRule ^comprar/$      /comprar.html [L]
 #	RewriteRule ^contacto/$  /paginas/contacto.htm [L]
+#
+
+
+
 
 
 #Habilitar la compresión GZip
