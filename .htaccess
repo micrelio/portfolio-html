@@ -13,10 +13,10 @@ AddDefaultCharset utf-8
 #Evitar el hotlinking
 #El hotlinking consiste en realizar un enlace directo a ficheros, generalmente imágenes y vídeos, que pertenecen a otra web.
 #Esta práctica consume la transferencia del sitio original de la imagen. Para evitar que te "roben" ancho de banda puedes configurar el .htaccess para impedir el hotlinking.
-RewriteEngine on
-RewriteCond %{HTTP_REFERER} !^$
-RewriteCond %{HTTP_REFERER} !^http://(www\.)?microeveloper.es/.*$ [NC]
-RewriteRule .*\.(jpe?g|gif|bmp|png)$ [L]
+#RewriteEngine on
+#RewriteCond %{HTTP_REFERER} !^$
+#RewriteCond %{HTTP_REFERER} !^http://(www\.)?microeveloper.es/.*$ [NC]
+#RewriteRule .*\.(jpe?g|gif|bmp|png)$ [L]
 
 RewriteEngine On
 RewriteCond %{HTTP_HOST} !^www\. [NC]
