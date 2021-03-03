@@ -213,25 +213,25 @@ function modoNoche(id) {
   switch (estilo) {
     case "dia":
       document.getElementById("dia").classList.add("efectoModoNoche");
-      setTimeout(function () {
+      // setTimeout(function () {
         document.getElementById("dia").classList.remove("efectoModoNoche");
         document.getElementById("noche").style = "display:block";
         document.getElementById("dia").style = "display:none;";
         document.getElementById("modo").href =
           "/src/assets/style/styles/styleDia.css";
-      }, 1000); // 1000ms = 3s
+      // }, 1000); // 1000ms = 3s
       // function mostrarAviso() {
       //   alert("Han pasado los tres segundos");
       // }
       break;
     case "noche":
       document.getElementById("noche").classList.add("efectoModoNoche");
-      setTimeout(function () {
+      // setTimeout(function () {
         document.getElementById("noche").classList.remove("efectoModoNoche");
         document.getElementById("dia").style = "display:block";
         document.getElementById("noche").style = "display:none";
         document.getElementById("modo").href = "";
-      }, 2000); // 1000ms = 3s
+      // }, 2000); // 1000ms = 3s
       break;
     default:
       break;

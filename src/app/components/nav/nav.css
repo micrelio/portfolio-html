@@ -1,8 +1,7 @@
 @charset "UTF-8";
-/* ---------------hovers--------------*/
 @font-face {
   font-family: "Londrina Outline";
-  src: url(../../assets/fuentes/letrasEfectos/LondrinaOutline-Regular.ttf) format("truetype");
+  src: url(../../../assets/fuentes/letrasEfectos/LondrinaOutline-Regular.ttf) format("truetype");
 }
 
 /* -----------------------------------------
@@ -68,6 +67,7 @@
 }
 
 .stick {
+  margin: 0rem 0rem 5rem 0rem;
   top: 0;
   width: 100%;
 }
@@ -653,22 +653,13 @@
 }
 
 .stick .nav .navbar .menu .links .mode .noche {
-  -webkit-animation: amplia 1s linear;
-          animation: amplia 1s linear;
   display: none;
   font-size: 3rem;
 }
 
 .stick .nav .navbar .menu .links .mode .dia {
-  -webkit-animation: amplia 1s linear;
-          animation: amplia 1s linear;
   display: none;
   font-size: 3rem;
-}
-
-.stick .nav .navbar .menu .links .efectoModoNoche {
-  -webkit-animation: reduce 2s linear;
-          animation: reduce 2s linear;
 }
 
 @-webkit-keyframes reduce {
