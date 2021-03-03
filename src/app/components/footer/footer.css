@@ -1,22 +1,13 @@
 @charset "UTF-8";
-* {
-  margin: 0rem 0rem 0rem 0rem;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-* footer {
+footer {
   margin: 5rem 0rem 0rem 0rem;
-  position: relative;
-  display: inline-block;
-  bottom: 0rem;
-  width: 100%;
-  border-top: 0.1rem solid #3c97bf;
+  border-top: 0.5rem solid #3c97bf;
   background-color: black;
+  clear: both;
+  bottom: 0;
 }
 
-* footer .footerContainer {
+footer .footerContainer {
   color: #fff;
   padding: 2rem 1rem 2rem 1rem;
   margin: auto;
@@ -33,9 +24,9 @@
       justify-content: space-around;
 }
 
-* footer .footerContainer .contacto,
-* footer .footerContainer .direccion,
-* footer .footerContainer .paginas {
+footer .footerContainer .contacto,
+footer .footerContainer .direccion,
+footer .footerContainer .paginas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,28 +40,28 @@
   margin: 0rem 1rem 0rem 1rem;
 }
 
-* footer .footerContainer .contacto h2,
-* footer .footerContainer .direccion h2,
-* footer .footerContainer .paginas h2 {
+footer .footerContainer .contacto h2,
+footer .footerContainer .direccion h2,
+footer .footerContainer .paginas h2 {
   -webkit-text-stroke: 0.05rem #ddd8d8;
 }
 
-* footer .footerContainer .contacto p,
-* footer .footerContainer .direccion p,
-* footer .footerContainer .paginas p {
+footer .footerContainer .contacto p,
+footer .footerContainer .direccion p,
+footer .footerContainer .paginas p {
   color: blanchedalmond;
 }
 
-* footer .footerContainer .contacto a,
-* footer .footerContainer .direccion a,
-* footer .footerContainer .paginas a {
+footer .footerContainer .contacto a,
+footer .footerContainer .direccion a,
+footer .footerContainer .paginas a {
   text-decoration: none;
   color: blanchedalmond;
 }
 
-* footer .footerContainer .contacto input[type="email"],
-* footer .footerContainer .direccion input[type="email"],
-* footer .footerContainer .paginas input[type="email"] {
+footer .footerContainer .contacto input[type="email"],
+footer .footerContainer .direccion input[type="email"],
+footer .footerContainer .paginas input[type="email"] {
   border: none;
   width: 80%;
   border: 0.1rem solid #eeeeee;
@@ -79,9 +70,9 @@
   border-radius: 0.9rem;
 }
 
-* footer .footerContainer .contacto input[type="submit"],
-* footer .footerContainer .direccion input[type="submit"],
-* footer .footerContainer .paginas input[type="submit"] {
+footer .footerContainer .contacto input[type="submit"],
+footer .footerContainer .direccion input[type="submit"],
+footer .footerContainer .paginas input[type="submit"] {
   border: none;
   background-image: -webkit-linear-gradient(top, #00c6ee, #272727);
   color: #fff;
@@ -94,47 +85,47 @@
   border-radius: 0.9rem;
 }
 
-* footer .footerContainer .contacto input[type="submit"]:hover,
-* footer .footerContainer .direccion input[type="submit"]:hover,
-* footer .footerContainer .paginas input[type="submit"]:hover {
+footer .footerContainer .contacto input[type="submit"]:hover,
+footer .footerContainer .direccion input[type="submit"]:hover,
+footer .footerContainer .paginas input[type="submit"]:hover {
   background-color: #0a0a0a;
   background-image: -webkit-linear-gradient(top, #272727, #00c6ee);
 }
 
-* footer .footerContainer .contacto .fa,
-* footer .footerContainer .direccion .fa,
-* footer .footerContainer .paginas .fa {
+footer .footerContainer .contacto .fa,
+footer .footerContainer .direccion .fa,
+footer .footerContainer .paginas .fa {
   color: red;
 }
 
-* footer .footerContainer .contacto .datos p,
-* footer .footerContainer .direccion .datos p,
-* footer .footerContainer .paginas .datos p {
+footer .footerContainer .contacto .datos p,
+footer .footerContainer .direccion .datos p,
+footer .footerContainer .paginas .datos p {
   margin-left: 0.5rem;
   margin: 1.5rem;
 }
 
-* footer .footerContainer .contacto .diseños p,
-* footer .footerContainer .direccion .diseños p,
-* footer .footerContainer .paginas .diseños p {
+footer .footerContainer .contacto .diseños p,
+footer .footerContainer .direccion .diseños p,
+footer .footerContainer .paginas .diseños p {
   display: inline-block;
   margin: 0rem 1rem 1.5rem 1rem;
   color: blanchedalmond;
 }
 
-* footer .footerContainer .contacto {
+footer .footerContainer .contacto {
   width: 30%;
 }
 
-* footer .footerContainer .direccion {
+footer .footerContainer .direccion {
   width: 30%;
 }
 
-* footer .footerContainer .paginas {
+footer .footerContainer .paginas {
   width: 40%;
 }
 
-* footer .redes {
+footer .redes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,11 +133,11 @@
   border-top: 0.1rem solid #3c97bf;
 }
 
-* footer .redes .propiedad {
+footer .redes .propiedad {
   width: 100%;
 }
 
-* footer .redes .propiedad .socialmedia {
+footer .redes .propiedad .socialmedia {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -159,12 +150,12 @@
       flex-wrap: wrap;
 }
 
-* footer .redes .propiedad .socialmedia .iconSocial img {
+footer .redes .propiedad .socialmedia .iconSocial img {
   height: 3.5rem;
   margin: 0.5rem;
 }
 
-* footer .redes .copy {
+footer .redes .copy {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,7 +172,7 @@
   border-bottom: 0.1rem solid #3c97bf;
 }
 
-* footer .redes .politicas {
+footer .redes .politicas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,13 +186,13 @@
   padding: 1rem;
 }
 
-* footer .redes .politicas p {
+footer .redes .politicas p {
   margin: 0rem 1rem 0rem 1rem;
   font-size: 1rem;
   cursor: pointer;
 }
 
-* footer .redes .politicas a {
+footer .redes .politicas a {
   text-decoration: none;
 }
 

@@ -122,6 +122,12 @@ body {
     color: $amarillento;
   }
   background-image: url("../../images/backgrounds/papelTexturadoClaro.jpg");
+  background-image: url("../../images/backgrounds/fondoLectura.jpg");
+  background: {
+    // attachment: scroll ;
+    size: auto;
+    color: $gris;
+  }
   h1 {
     color: $negro;
     -webkit-text-stroke: 0.05rem rgb(221, 216, 216);

@@ -48,6 +48,9 @@ html,
 body {
   background-color: blanchedalmond;
   background-image: url("../../images/backgrounds/papelTexturadoClaro.jpg");
+  background-image: url("../../images/backgrounds/fondoLectura.jpg");
+  background-size: auto;
+  background-color: #272727;
 }
 
 html h1,
