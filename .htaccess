@@ -82,3 +82,12 @@ deny from all
 <ifmodule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript text/javascript
 </ifmodule>
+
+#HABILITAR ZONA PROTEGIDA CON CONTRASEÑA
+#AuthType Basic
+#AuthName "ZONA VIP"
+#AuthUserFile /src/autentificacion/.htpassword
+#PAra cualquies usuario incrito
+#require valid-user
+#para usuarios especificos
+#require user usuario1 usuario2 usuario3
