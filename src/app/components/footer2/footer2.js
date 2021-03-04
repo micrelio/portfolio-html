@@ -51,7 +51,20 @@ class miFooter2 extends HTMLElement {
 
             <div class="segundaFila">
 
-
+            <div class="presentacion">
+            <div class="titulo">
+                <h3>Suscribete</h3>
+            </div>
+            <div class="texto">
+                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+            </div>
+            <div class="suscripcion">
+                <form action="#">
+                    <input type="text" placeholder="&#xf003; Email Address">
+                    <button><i class="fab fa-telegram-plane"></i></button>
+                </form>
+            </div>
+        </div>
                 <div class="presentacion">
                     <div class="logo">
                         <a href="index.html"><img src="/src/assets/images/logoEmpresa/micro.png" class="img-fluid"
@@ -91,20 +104,7 @@ class miFooter2 extends HTMLElement {
                 </div>
 
 
-                <div class="presentacion">
-                    <div class="titulo">
-                        <h3>Suscribete</h3>
-                    </div>
-                    <div class="texto">
-                        <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                    </div>
-                    <div class="suscripcion">
-                        <form action="#">
-                            <input type="text" placeholder="&#xf003; Email Address">
-                            <button><i class="fab fa-telegram-plane"></i></button>
-                        </form>
-                    </div>
-                </div>
+                
             </div>
         </div>
 

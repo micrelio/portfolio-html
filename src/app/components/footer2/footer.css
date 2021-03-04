@@ -72,8 +72,8 @@ footer .footerContainer .primeraFila .footerContact .contactoInfo {
   grid-column-gap: 0rem;
   grid-row-gap: 0rem;
   grid-gap: 0rem 0rem;
-  width: 30%;
   min-width: 300px;
+  max-width: 350px;
 }
 
 footer .footerContainer .primeraFila .footerContact .contactoInfo .icono {
@@ -152,6 +152,7 @@ footer .footerContainer .segundaFila {
 footer .footerContainer .segundaFila .presentacion {
   width: 30%;
   min-width: 300px;
+  max-width: 350px;
 }
 
 footer .footerContainer .segundaFila .presentacion .logo {
@@ -272,6 +273,7 @@ footer .footerContainer .segundaFila .presentacion .suscripcion form input {
   background: #2e2e2e;
   border: 1px solid #2e2e2e;
   color: #fff;
+  max-width: 30rem;
 }
 
 footer .footerContainer .segundaFila .presentacion .suscripcion form button {

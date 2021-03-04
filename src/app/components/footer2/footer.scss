@@ -74,8 +74,9 @@ footer {
           grid-row-gap: 0rem;
           grid-gap: 0rem 0rem;
           // background-color: blue;
-          width: 30%;
+          // width: 30%;
           min-width: 300px;
+          max-width: 350px;
           .icono {
             grid-column: x0 / x1;
             grid-row: y0 / y2;
@@ -125,6 +126,8 @@ footer {
       .presentacion {
         width: 30%;
         min-width: 300px;
+        max-width: 350px;
+
         .logo {
           margin-bottom: 3rem;
           a {
@@ -228,6 +231,7 @@ footer {
               background: #2e2e2e;
               border: 1px solid #2e2e2e;
               color: #fff;
+              max-width: 30rem;
             }
             button {
               width: 20%;
