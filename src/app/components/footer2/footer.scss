@@ -75,7 +75,7 @@ footer {
           grid-gap: 0rem 0rem;
           // background-color: blue;
           // width: 30%;
-          min-width: 300px;
+          min-width: 200px;
           max-width: 350px;
           .icono {
             grid-column: x0 / x1;
@@ -125,7 +125,7 @@ footer {
       width: 90%;
       .presentacion {
         width: 30%;
-        min-width: 300px;
+        min-width: 200px;
         max-width: 350px;
 
         .logo {
@@ -151,29 +151,101 @@ footer {
             font-size: 20px;
             font-weight: 700;
             font-family: "Poppins", sans-serif;
-            margin-bottom: 20px;
+            margin-bottom: 0.5rem;
           }
-          a {
-            color: #fff;
-            font-size: 16px;
-            margin-right: 15px;
-
-            i {
-              height: 40px;
-              width: 40px;
-              text-align: center;
-              line-height: 38px;
+          .redes {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-start;
+            .iconoSocial {
+              margin: 0.3rem;
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: center;
+              width: 3rem;
+              height: 3rem;
+              // background-color: violet;
               border-radius: 50%;
+
+              a {
+                // display: flex;
+                // flex-direction: row;
+                // flex-wrap: wrap;
+                // align-items: center;
+                // justify-content: space-around;
+
+                justify-content: center;
+                // font-size: 10rem;
+                // width: 20rem;
+                // font-size: 2rem;
+                // margin-right: 15px;
+
+                i {
+                  color: #fff;
+                  font-size: 2rem;
+
+                  // height: 5rem;
+                  // width: 5rem;
+                  // text-align: center;
+                  // line-height: 38px;
+                 
+                }
+              }
             }
-            .facebook-bg {
-              background: #3b5998;
-            }
-            .twitter-bg {
-              background: #55acee;
-            }
-            .google-bg {
-              background: #dd4b39;
-            }
+                .facebook-bg {
+                  background: #3b5998;
+                }
+                .twitter-bg {
+                  background: #55acee;
+                }
+                .google-bg {
+                  background: #dd4b39;
+                }
+                .youtube-bg {
+                  background: #cc181e;
+                }
+                .instagram-bg {
+                  background: #f09433;
+                  background: -moz-linear-gradient(
+                    45deg,
+                    #f09433 0%,
+                    #e6683c 25%,
+                    #dc2743 50%,
+                    #cc2366 75%,
+                    #bc1888 100%
+                  );
+                  background: -webkit-linear-gradient(
+                    45deg,
+                    #f09433 0%,
+                    #e6683c 25%,
+                    #dc2743 50%,
+                    #cc2366 75%,
+                    #bc1888 100%
+                  );
+                  background: linear-gradient(
+                    45deg,
+                    #f09433 0%,
+                    #e6683c 25%,
+                    #dc2743 50%,
+                    #cc2366 75%,
+                    #bc1888 100%
+                  );
+                  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+                }
+                .linkedin-bg {
+                  background: #0e76a8;
+                }
+                .github-bg {
+                  background: #000;
+                }
+                .whatsapp-bg {
+                  background: #4dc247;
+                }
+             
           }
         }
         .titulo {
@@ -261,7 +333,6 @@ footer {
     // align-items: center;
     background: #202020;
     .copyright {
-
       display: flex;
       flex-direction: row;
       flex-wrap: wrap-reverse;
@@ -270,7 +341,7 @@ footer {
       width: 90%;
       // padding: 25px 0;
       .texto {
-        min-width: 300px;
+        min-width: 200px;
         margin: 3rem;
         p {
           margin: 0;
@@ -283,17 +354,16 @@ footer {
         }
       }
       .textosLegales {
-        min-width: 300px;
+        min-width: 200px;
         margin: 3rem;
         a {
-            font-size: 14px;
-            color: #878787;
-            text-decoration: none;
-          }
-          a:hover {
-            color: #ff5e14;
-          }
-        
+          font-size: 14px;
+          color: #878787;
+          text-decoration: none;
+        }
+        a:hover {
+          color: #ff5e14;
+        }
       }
     }
   }
