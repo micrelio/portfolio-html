@@ -1,14 +1,19 @@
-class miFooter2 extends HTMLElement {
-  constructor() {
-    super();
-  }
-  connectedCallback() {
-    this.innerHTML = `
-    <style>
-      @import "/src/app/components/footer2/footer.css";
-    </style>
-    
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Footer Responsive</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="/src/app/components/footer2/footer.css">
+    <!-- <style>
+    @import "/src/app/components/footer2/footer.css";
+  </style> -->
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
     <footer>
         <div class="footerContainer">
             <div class="primeraFila">
@@ -54,7 +59,7 @@ class miFooter2 extends HTMLElement {
 
                 <div class="presentacion">
                     <div class="logo">
-                        <a href="index.html"><img src="/src/assets/images/logoEmpresa/micro.png" class="img-fluid"
+                        <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid"
                                 alt="logo" /></a>
                     </div>
                     <div class="texto">
@@ -63,7 +68,7 @@ class miFooter2 extends HTMLElement {
                             elit,Lorem ipsum dolor sit amet.</p>
                     </div>
                     <div class="socialMedia">
-                        <h4>Sigueme</h4>
+                        <h4>Follow us</h4>
                         <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
                         <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
                         <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
@@ -100,7 +105,7 @@ class miFooter2 extends HTMLElement {
                     </div>
                     <div class="suscripcion">
                         <form action="#">
-                            <input type="text" placeholder="&#xf003; Email Address">
+                            <input type="text" placeholder="Email Address">
                             <button><i class="fab fa-telegram-plane"></i></button>
                         </form>
                     </div>
@@ -109,25 +114,24 @@ class miFooter2 extends HTMLElement {
         </div>
 
 
-        <div class="terceraFila">
-            <div class="copyright">
-                <div class="texto">
-                    <p>Copyright &copy; 2021, All Right Reserved <a href="https://microdeveloper.es/">Micro</a></p>
-                </div>
-                <div class="textosLegales">                   
-                        <p>
-                            <a href="#"> Home </a>
-                            <a href="#"> Terms </a>
-                            <a href="#"> Privacy </a>
-                            <a href="#"> Policy </a>
-                            <a href="#"> Contact </a>
-                        </p>                   
-                </div>
-             </div>
+        <div class="copyright">
+            <div class="texto">
+                <p>Copyright &copy; 2018, All Right Reserved <a href="https://microdeveloper.es/">Micro</a>
+                </p>
+            </div>
+            <div class="">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Policy</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
-  `;
-     }
-}
-customElements.define("mi-footer2", miFooter2);
+    <!-- partial -->
 
+</body>
+
+</html>

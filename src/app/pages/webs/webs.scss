@@ -47,6 +47,9 @@
       display: grid;
       grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5];
       grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] 1fr [y4];
+      // grid-column-gap: 0rem;
+      // grid-row-gap: 0rem;
+      // grid-gap: 0rem 0rem;
       .titulo {
         grid-column: x0 / x5;
         grid-row: y0 / y1;
