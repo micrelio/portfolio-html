@@ -1,0 +1,33 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+  <url>
+    <loc>https://microdeveloper.es/</loc>
+    <lastmod>2021-03-03T00:00:21+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://microdeveloper.es/src/app/pages/biografia/biografia.html</loc>
+    <lastmod>2021-03-02T18:38:02+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://microdeveloper.es/src/app/pages/webs/webs.html</loc>
+    <lastmod>2021-03-02T18:36:51+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://microdeveloper.es/src/app/pages/galeria/galeria.html</loc>
+    <lastmod>2021-03-02T18:39:57+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://microdeveloper.es/src/app/pages/curriculum/curriculum.html</loc>
+    <lastmod>2021-03-02T18:56:56+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://microdeveloper.es/src/app/pages/contacto/contacto.php</loc>
+    <lastmod>2021-03-05T18:35:24+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+</urlset>
