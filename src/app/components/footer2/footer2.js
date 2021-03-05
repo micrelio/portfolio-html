@@ -63,14 +63,14 @@ class miFooter2 extends HTMLElement {
                             <h3>Enlaces de interés</h3>
                         </div>
                         <div class="menuFooter">
-                            <ul>
-                                <li><a class="enlace irInicio" href="/"><i class="fas fa-home" aria-hidden="true"></i> Inicio</a></li>
-                                <li><a class="enlace irBiografia" href="/src/app/pages/biografia/biografia.html"><i class="fab fa-leanpub" aria-hidden="true"></i> Biografía</a></li>
-                                <li> <a class="enlace irWebs" href="/src/app/pages/webs/webs.html"><i class="fas fa-globe" aria-hidden="true"></i> Webs</a></li>
-                                <li><a class="enlace irGaleria" href="/src/app/pages/galeria/galeria.html"><i class="far fa-images" aria-hidden="true"></i> Galería</a></li>
-                                <li> <a class="enlace irCurriculum" href="/src/app/pages/curriculum/curriculum.html"><i class="far fa-id-badge" aria-hidden="true"></i> Currículum</a></li>
-                                <li> <a class="enlace irContacto" target="_blank" href="/src/app/pages/contacto/contacto.php"><i class="far fa-envelope" aria-hidden="true"></i> Contacto</a></li>
-                            </ul>
+                            
+                                <p><a class="enlace irInicio" href="/"><i class="fas fa-home" aria-hidden="true"></i> Inicio</a></p>
+                                <p><a class="enlace irBiografia" href="/src/app/pages/biografia/biografia.html"><i class="fab fa-leanpub" aria-hidden="true"></i> Biografía</a></p>
+                                <p> <a class="enlace irWebs" href="/src/app/pages/webs/webs.html"><i class="fas fa-globe" aria-hidden="true"></i> Webs</a></p>
+                                <p><a class="enlace irGaleria" href="/src/app/pages/galeria/galeria.html"><i class="far fa-images" aria-hidden="true"></i> Galería</a></p>
+                                <p> <a class="enlace irCurriculum" href="/src/app/pages/curriculum/curriculum.html"><i class="far fa-id-badge" aria-hidden="true"></i> Currículum</a></p>
+                                <p> <a class="enlace irContacto" target="_blank" href="/src/app/pages/contacto/contacto.php"><i class="far fa-envelope" aria-hidden="true"></i> Contacto</a></p>
+                            
                         </div>
                     </div>
                     
