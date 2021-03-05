@@ -17,7 +17,6 @@ footer .footerContainer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 3rem;
 }
 
 footer .footerContainer .primeraFila {
@@ -38,7 +37,6 @@ footer .footerContainer .primeraFila {
 }
 
 footer .footerContainer .primeraFila hr {
-  margin: 3rem;
   border: 1px solid #373636;
   width: 100%;
 }
@@ -56,24 +54,24 @@ footer .footerContainer .primeraFila .footerContact {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
 }
 
 footer .footerContainer .primeraFila .footerContact .contactoInfo {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: [x0] 0.5fr [x1] 1fr [x2] 1fr [x3] 1fr [x4];
-      grid-template-columns: [x0] 0.5fr [x1] 1fr [x2] 1fr [x3] 1fr [x4];
+  -ms-grid-columns: [x0] 0.1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4];
+      grid-template-columns: [x0] 0.1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4];
   -ms-grid-rows: [y0] 1fr [y1] 1fr [y2];
       grid-template-rows: [y0] 1fr [y1] 1fr [y2];
   grid-column-gap: 0rem;
   grid-row-gap: 0rem;
   grid-gap: 0rem 0rem;
-  min-width: 200px;
-  max-width: 350px;
+  min-width: 250px;
+  width: 30%;
+  margin: 3rem 0rem 3rem 0rem;
 }
 
 footer .footerContainer .primeraFila .footerContact .contactoInfo .icono {
@@ -82,22 +80,28 @@ footer .footerContainer .primeraFila .footerContact .contactoInfo .icono {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 footer .footerContainer .primeraFila .footerContact .contactoInfo .icono i {
   color: #ff5e14;
   font-size: 30px;
-  margin-top: 0.8rem;
+}
+
+footer .footerContainer .primeraFila .footerContact .contactoInfo .icono i:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #ffe402;
+  text-shadow: 0px 10px 50px #ffe402;
 }
 
 footer .footerContainer .primeraFila .footerContact .contactoInfo .texto {
@@ -113,10 +117,10 @@ footer .footerContainer .primeraFila .footerContact .contactoInfo .texto {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-left: 15px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 1rem;
   display: inline-block;
 }
 
@@ -136,6 +140,23 @@ footer .footerContainer .segundaFila {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+}
+
+footer .footerContainer .segundaFila .footerPresentacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -145,129 +166,19 @@ footer .footerContainer .segundaFila {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
-  width: 90%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
 }
 
-footer .footerContainer .segundaFila .presentacion {
+footer .footerContainer .segundaFila .footerPresentacion .presentacion {
+  min-width: 250px;
+  margin: 3rem 0rem 3rem 0rem;
   width: 30%;
-  min-width: 200px;
-  max-width: 350px;
+  height: 100%;
 }
 
-footer .footerContainer .segundaFila .presentacion .logo {
-  margin-bottom: 3rem;
-}
-
-footer .footerContainer .segundaFila .presentacion .logo a img {
-  max-width: 20rem;
-}
-
-footer .footerContainer .segundaFila .presentacion .texto p {
-  margin-bottom: 14px;
-  font-size: 14px;
-  color: #7e7e7e;
-  line-height: 28px;
-}
-
-footer .footerContainer .segundaFila .presentacion .socialMedia h4 {
-  color: #fff;
-  display: block;
-  font-size: 20px;
-  font-weight: 700;
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 0.5rem;
-}
-
-footer .footerContainer .segundaFila .presentacion .socialMedia .redes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-footer .footerContainer .segundaFila .presentacion .socialMedia .redes .iconoSocial {
-  margin: 0.3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-}
-
-footer .footerContainer .segundaFila .presentacion .socialMedia .redes .iconoSocial a {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-footer .footerContainer .segundaFila .presentacion .socialMedia .redes .iconoSocial a i {
-  color: #fff;
-  font-size: 2rem;
-}
-
-footer .footerContainer .segundaFila .presentacion .socialMedia .redes .facebook-bg {
-  background: #3b5998;
-}
-
-footer .footerContainer .segundaFila .presentacion .socialMedia .redes .twitter-bg {
-  background: #55acee;
-}
-
-footer .footerContainer .segundaFila .presentacion .socialMedia .redes .google-bg {
-  background: #dd4b39;
-}
-
-footer .footerContainer .segundaFila .presentacion .socialMedia .redes .youtube-bg {
-  background: #cc181e;
-}
-
-footer .footerContainer .segundaFila .presentacion .socialMedia .redes .instagram-bg {
-  background: #f09433;
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-}
-
-footer .footerContainer .segundaFila .presentacion .socialMedia .redes .linkedin-bg {
-  background: #0e76a8;
-}
-
-footer .footerContainer .segundaFila .presentacion .socialMedia .redes .github-bg {
-  background: #000;
-}
-
-footer .footerContainer .segundaFila .presentacion .socialMedia .redes .whatsapp-bg {
-  background: #4dc247;
-}
-
-footer .footerContainer .segundaFila .presentacion .titulo h3 {
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .titulo h3 {
   color: #fff;
   font-size: 20px;
   font-weight: 600;
@@ -275,7 +186,7 @@ footer .footerContainer .segundaFila .presentacion .titulo h3 {
   position: relative;
 }
 
-footer .footerContainer .segundaFila .presentacion .titulo h3::before {
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .titulo h3::before {
   content: "";
   position: absolute;
   left: 0;
@@ -285,7 +196,19 @@ footer .footerContainer .segundaFila .presentacion .titulo h3::before {
   background: #ff5e14;
 }
 
-footer .footerContainer .segundaFila .presentacion .menuFooter {
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .texto {
+  grid-column: x1 / x4;
+  grid-row: y0 / y4;
+}
+
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .texto p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: 28px;
+}
+
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .menuFooter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,25 +222,29 @@ footer .footerContainer .segundaFila .presentacion .menuFooter {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  min-width: 200px;
+  max-width: 350px;
 }
 
-footer .footerContainer .segundaFila .presentacion .menuFooter ul li {
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .menuFooter ul li {
   display: inline-block;
   width: 50%;
   margin-bottom: 0.5rem;
 }
 
-footer .footerContainer .segundaFila .presentacion .menuFooter ul li a {
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .menuFooter ul li a {
   color: #878787;
   text-transform: capitalize;
   text-decoration: none;
 }
 
-footer .footerContainer .segundaFila .presentacion .menuFooter ul li a:hover {
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .menuFooter ul li a:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   color: #ff5e14;
 }
 
-footer .footerContainer .segundaFila .presentacion .suscripcion form {
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .suscripcion form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -326,9 +253,10 @@ footer .footerContainer .segundaFila .presentacion .suscripcion form {
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: #ff5e14;
+  max-width: 20rem;
 }
 
-footer .footerContainer .segundaFila .presentacion .suscripcion form input {
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .suscripcion form input {
   font-family: FontAwesome;
   width: 80%;
   padding: 1rem 28px;
@@ -338,7 +266,7 @@ footer .footerContainer .segundaFila .presentacion .suscripcion form input {
   max-width: 30rem;
 }
 
-footer .footerContainer .segundaFila .presentacion .suscripcion form button {
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .suscripcion form button {
   width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -356,11 +284,163 @@ footer .footerContainer .segundaFila .presentacion .suscripcion form button {
   border: 1px solid #ff5e14;
 }
 
-footer .footerContainer .segundaFila .presentacion .suscripcion form button i {
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .suscripcion form button i {
   color: #fff;
   font-size: 22px;
   -webkit-transform: rotate(-6deg);
           transform: rotate(-6deg);
+}
+
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .suscripcion form button:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #ffe402;
+  -webkit-box-shadow: 0px 10px 50px -10px #ffe402;
+          box-shadow: 0px 10px 50px -10px #ffe402;
+}
+
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .suscripcion form button:hover i {
+  color: #201f1f;
+}
+
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0rem;
+}
+
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .logo a {
+  text-decoration: none;
+}
+
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .logo a h1 {
+  font-weight: lighter;
+  padding: 0rem;
+  margin: -3rem 0rem -4.5rem 0rem;
+  color: #f72f4e;
+  text-align: center;
+  -webkit-text-stroke: 0rem;
+  text-shadow: none;
+  font-family: PiratesBlackbeard;
+  font-size: 12rem;
+}
+
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .logo h1:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-text-stroke: 0.05rem black;
+  color: #ffe402;
+  text-shadow: 0px 10px 50px #ffe402;
+}
+
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .logo a img {
+  max-width: 20rem;
+}
+
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .socialMedia h4 {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .socialMedia .redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .socialMedia .redes .iconoSocial {
+  margin: 0.3rem;
+  border-radius: 50%;
+  display: inline-block;
+  display: block;
+}
+
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .socialMedia .redes .iconoSocial a {
+  width: 3rem;
+  height: 3rem;
+  color: white;
+  text-align: center;
+  text-justify: center;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  -webkit-box-shadow: 0 0px 0 #c7c7c7, 0 0.15rem 0 #c7c7c7;
+  box-shadow: 0 0px 0 #c7c7c7, 0 0.15rem 0 #c7c7c7;
+  border-radius: 50px;
+}
+
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .socialMedia .redes .iconoSocial a i {
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .socialMedia .redes .iconoSocial a:active {
+  top: 1px;
+  display: block;
+  -webkit-box-shadow: inset 0 1px 0 #c7c7c7, 0 1px 0 #c7c7c7;
+  box-shadow: inset 0 1px 0 #c7c7c7, 0 1px 0 #c7c7c7;
+}
+
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .socialMedia .redes .facebook-bg {
+  background: #3b5998;
+}
+
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .socialMedia .redes .twitter-bg {
+  background: #55acee;
+}
+
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .socialMedia .redes .google-bg {
+  background: #dd4b39;
+}
+
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .socialMedia .redes .youtube-bg {
+  background: #cc181e;
+}
+
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .socialMedia .redes .instagram-bg {
+  background: #f09433;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .socialMedia .redes .linkedin-bg {
+  background: #0e76a8;
+}
+
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .socialMedia .redes .github-bg a i {
+  margin-top: 0rem;
+  font-size: 3rem;
+}
+
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .socialMedia .redes .whatsapp-bg {
+  background: #4dc247;
 }
 
 footer .terceraFila {
@@ -384,23 +464,22 @@ footer .terceraFila .copyright {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap-reverse;
-      flex-wrap: wrap-reverse;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 90%;
 }
 
 footer .terceraFila .copyright .texto {
+  margin: 3rem 0rem 3rem 0rem;
   min-width: 200px;
-  margin: 3rem;
 }
 
 footer .terceraFila .copyright .texto p {
@@ -414,18 +493,46 @@ footer .terceraFila .copyright .texto a {
   text-decoration: none;
 }
 
+footer .terceraFila .copyright .texto hr {
+  margin: 0.5rem 0rem;
+  border: 1px solid #373636;
+  width: 100%;
+}
+
 footer .terceraFila .copyright .textosLegales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   min-width: 200px;
-  margin: 3rem;
+  margin: 1rem 0rem 1rem 0rem;
 }
 
 footer .terceraFila .copyright .textosLegales a {
-  font-size: 14px;
   color: #878787;
   text-decoration: none;
+  margin: 0rem 1rem 0rem 1rem;
 }
 
-footer .terceraFila .copyright .textosLegales a:hover {
+footer .terceraFila .copyright .textosLegales a p {
+  font-size: 1rem;
+  color: #878787;
+}
+
+footer .terceraFila .copyright .textosLegales a p:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   color: #ff5e14;
 }
 /*# sourceMappingURL=footer.css.map */

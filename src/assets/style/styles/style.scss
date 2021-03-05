@@ -4,66 +4,78 @@
 
 @font-face {
   font-family: "supercell";
-  src: url(../../fuentes/supercell-magic-webfont.ttf) format("truetype");
+  src: url(/src/assets/fonts/fuentes/supercell-magic-webfont.ttf) format("truetype");
 }
 @font-face {
   font-family: "FontAwesome";
-  src: url("../../fonts/font-awesome/fontawesome-webfont.woff");
+  src: url(/src/assets/fonts/font-awesome/fontawesome-webfont.woff);
 }
 @font-face {
   font-family: "FontAwesome";
-  src: url("../../fonts/font-awesome/fontawesome-webfont.woff2");
+  src: url(/src/assets/fonts/font-awesome/fontawesome-webfont.woff2);
 }
 @font-face {
   font-family: "titanium";
-  src: url(../../fuentes/pricedow.ttf) format("truetype");
+  src: url(/src/assets/fonts/fuentes/pricedow.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PiratesBlackbeard";
+  src: url(/src/assets/fonts/fuentes/PiratesBlackbeard.ttf);
+}
+@font-face {
+  font-family: "Audiowide";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Audiowide"), local("Audiowide-Regular"),
+    url(/src/assets/fonts/fuentes/Audiowide.woff)
+      format("woff");
 }
 @font-face {
   font-family: "Bad Script";
-  src: url(../../fuentes/letrasEfectos/BadScript-Regular.ttf) format("truetype");
+  src: url(/src/assets/fonts/fuentes/BadScript-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "Sriracha";
-  src: url(../../fuentes/letrasEfectos/Sriracha-Regular.ttf) format("truetype");
+  src: url(/src/assets/fonts/fuentes/Sriracha-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "Kumar One outline";
-  src: url(../../fuentes/letrasEfectos/KumarOneOutline-Regular.ttf)
+  src: url(/src/assets/fonts/fuentes/KumarOneOutline-Regular.ttf)
     format("truetype");
 }
 @font-face {
   font-family: "Gruppo";
-  src: url(../../fuentes/letrasEfectos/Gruppo-Regular.ttf) format("truetype");
+  src: url(/src/assets/fonts/fuentes/Gruppo-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "Yellowtail";
-  src: url(../../fuentes/letrasEfectos/Yellowtail-Regular.ttf)
+  src: url(/src/assets/fonts/fuentes/Yellowtail-Regular.ttf)
     format("truetype");
 }
 @font-face {
   font-family: "Londrina";
-  src: url(../../fuentes/letrasEfectos/Yellowtail-Regular.ttf)
+  src: url(/src/assets/fonts/fuentes/Yellowtail-Regular.ttf)
     format("truetype");
 }
 @font-face {
   font-family: "Londrina Outline";
-  src: url(../../fuentes/letrasEfectos/LondrinaOutline-Regular.ttf)
+  src: url(/src/assets/fonts/fuentes/LondrinaOutline-Regular.ttf)
     format("truetype");
 }
 @font-face {
   font-family: "Monoton";
-  src: url(../../fuentes/letrasEfectos/Monoton-Regular.ttf) format("truetype");
+  src: url(/src/assets/fonts/fuentes/Monoton-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "frozen";
-  src: url(../../fuentes/letrasEfectos/Ice-kingdomKustren.woff);
+  src: url(/src/assets/fonts/fuentes/Ice-kingdomKustren.woff);
 }
 @font-face {
   font-family: "Monoton";
   font-style: normal;
   font-weight: 400;
   src: local("Monoton"), local("Monoton-Regular"),
-    src url(../../assets/fuentes/letrasEfectos/Monoton-Regular.ttf)
+    src url(/src/assets/fonts/fuentes/Monoton-Regular.ttf)
       format("woff");
 }
 @font-face {
@@ -71,7 +83,7 @@
   font-style: normal;
   font-weight: 400;
   src: local("Iceland"), local("Iceland-Regular"),
-    src url(../../assets/fuentes/letrasEfectos/Iceland-Regular.woff)
+    src url(/src/assets/fonts/fuentes/Iceland-Regular.woff)
       format("woff");
 }
 @font-face {
@@ -90,14 +102,7 @@
     url(http://themes.googleusercontent.com/static/fonts/pressstart2p/v2/8Lg6LX8-ntOHUQnvQ0E7o3dD2UuwsmbX3BOp4SL_VwM.woff)
       format("woff");
 }
-@font-face {
-  font-family: "Audiowide";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Audiowide"), local("Audiowide-Regular"),
-    url(http://themes.googleusercontent.com/static/fonts/audiowide/v2/8XtYtNKEyyZh481XVWfVOj8E0i7KZn-EPnyo3HZu7kw.woff)
-      format("woff");
-}
+
 @font-face {
   font-family: "Vampiro One";
   font-style: normal;
