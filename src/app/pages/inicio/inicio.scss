@@ -25,13 +25,16 @@ $dark: #343a40;
 // $breakpoint-xs: 0;
 // $breakpoint-sm: 576px;
 // $breakpoint-md: 768px;
-// $breakpoint-lg: 992px;
+// $breakpoint-lg: 990.2rem;
 // $breakpoint-xl: 1200px;
 
 /*Carousel*/
 .containerCarousel {
   // position: absolute;
-  margin-top: -20rem;
+//   margin-top: -20rem;
+.carousel-title {
+    bottom: 80px;
+}
   .carousel-caption {
     bottom: 70px;
     background: rgba(3, 3, 3, 0.3);
@@ -44,7 +47,7 @@ $dark: #343a40;
   .carousel-indicators li {
     height: 15px;
     width: 15px;
-    border: 1px solid #eee;
+    border: 0.1rem solid #eee;
   }
   .carousel-indicators .active {
     height: 17px;
@@ -127,7 +130,7 @@ $dark: #343a40;
     width: 80px;
     height: 80px;
     opacity: 0.5;
-    border: 2px solid #fff;
+    border: 0.2rem solid #fff;
     border-radius: 50%;
     overflow: hidden;
     margin: 5px;
@@ -137,7 +140,7 @@ $dark: #343a40;
     height: 80px;
     opacity: 1;
     background: none;
-    border: 2px solid #e41b17;
+    border: 0.2rem solid #e41b17;
   }
 
   .testimonials .carousel-indicators li img {
@@ -149,15 +152,55 @@ $dark: #343a40;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-end;
 //   background-color: salmon;
-  margin: 5rem 0rem 5rem 0rem;
+  margin: 0rem 0rem 0rem -3rem;
+margin-right: 50rem;
   width: 100%;
-//   position: relative;
-//   max-height: 30rem;
-    //   overflow: hidden;
-    //   border-radius: 0rem 5rem 5rem 0rem;
-        height: calc(20vw + 1rem);
+        height: calc(1vw + 20rem);
+        // background-color: skyblue;
+
+        overflow: hidden;
+        border-radius: 0rem 5rem 5rem 0rem;
+        width: 100%;
+        height: calc(11vw + 1rem);
+padding: 1rem,;
+
+        // background: #2323ff;  /* Fondo, debe ser más claro que el borde */
+        // border: 1rem inset #4444ff;  /* Grosor del Borde */  /* Color del Borde */
+        // border-left: 0rem;
+        // border-radius: 1rem;
+        // color: white;  /* Color del texto */
+        // text-align: center;  /* Alineación del texto */
+        // text-shadow: -0.1rem -0.1rem rgba(0,0,0,.2);
+        	// box-shadow: 0.8rem 0.8rem 0.4rem rgba(8, 8, 8, 0.4),  0.3rem 0.3rem 0.3rem rgba(2, 0, 0, 0.4);
+
+            // box-shadow: 3px 4px 0.6rem rgb(4, 4, 5), 0 0 0 #000, 0.1rem 4px 0.6rem rgb(4, 4, 5);
+
+
+
+
+    //     border: 0.1rem solid #00cc00; /* Color del borde, debe ser más oscuro que fondo */
+	// background: #00f400; /* Fondo */
+	// border-radius: 0.6rem;  /* Bordes redondos */
+	// box-shadow: inset 0.3rem 0.3rem 0.3rem rgba(255,255,255,.7), inset -0.2rem -0.2rem 0.3rem rgba(0,0,0,.1), 0.2rem 0.2rem 10px rgba(0,0,0,.1);
+	// text-shadow: 0.1rem 0.1rem 0.1rem rgba(255,255,255,.9);  /* Sombra del texto */
+	// text-align: center;  /* Alineación del texto */
+
+
+
+
+
+    border: 0.1rem solid #00cc00; /* Color del borde, debe ser más claro que fondo */
+	background:#00d800; /* Fondo */
+	// color: #fff;  /* Color del texto */
+	// border-radius: 0.6rem;  /* Bordes redondos */
+	box-shadow:inset 0.2rem 0.2rem 0.4rem rgba(120, 120, 120, .4), inset -0.3rem -0.3rem 0.1rem rgba(255,255,255,.4);
+	// text-shadow: 0.1rem 0.1rem rgba(0,0,0,.3);  /* Sombra del texto */
+	// text-align: center;  /* Alineación del texto */
+
+
+
   .global {
     display: flex;
     flex-direction: row;
@@ -165,32 +208,20 @@ $dark: #343a40;
     justify-content: space-between;
     // padding: 1rem;
     //   background-color: $info;
-    background-color: skyblue;
 
-      overflow: hidden;
-    //   border-radius: 0rem 5rem 5rem 0rem;
-      width: 95%;
-      padding: 0.5rem;
 
-    //   display: flex;
-    //   flex-direction: row;
-    //   align-items: center;
-    //   justify-content: flex-start;
-    //   background-color: $info;
-    //   width: 100%;
-      // height: 20rem;
-      
-      // margin: 5rem 0rem 5rem 0rem;
+
       .descripcion {
         overflow: hidden;
         // width: 70%;
         // border-radius: 0rem 5rem 5rem 0rem;
+        padding: 0rem 2rem 0rem 5rem;
 
         //   margin: 0rem 3rem 0rem 0rem;
         // width: 70%;
-        background-color: skyblue;
+        // background-color: skyblue;
         p {
-          padding: 3rem;
+        //   padding: 3rem;
         //   width: 70%;
         }
       }
@@ -199,7 +230,7 @@ $dark: #343a40;
         flex-direction: row;
         align-items: center;
         justify-content: flex-end;
-          width: 100rem;
+        //   width: 100rem;
         //   border-radius: 0rem 5rem 5rem 0rem;
         //   overflow: hidden;
         // width: 20rem;
@@ -209,19 +240,18 @@ $dark: #343a40;
         background-color: seagreen;
         // height: 20rem;
         // width: 30rem;
-        overflow: hidden;
+        // overflow: hidden;
         // width: 30%;
         // height: calc(20vw + 1rem);
-        // border-radius: 0rem 5rem 5rem 0rem;
-
+        border-radius: 0rem 0.6rem 0.6rem 0rem;
         // border-radius: 0rem 2rem 2rem 0rem;
 // overflow: hidden;
         img {
             // width: 20rem;
             // height: 222rem;
-            height: calc(20vw + 1rem);
+            height: calc(10vw + 1rem);
             // border-radius: 0rem 5rem 5rem 0rem;
-
+width: calc(10vw + 1rem);
         }
       }
     

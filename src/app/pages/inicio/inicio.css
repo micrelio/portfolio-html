@@ -1,12 +1,16 @@
+@charset "UTF-8";
 /*Carousel*/
 .containerCarousel {
-  margin-top: -20rem;
   /**********End Overriding Bootstrap********/
   /*Start Section About*/
   /*End Section About*/
   /*Start Section Features*/
   /*End Section Features*/
   /*Start Section Testimonials*/
+}
+
+.containerCarousel .carousel-title {
+  bottom: 80px;
 }
 
 .containerCarousel .carousel-caption {
@@ -23,7 +27,7 @@
 .containerCarousel .carousel-indicators li {
   height: 15px;
   width: 15px;
-  border: 1px solid #eee;
+  border: 0.1rem solid #eee;
 }
 
 .containerCarousel .carousel-indicators .active {
@@ -115,7 +119,7 @@
   width: 80px;
   height: 80px;
   opacity: 0.5;
-  border: 2px solid #fff;
+  border: 0.2rem solid #fff;
   border-radius: 50%;
   overflow: hidden;
   margin: 5px;
@@ -126,7 +130,7 @@
   height: 80px;
   opacity: 1;
   background: none;
-  border: 2px solid #e41b17;
+  border: 0.2rem solid #e41b17;
 }
 
 .containerCarousel .testimonials .carousel-indicators li img {
@@ -145,12 +149,24 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin: 5rem 0rem 5rem 0rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0rem 0rem 0rem -3rem;
+  margin-right: 50rem;
   width: 100%;
-  height: calc(20vw + 1rem);
+  height: calc(1vw + 20rem);
+  overflow: hidden;
+  border-radius: 0rem 5rem 5rem 0rem;
+  width: 100%;
+  height: calc(11vw + 1rem);
+  padding: 1rem;
+  border: 0.1rem solid #00cc00;
+  /* Color del borde, debe ser más claro que fondo */
+  background: #00d800;
+  /* Fondo */
+  -webkit-box-shadow: inset 0.2rem 0.2rem 0.4rem rgba(120, 120, 120, 0.4), inset -0.3rem -0.3rem 0.1rem rgba(255, 255, 255, 0.4);
+          box-shadow: inset 0.2rem 0.2rem 0.4rem rgba(120, 120, 120, 0.4), inset -0.3rem -0.3rem 0.1rem rgba(255, 255, 255, 0.4);
 }
 
 .salidaIzquierda .global {
@@ -167,19 +183,11 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: skyblue;
-  overflow: hidden;
-  width: 95%;
-  padding: 0.5rem;
 }
 
 .salidaIzquierda .global .descripcion {
   overflow: hidden;
-  background-color: skyblue;
-}
-
-.salidaIzquierda .global .descripcion p {
-  padding: 3rem;
+  padding: 0rem 2rem 0rem 5rem;
 }
 
 .salidaIzquierda .global .grafico {
@@ -196,12 +204,12 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 100rem;
   background-color: seagreen;
-  overflow: hidden;
+  border-radius: 0rem 0.6rem 0.6rem 0rem;
 }
 
 .salidaIzquierda .global .grafico img {
-  height: calc(20vw + 1rem);
+  height: calc(10vw + 1rem);
+  width: calc(10vw + 1rem);
 }
 /*# sourceMappingURL=inicio.css.map */
