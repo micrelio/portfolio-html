@@ -1,0 +1,207 @@
+/*Carousel*/
+.containerCarousel {
+  margin-top: -20rem;
+  /**********End Overriding Bootstrap********/
+  /*Start Section About*/
+  /*End Section About*/
+  /*Start Section Features*/
+  /*End Section Features*/
+  /*Start Section Testimonials*/
+}
+
+.containerCarousel .carousel-caption {
+  bottom: 70px;
+  background: rgba(3, 3, 3, 0.3);
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.containerCarousel .carousel-indicators {
+  bottom: 0;
+}
+
+.containerCarousel .carousel-indicators li {
+  height: 15px;
+  width: 15px;
+  border: 1px solid #eee;
+}
+
+.containerCarousel .carousel-indicators .active {
+  height: 17px;
+  width: 17px;
+  background-color: #e41b17;
+}
+
+.containerCarousel .carousel-inner > .item > img {
+  width: 100%;
+}
+
+.containerCarousel .about {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.containerCarousel .about .about-paragraph1 {
+  color: #888;
+  font-size: 25px;
+  margin-top: 15px;
+}
+
+.containerCarousel .about .about-paragraph2 {
+  color: #888;
+  font-size: 17px;
+  margin-top: 15px;
+}
+
+.containerCarousel .about h1 {
+  font-weight: bold;
+}
+
+.containerCarousel .about h2 {
+  font-weight: bold;
+}
+
+.containerCarousel .about h1 span {
+  color: #e41b17;
+}
+
+.containerCarousel .about h2 span {
+  color: #e41b17;
+}
+
+.containerCarousel .features {
+  overflow: hidden;
+  background-color: #eee;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.containerCarousel .features .feat {
+  margin-bottom: 30px;
+}
+
+.containerCarousel .features .feat p {
+  line-height: 2em;
+}
+
+.containerCarousel .features .feat span.glyphicon {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.containerCarousel .testimonials {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.containerCarousel .testimonials .lead {
+  line-height: 2em;
+  margin-bottom: 10px;
+}
+
+.containerCarousel .testimonials span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e41b17;
+}
+
+.containerCarousel .testimonials .carousel-indicators {
+  padding-top: 20px;
+}
+
+.containerCarousel .testimonials .carousel-indicators li {
+  text-indent: 0;
+  width: 80px;
+  height: 80px;
+  opacity: 0.5;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 5px;
+}
+
+.containerCarousel .testimonials .carousel-indicators li.active {
+  width: 80px;
+  height: 80px;
+  opacity: 1;
+  background: none;
+  border: 2px solid #e41b17;
+}
+
+.containerCarousel .testimonials .carousel-indicators li img {
+  max-width: 100%;
+}
+
+/*End Section carousel*/
+.salidaIzquierda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 5rem 0rem 5rem 0rem;
+  width: 100%;
+  height: calc(20vw + 1rem);
+}
+
+.salidaIzquierda .global {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: skyblue;
+  overflow: hidden;
+  width: 95%;
+  padding: 0.5rem;
+}
+
+.salidaIzquierda .global .descripcion {
+  overflow: hidden;
+  background-color: skyblue;
+}
+
+.salidaIzquierda .global .descripcion p {
+  padding: 3rem;
+}
+
+.salidaIzquierda .global .grafico {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100rem;
+  background-color: seagreen;
+  overflow: hidden;
+}
+
+.salidaIzquierda .global .grafico img {
+  height: calc(20vw + 1rem);
+}
+/*# sourceMappingURL=inicio.css.map */

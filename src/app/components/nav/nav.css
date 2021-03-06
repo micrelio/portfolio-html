@@ -8,7 +8,9 @@
          social media menu
 ------------------------------------------ */
 .social-media {
-  padding: 0.1rem 1rem 0.1rem 1rem;
+  z-index: 2;
+  position: relative;
+  width: 100%;
   background-color: #3c97bf;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,6 +69,8 @@
 }
 
 .stick {
+  z-index: 2;
+  position: relative;
   margin: 0rem 0rem 5rem 0rem;
   top: 0;
   width: 100%;
@@ -798,6 +802,8 @@
   }
   .stick {
     margin: 0rem 0rem 5rem 0rem;
+    position: relative;
+    z-index: 2;
   }
   .stick .movil {
     border-bottom: 0.05rem solid #3c97bf;

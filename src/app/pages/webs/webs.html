@@ -50,10 +50,18 @@
   <!-- estilos -->
   <link rel="stylesheet" href="/src/assets/style/styles/style.css" media="screen" />
   <link rel="stylesheet" href="/src/app/pages/webs/webs.css" media="screen" />
-  <script type="text/javascript" src="/src/app/pages/webs/webs.js"></script>
   <!-- TRANSICIONES -->
   <link rel="stylesheet" href="/src/assets/efectos/transiciones/aos.css" media="screen" />
   <script type="text/javascript" src="/src/assets/efectos/transiciones/aos.js"></script>
+  <script type="text/javascript">
+    // Init AOS
+    function aos_init() {
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    }
+  </script>
   <!-- Efectos -->
   <link rel="stylesheet" href="/src/assets/efectos/efectos/animate.min.css" media="screen" />
   <script src="/src/assets/efectos/efectos/wow.min.js"></script>
@@ -62,9 +70,9 @@
   <link id="cssArchivo" href="" rel="stylesheet" media="screen" />
   <!-- para mover objetos por la pantalla -->
   <script type="text/javascript" src="/src/assets/funciones/dom-drag.js"></script>
-  <script type="text / javascript">
-        <!-- Drag.init (document.getElementById ("foto")); -->
-    </script>
+  <script type="text/javascript">
+    Drag.init(document.getElementById("foto")); 
+  </script>
   <!-- Para galeria nueva -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <!-- No se para que son -->
@@ -80,14 +88,15 @@
   <script type="text/javascript" src="/src/app/components/panelEstilos/panelEstilos.js"></script>
   <!-- Función cokies -->
   <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <!-- CAMBIO DE ESTILOS -->
+  <link id="modo" href="" rel="stylesheet" media="screen" />
+  <link id="color" href="" rel="stylesheet" media="screen" />
+  <script type="text/javascript">
+    modoNoche();
+  </script>
 </head>
 <mi-nav></mi-nav>
-<!-- CAMBIO DE ESTILOS -->
-<link id="modo" href="" rel="stylesheet" media="screen" />
-<link id="color" href="" rel="stylesheet" media="screen" />
-<script type="text/javascript">
-  modoNoche();
-</script>
+
 
 <body id="body">
   <div id="preloader"></div>
@@ -108,7 +117,7 @@
     </script>
   </div>
   <section class="total">
-    <h1 data-aos=" fade-left" data-aos-delay="200">Diseños web</h1>
+    <h1 data-aos="fade-left" data-aos-delay="200">Diseños web</h1>
     <div class="webs">
       <div class="wow bounceInDown  titaniumGamers miniWeb" data-wow-duration="2s" data-wow-offset="100"
         id="titaniumGamers">

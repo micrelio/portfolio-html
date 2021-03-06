@@ -37,9 +37,12 @@
          social media menu
 ------------------------------------------ */
 .social-media {
+  z-index: 2;
+  position: relative;
+  width: 100%;
   // z-index: 20000;
   // position: relative;
-  padding: 0.1rem 1rem 0.1rem 1rem;
+  // padding: 0.1rem 1rem 0.1rem 1rem;
   // padding: 0.2rem 0.2rem 0.2rem 0.2rem;
   background-color: $corporativo;
   // border: 0.05rem solid black;
@@ -79,6 +82,8 @@
   display: none;
 }
 .stick {
+  z-index: 2;
+  position: relative;
   margin: 0rem 0rem 5rem 0rem;
   // position: fixed; //para que siga la pagina
   // position: -webkit-fixed;  // required for Safari
@@ -723,6 +728,8 @@
   }
   .stick {
     margin: 0rem 0rem 5rem 0rem;
+    position: relative;
+    z-index: 2;
     .movil {
       border-bottom: 0.05rem solid $corporativo;
       display: block;

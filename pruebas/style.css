@@ -77,9 +77,9 @@ h1, h2, h3, h4, h5, .lead {font-family: 'Droid Sans', sans-serif}
 .testimonials span {font-size: 18px; font-weight: bold; color: #E41B17}
 .testimonials .carousel-indicators
 {
-	//postion: static;
+	/* //postion: static;
 	//width: 100%;
-	//margin-left: auto;
+	//margin-left: auto; */
 	padding-top: 20px
 }
 .testimonials .carousel-indicators li
