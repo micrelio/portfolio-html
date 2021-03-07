@@ -4,86 +4,78 @@
 
 @font-face {
   font-family: "supercell";
-  src: url(/src/assets/fonts/fuentes/supercell-magic-webfont.ttf) format("truetype");
+  src: url("/src/assets/fonts/fuentes/supercell-magic-webfont.ttf") format("truetype");
 }
 @font-face {
   font-family: "FontAwesome";
-  src: url(/src/assets/fonts/font-awesome/fontawesome-webfont.woff);
+  src: url("/src/assets/fonts/font-awesome/fontawesome-webfont.woff");
 }
 @font-face {
   font-family: "FontAwesome";
-  src: url(/src/assets/fonts/font-awesome/fontawesome-webfont.woff2);
+  src: url("/src/assets/fonts/font-awesome/fontawesome-webfont.woff2");
 }
 @font-face {
   font-family: "titanium";
-  src: url(/src/assets/fonts/fuentes/pricedow.ttf) format("truetype");
+  src: url("/src/assets/fonts/fuentes/pricedow.ttf") format("truetype");
 }
 @font-face {
   font-family: "PiratesBlackbeard";
-  src: url(/src/assets/fonts/fuentes/PiratesBlackbeard.ttf);
+  src: url("/src/assets/fonts/fuentes/PiratesBlackbeard.ttf");
 }
 @font-face {
   font-family: "Audiowide";
   font-style: normal;
   font-weight: 400;
   src: local("Audiowide"), local("Audiowide-Regular"),
-    url(/src/assets/fonts/fuentes/Audiowide.woff)
+    url("/src/assets/fonts/fuentes/Audiowide.woff")
       format("woff");
 }
 @font-face {
   font-family: "Bad Script";
-  src: url(/src/assets/fonts/fuentes/BadScript-Regular.ttf) format("truetype");
+  src: url("/src/assets/fonts/fuentes/BadScript-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Sriracha";
-  src: url(/src/assets/fonts/fuentes/Sriracha-Regular.ttf) format("truetype");
+  src: url("/src/assets/fonts/fuentes/Sriracha-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Kumar One outline";
-  src: url(/src/assets/fonts/fuentes/KumarOneOutline-Regular.ttf)
+  src: url("/src/assets/fonts/fuentes/KumarOneOutline-Regular.ttf")
     format("truetype");
 }
 @font-face {
   font-family: "Gruppo";
-  src: url(/src/assets/fonts/fuentes/Gruppo-Regular.ttf) format("truetype");
+  src: url("/src/assets/fonts/fuentes/Gruppo-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Yellowtail";
-  src: url(/src/assets/fonts/fuentes/Yellowtail-Regular.ttf)
+  src: url("/src/assets/fonts/fuentes/Yellowtail-Regular.ttf")
     format("truetype");
 }
 @font-face {
   font-family: "Londrina";
-  src: url(/src/assets/fonts/fuentes/Yellowtail-Regular.ttf)
+  src: url("/src/assets/fonts/fuentes/Yellowtail-Regular.ttf")
     format("truetype");
 }
 @font-face {
   font-family: "Londrina Outline";
-  src: url(/src/assets/fonts/fuentes/LondrinaOutline-Regular.ttf)
+  src: url("/src/assets/fonts/fuentes/LondrinaOutline-Regular.ttf")
     format("truetype");
 }
 @font-face {
   font-family: "Monoton";
-  src: url(/src/assets/fonts/fuentes/Monoton-Regular.ttf) format("truetype");
+  src: url("/src/assets/fonts/fuentes/Monoton-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "frozen";
-  src: url(/src/assets/fonts/fuentes/Ice-kingdomKustren.woff);
-}
-@font-face {
-  font-family: "Monoton";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Monoton"), local("Monoton-Regular"),
-    src url(/src/assets/fonts/fuentes/Monoton-Regular.ttf)
-      format("woff");
+  src: url("/src/assets/fonts/fuentes/Ice-kingdom.woff");
 }
 @font-face {
   font-family: "Iceland";
   font-style: normal;
   font-weight: 400;
   src: local("Iceland"), local("Iceland-Regular"),
-    src url(/src/assets/fonts/fuentes/Iceland-Regular.woff)
+    src url("/src/assets/fonts/fuentes/Iceland-Regular.woff")
       format("woff");
 }
 @font-face {
@@ -91,7 +83,7 @@
   font-style: normal;
   font-weight: 400;
   src: local("Pacifico Regular"), local("Pacifico-Regular"),
-    url(http://themes.googleusercontent.com/static/fonts/pacifico/v5/yunJt0R8tCvMyj_V4xSjafesZW2xOQ-xsNqO47m55DA.woff)
+    url("/src/assets/fonts/fuentes/PiratesBlackbeard.ttf")
       format("woff");
 }
 @font-face {
@@ -99,7 +91,7 @@
   font-style: normal;
   font-weight: 400;
   src: local("Press Start 2P"), local("PressStart2P-Regular"),
-    url(http://themes.googleusercontent.com/static/fonts/pressstart2p/v2/8Lg6LX8-ntOHUQnvQ0E7o3dD2UuwsmbX3BOp4SL_VwM.woff)
+    url("/src/assets/fonts/fuentes/PressStart.woff")
       format("woff");
 }
 
@@ -108,7 +100,16 @@
   font-style: normal;
   font-weight: 400;
   src: local("Vampiro One"), local("VampiroOne-Regular"),
-    url(http://themes.googleusercontent.com/static/fonts/vampiroone/v3/Ho2Xld8UbQyBA8XLxF1_NYbN6UDyHWBl620a-IRfuBk.woff)
+    url("/src/assets/fonts/fuentes/VampiroOne.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Asap";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Vampiro One"), local("VampiroOne-Regular"),
+    url("/src/assets/fonts/fuentes/Asap-Regular.ttf")
       format("woff");
 }
 /*--------------------------------------------------------------
@@ -199,9 +200,12 @@ body {
   }
   font: {
     // family: Arial;
-    family: Audiowide;
+    // family: Asap;
+    family: Roboto, sans-serif;
+
     size: 62.5%;
   }
+
   h1 {
     font-size: 4rem;
     color: $blanco;

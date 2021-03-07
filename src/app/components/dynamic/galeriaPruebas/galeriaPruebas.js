@@ -5,7 +5,7 @@ class miGaleriapruebas extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <style>
-      @import "/src/app/pages/galeriaPruebas/galeriaPruebas.css";
+      @import "/src/app/components/dynamic/galeriaPruebas/galeriaPruebas.css";
     </style>
     
     <section class="galeriaPruebas">

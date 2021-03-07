@@ -1,16 +1,15 @@
 @charset "UTF-8";
 /*Carousel*/
 .containerCarousel {
+  text-shadow: -0.1rem -0.1rem rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0.8rem 0.8rem 0.4rem rgba(8, 8, 8, 0.4), 0.3rem 0.3rem 0.3rem rgba(2, 0, 0, 0.4);
+          box-shadow: 0.8rem 0.8rem 0.4rem rgba(8, 8, 8, 0.4), 0.3rem 0.3rem 0.3rem rgba(2, 0, 0, 0.4);
   /**********End Overriding Bootstrap********/
   /*Start Section About*/
   /*End Section About*/
   /*Start Section Features*/
   /*End Section Features*/
   /*Start Section Testimonials*/
-}
-
-.containerCarousel .carousel-title {
-  bottom: 80px;
 }
 
 .containerCarousel .carousel-caption {
@@ -138,6 +137,63 @@
 }
 
 /*End Section carousel*/
+.carousel-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-title h1 {
+  font-weight: lighter;
+  padding: 0rem;
+  margin: 0rem 0rem -3.5rem 0rem;
+  color: #f82249;
+  text-align: center;
+  -webkit-text-stroke: 0rem;
+  text-shadow: none;
+  font-family: "PiratesBlackbeard";
+  font-size: 8rem;
+}
+
+.carousel-title h1:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-text-stroke: 0.05rem black;
+  color: #ffe402;
+  text-shadow: 0px 10px 50px #ffe402;
+}
+
+.carousel-title h2 {
+  font-weight: lighter;
+  padding: 0rem;
+  margin: -2.5rem 0rem 0rem 0rem;
+  color: #f82249;
+  text-align: center;
+  -webkit-text-stroke: 0rem;
+  text-shadow: none;
+  font-family: "Vampiro One";
+  font-size: 3rem;
+}
+
+.carousel-title hr {
+  width: 100%;
+  margin: 2rem 0rem 2.5rem 0rem;
+  border: 1px solid #f82249;
+}
+
 .salidaIzquierda {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -167,6 +223,20 @@
   /* Fondo */
   -webkit-box-shadow: inset 0.2rem 0.2rem 0.4rem rgba(120, 120, 120, 0.4), inset -0.3rem -0.3rem 0.1rem rgba(255, 255, 255, 0.4);
           box-shadow: inset 0.2rem 0.2rem 0.4rem rgba(120, 120, 120, 0.4), inset -0.3rem -0.3rem 0.1rem rgba(255, 255, 255, 0.4);
+  background: #2323ff;
+  /* Fondo, debe ser más claro que el borde */
+  border: 1rem inset #4444ff;
+  /* Grosor del Borde */
+  /* Color del Borde */
+  border-left: 0rem;
+  border-radius: 1rem;
+  color: white;
+  /* Color del texto */
+  text-align: center;
+  /* Alineación del texto */
+  text-shadow: -0.1rem -0.1rem rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0.8rem 0.8rem 0.4rem rgba(8, 8, 8, 0.4), 0.3rem 0.3rem 0.3rem rgba(2, 0, 0, 0.4);
+          box-shadow: 0.8rem 0.8rem 0.4rem rgba(8, 8, 8, 0.4), 0.3rem 0.3rem 0.3rem rgba(2, 0, 0, 0.4);
 }
 
 .salidaIzquierda .global {

@@ -8,7 +8,7 @@ class miEfectos extends HTMLElement {
         this.innerHTML =
             `
             <style>
-      @import "/src/app/pages/disenos/efectos.css";
+      @import "/src/app/components/dynamic/disenos/efectos.css";
     </style>
         <div id='c'>
             <div class='s'></div>

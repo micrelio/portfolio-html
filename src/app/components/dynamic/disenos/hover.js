@@ -5,7 +5,7 @@ class miHover extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <style>
-    @import "/src/app/pages/disenos/hover.css";
+    @import "/src/app/components/dynamic/disenos/hover.css";
   </style>
 <section class="cajonHover">
 <div class="menuEfecto hover">
