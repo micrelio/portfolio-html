@@ -390,13 +390,32 @@
   width: 40%;
 }
 
-.progreso50,
-.progreso60 {
-  -webkit-animation: barraProgreso50 5s linear;
-          animation: barraProgreso50 5s linear;
+.lenguaje {
+  width: 100%;
+  position: absolute;
+}
+
+.lenguaje p {
+  font-weight: bold;
+}
+
+.progreso {
+  height: 20px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  border: 0.1rem solid #c7c7c7;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.progreso40,
+.progreso50 {
+  -webkit-animation: barraProgreso50 4s linear;
+          animation: barraProgreso50 4s linear;
   max-width: 50%;
   width: 50%;
-  background-color: #5bc0de;
+  background-color: #f0ad4e;
   height: 20px;
 }
 
@@ -417,20 +436,20 @@
   }
   50% {
     width: 50%;
-    background-color: #5bc0de;
+    background-color: #f0ad4e;
   }
   70% {
-    background-color: #5bc0de;
+    background-color: #f0ad4e;
   }
   75% {
-    background-color: #5bc0de;
+    background-color: #f0ad4e;
   }
   95% {
-    background-color: #5bc0de;
+    background-color: #f0ad4e;
   }
   100% {
     width: 100%;
-    background-color: #5bc0de;
+    background-color: #f0ad4e;
   }
 }
 
@@ -451,34 +470,34 @@
   }
   50% {
     width: 50%;
-    background-color: #5bc0de;
+    background-color: #f0ad4e;
   }
   70% {
-    background-color: #5bc0de;
+    background-color: #f0ad4e;
   }
   75% {
-    background-color: #5bc0de;
+    background-color: #f0ad4e;
   }
   95% {
-    background-color: #5bc0de;
+    background-color: #f0ad4e;
   }
   100% {
     width: 100%;
-    background-color: #5bc0de;
+    background-color: #f0ad4e;
   }
 }
 
-.progreso70,
-.progreso80 {
-  -webkit-animation: barraProgreso70 5s linear;
-          animation: barraProgreso70 5s linear;
-  max-width: 75%;
-  width: 75%;
-  background-color: #337ab7;
+.progreso60,
+.progreso70 {
+  -webkit-animation: barraProgreso60 4s linear;
+          animation: barraProgreso60 4s linear;
+  max-width: 60%;
+  width: 60%;
+  background-color: #ffc107;
   height: 20px;
 }
 
-@-webkit-keyframes barraProgreso70 {
+@-webkit-keyframes barraProgreso60 {
   0% {
     width: 0%;
     background-color: #d9534f;
@@ -495,24 +514,24 @@
   }
   50% {
     width: 50%;
-    background-color: #5bc0de;
+    background-color: #f0ad4e;
   }
   70% {
-    background-color: #5bc0de;
+    background-color: #ffc107;
   }
   75% {
-    background-color: #337ab7;
+    background-color: #ffc107;
   }
   95% {
-    background-color: #337ab7;
+    background-color: #ffc107;
   }
   100% {
     width: 100%;
-    background-color: #337ab7;
+    background-color: #ffc107;
   }
 }
 
-@keyframes barraProgreso70 {
+@keyframes barraProgreso60 {
   0% {
     width: 0%;
     background-color: #d9534f;
@@ -529,29 +548,111 @@
   }
   50% {
     width: 50%;
-    background-color: #5bc0de;
+    background-color: #f0ad4e;
   }
   70% {
-    background-color: #5bc0de;
+    background-color: #ffc107;
   }
   75% {
-    background-color: #337ab7;
+    background-color: #ffc107;
   }
   95% {
-    background-color: #337ab7;
+    background-color: #ffc107;
   }
   100% {
     width: 100%;
-    background-color: #337ab7;
+    background-color: #ffc107;
+  }
+}
+
+.progreso70 {
+  max-width: 70%;
+  width: 70%;
+}
+
+.progreso80 {
+  -webkit-animation: barraProgreso80 4s linear;
+          animation: barraProgreso80 4s linear;
+  max-width: 80%;
+  width: 80%;
+  background-color: #5bc0de;
+  height: 20px;
+}
+
+@-webkit-keyframes barraProgreso80 {
+  0% {
+    width: 0%;
+    background-color: #d9534f;
+  }
+  20% {
+    background-color: #d9534f;
+  }
+  25% {
+    width: 25%;
+    background-color: #f0ad4e;
+  }
+  45% {
+    background-color: #f0ad4e;
+  }
+  50% {
+    width: 50%;
+    background-color: #f0ad4e;
+  }
+  70% {
+    background-color: #ffc107;
+  }
+  75% {
+    background-color: #5bc0de;
+  }
+  95% {
+    background-color: #5bc0de;
+  }
+  100% {
+    width: 100%;
+    background-color: #5bc0de;
+  }
+}
+
+@keyframes barraProgreso80 {
+  0% {
+    width: 0%;
+    background-color: #d9534f;
+  }
+  20% {
+    background-color: #d9534f;
+  }
+  25% {
+    width: 25%;
+    background-color: #f0ad4e;
+  }
+  45% {
+    background-color: #f0ad4e;
+  }
+  50% {
+    width: 50%;
+    background-color: #f0ad4e;
+  }
+  70% {
+    background-color: #ffc107;
+  }
+  75% {
+    background-color: #5bc0de;
+  }
+  95% {
+    background-color: #5bc0de;
+  }
+  100% {
+    width: 100%;
+    background-color: #5bc0de;
   }
 }
 
 .progreso90,
 .progreso100 {
-  -webkit-animation: barraProgreso90 5s linear;
-          animation: barraProgreso90 5s linear;
-  max-width: 100%;
-  width: 100%;
+  -webkit-animation: barraProgreso90 4s linear;
+          animation: barraProgreso90 4s linear;
+  max-width: 80%;
+  width: 80%;
   background-color: #5cb85c;
   height: 20px;
 }
@@ -573,15 +674,16 @@
   }
   50% {
     width: 50%;
-    background-color: #5bc0de;
+    background-color: #f0ad4e;
   }
   70% {
-    background-color: #5bc0de;
+    background-color: #ffc107;
   }
   75% {
+    background-color: #5bc0de;
   }
   90% {
-    background-color: #5cb85c;
+    background-color: #5bc0de;
   }
   100% {
     width: 100%;
@@ -606,15 +708,16 @@
   }
   50% {
     width: 50%;
-    background-color: #5bc0de;
+    background-color: #f0ad4e;
   }
   70% {
-    background-color: #5bc0de;
+    background-color: #ffc107;
   }
   75% {
+    background-color: #5bc0de;
   }
   90% {
-    background-color: #5cb85c;
+    background-color: #5bc0de;
   }
   100% {
     width: 100%;
@@ -622,9 +725,9 @@
   }
 }
 
-.progreso90 {
-  max-width: 90%;
-  width: 90%;
+.progreso100 {
+  max-width: 100%;
+  width: 100%;
 }
 
 @-webkit-keyframes progress-bar-stripes {
