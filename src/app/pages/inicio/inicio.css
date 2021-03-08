@@ -135,12 +135,13 @@
 }
 
 /*End Section carousel*/
-.presentacion {
+.titular {
+  overflow: hidden;
   -webkit-box-shadow: inset 0rem 1rem 0.5rem rgba(0, 0, 0, 0.39), inset 0rem -1rem 0.5rem rgba(0, 0, 0, 0.39);
           box-shadow: inset 0rem 1rem 0.5rem rgba(0, 0, 0, 0.39), inset 0rem -1rem 0.5rem rgba(0, 0, 0, 0.39);
 }
 
-.presentacion .titulo {
+.titular .titulo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,7 +160,7 @@
   height: 100%;
 }
 
-.presentacion .titulo .neonTitulo h1 {
+.titular .titulo .neonTitulo h1 {
   font-weight: lighter;
   padding: 0rem;
   margin: 0rem 0rem -3.5rem 0rem;
@@ -171,7 +172,7 @@
   font-size: 12rem;
 }
 
-.presentacion .titulo .neonTitulo h1:hover {
+.titular .titulo .neonTitulo h1:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-text-stroke: 0.05rem black;
@@ -179,7 +180,7 @@
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1177, 0 0 70px #ff1177, 0 0 80px #ff1177, 0 0 100px #ff1177, 0 0 150px #ff1177;
 }
 
-.presentacion .titulo .neonTitulo h2 {
+.titular .titulo .neonTitulo h2 {
   font-weight: lighter;
   padding: 0rem;
   margin: -2.5rem 0rem 0rem 0rem;
@@ -191,7 +192,7 @@
   font-size: 5rem;
 }
 
-.presentacion .titulo .neonTitulo .borde {
+.titular .titulo .neonTitulo .borde {
   width: 100%;
   height: 0.2rem;
   margin: 2rem 0rem 2.5rem 0rem;
@@ -205,7 +206,7 @@
   margin-left: auto;
 }
 
-.presentacion .salidaIzquierda {
+.titular .salidaIzquierda {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,7 +246,7 @@
           box-shadow: 0.8rem 0.8rem 0.4rem rgba(8, 8, 8, 0.4), 0.3rem 0.3rem 0.3rem rgba(2, 0, 0, 0.4);
 }
 
-.presentacion .salidaIzquierda .global {
+.titular .salidaIzquierda .global {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -261,12 +262,12 @@
           justify-content: space-between;
 }
 
-.presentacion .salidaIzquierda .global .descripcion {
+.titular .salidaIzquierda .global .descripcion {
   overflow: hidden;
   padding: 0rem 2rem 0rem 10rem;
 }
 
-.presentacion .salidaIzquierda .global .grafico {
+.titular .salidaIzquierda .global .grafico {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,12 +284,13 @@
   border-radius: 0rem 0.6rem 0.6rem 0rem;
 }
 
-.presentacion .salidaIzquierda .global .grafico img {
+.titular .salidaIzquierda .global .grafico img {
   height: calc(10vw + 1rem);
   width: calc(10vw + 1rem);
 }
 
 .principal {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -386,5 +388,173 @@
 
 .principal .imagenPrincipal img {
   width: 40%;
+}
+
+#progreso50 {
+  -webkit-animation: barraProgreso50 5s linear;
+          animation: barraProgreso50 5s linear;
+  max-width: 50%;
+  width: 50%;
+  background-color: #5bc0de;
+}
+
+@-webkit-keyframes barraProgreso50 {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 50%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes barraProgreso50 {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 50%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes barraProgresoColor {
+  0% {
+    background-color: #d9534f;
+  }
+  25% {
+    background-color: #f0ad4e;
+  }
+  49% {
+    background-color: #f0ad4e;
+  }
+  50% {
+    background-color: #5bc0de;
+  }
+  75% {
+    width: %;
+    background-color: #5bc0de;
+  }
+  100% {
+    background-color: #5bc0de;
+  }
+}
+
+@keyframes barraProgresoColor {
+  0% {
+    background-color: #d9534f;
+  }
+  25% {
+    background-color: #f0ad4e;
+  }
+  49% {
+    background-color: #f0ad4e;
+  }
+  50% {
+    background-color: #5bc0de;
+  }
+  75% {
+    width: %;
+    background-color: #5bc0de;
+  }
+  100% {
+    background-color: #5bc0de;
+  }
+}
+
+#progreso75 {
+  -webkit-animation: barraProgreso 5s linear;
+          animation: barraProgreso 5s linear;
+  width: 50 #progreso75;
+}
+
+@-webkit-keyframes barraProgreso {
+  0% {
+    background-color: #d9534f;
+    width: 0%;
+  }
+  25% {
+    width: 25%;
+    background-color: #f0ad4e;
+  }
+  51% {
+    width: 50%;
+    background-color: #5bc0de;
+  }
+  75% {
+    width: 75%;
+    background-color: #5cb85c;
+  }
+  100% {
+    background-color: #f0ad4e;
+    width: 100%;
+  }
+}
+
+@keyframes barraProgreso {
+  0% {
+    background-color: #d9534f;
+    width: 0%;
+  }
+  25% {
+    width: 25%;
+    background-color: #f0ad4e;
+  }
+  51% {
+    width: 50%;
+    background-color: #5bc0de;
+  }
+  75% {
+    width: 75%;
+    background-color: #5cb85c;
+  }
+  100% {
+    background-color: #f0ad4e;
+    width: 100%;
+  }
+}
+
+#progreso100 {
+  -webkit-animation: barraProgreso 5s linear;
+          animation: barraProgreso 5s linear;
+  max-width: 20%;
+}
+
+@keyframes barraProgreso {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 25%;
+    background-color: #f0ad4e;
+  }
+  50% {
+    width: 50%;
+    background-color: #5bc0de;
+  }
+  75% {
+    width: 75%;
+    background-color: #5cb85c;
+  }
+  100% {
+    background-color: #5cb85c;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=inicio.css.map */

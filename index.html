@@ -207,14 +207,14 @@ $bg-color: #df0174;
         </div>
     </div>
     <!--End Carousel-->
-    <section class="presentacion">
+    <section class="titular">
         <div class="separador5"></div>
 
         <div class="titulo">
-            <div class="neonTitulo wow bounceIn" data-wow-duration="1s" data-wow-offset="100" >
+            <div class="neonTitulo wow bounceIn" data-wow-duration="1s" data-wow-offset="100">
                 <h1>Micro</h1>
                 <!-- <hr> -->
-                <div class="borde neonTitulo wow zoomIn" data-wow-duration="1.5s" data-wow-offset="100" ></div>
+                <div class="borde neonTitulo wow zoomIn" data-wow-duration="1.5s" data-wow-offset="100"></div>
 
                 <h2>desarrollador web</h2>
             </div>
@@ -222,7 +222,7 @@ $bg-color: #df0174;
         <div class="separador5"></div>
 
 
-        <div class="salidaIzquierda wow fadeInLeft" data-wow-duration="s" data-wow-offset="100">
+        <div class="salidaIzquierda wow fadeInLeft" data-wow-duration="2s" data-wow-offset="100">
             <div class="global">
                 <span class="descripcion">
                     <p>
@@ -275,20 +275,45 @@ $bg-color: #df0174;
             <h2 class="h1 text-center">Conocimientos de desarrollo</h2>
             <div class="row">
                 <!--Start Progress Skills-->
+                <!-- <input type="range" min="0" max="50" value="0" step="10" class="slider" id="myRange"
+                onchange="mostrarValor(this.value)"> -->
+
+
+
+                <link rel="stylesheet" href="/src/app/pages/inicio/inicio.css" media="screen" />
+
                 <div class="col-md-5">
                     <div class="skills-progress">
+
+
+
+                        <div class="progress">
+                            <div >
+                                <div  id="progreso50" class="progress-bar  progress-bar-striped active" role="progressbar"
+                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
+                                    MICRO
+                                    <!-- <span class="sr-only">45% completado</span> -->
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
                         <div class="progress">
                             <div class="progress-bar progress-bar-success progress-bar-striped active"
                                 role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
                                 style="width:90%">
                                 HTML / CSS
+                                <span class="sr-only">45% completado</span>
+
                             </div>
                         </div>
                         <!--progress-bar-striped,   -->
                         <div class="progress">
-                            <div class="progress-bar progress-bar-info progress-bar-striped active"
-                                role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                                style="width:90%">
+                            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+                                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:50%">
                                 SASS
                             </div>
                         </div>
@@ -308,7 +333,7 @@ $bg-color: #df0174;
                         <div class="progress">
                             <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
                                 aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:95%">
-                                Wordpress  / DIVI
+                                Wordpress / DIVI
                             </div>
                         </div>
                         <div class="progress">
@@ -319,10 +344,17 @@ $bg-color: #df0174;
                         </div>
                     </div>
                 </div>
+
+
+
+
+
+
+
                 <!--End Progress Skills-->
                 <!--Start Team Info-->
                 <div class="col-md-6 col-md-offset-1">
-                    <div class="skills-info" >
+                    <div class="skills-info">
                         <h3>About The Team</h3>
                         <p class="lead">Transition animations not supported in Internet Explorer 8 & 9 Bootstrap
                             exclusively uses CSS3 for its animations, but Internet Explorer 8 & 9 don't support the

@@ -148,9 +148,12 @@ $dark: #343a40;
   }
 }
 /*End Section carousel*/
-.presentacion {
+.titular {
+  overflow: hidden;
+
   // background-color: green;
-  box-shadow: inset 0rem 1rem 0.5rem rgba(0, 0, 0, 0.39), inset 0rem -1rem 0.5rem rgba(0, 0, 0, 0.39);
+  box-shadow: inset 0rem 1rem 0.5rem rgba(0, 0, 0, 0.39),
+    inset 0rem -1rem 0.5rem rgba(0, 0, 0, 0.39);
 
   .titulo {
     display: flex;
@@ -318,6 +321,8 @@ $dark: #343a40;
   }
 }
 .principal {
+  overflow: hidden;
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -328,10 +333,10 @@ $dark: #343a40;
   background: {
     // image: url("../../../assets/images/fondos/tecnologia.jpg");
     size: cover;
-attachment: fixed;
-position: center;
-repeat: no-repeat;
-size: cover;
+    attachment: fixed;
+    position: center;
+    repeat: no-repeat;
+    size: cover;
   }
   .textoPrincipal {
     display: flex;
@@ -348,25 +353,25 @@ size: cover;
       justify-content: center;
       width: 50%;
       .borde {
-          width: 9rem;
+        width: 9rem;
         margin: 0.2rem 0rem 0.5rem 0rem;
-               border: 0.1rem solid #f82249;
+        border: 0.1rem solid #f82249;
       }
       h2 {
         margin: 0rem;
         cursor: pointer;
       }
-         h2:hover + .borde {
+      h2:hover + .borde {
         transition: 1s;
         width: 100%;
       }
-         }
-         p{
-          // color: white;
-          font-size: 1.8rem;
-        }
-      }
-   .imagenPrincipal {
+    }
+    p {
+      // color: white;
+      font-size: 1.8rem;
+    }
+  }
+  .imagenPrincipal {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -376,5 +381,105 @@ size: cover;
     img {
       width: 40%;
     }
+  }
+}
+#progreso50 {
+  animation: barraProgreso50 5s linear;
+  max-width: 50%;
+  width: 50%;
+  background-color: #5bc0de;
+}
+@keyframes barraProgreso50 {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 50%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes barraProgresoColor {
+  0% {
+    background-color: #d9534f;
+  }
+  25% {
+    background-color: #f0ad4e;
+  }
+  49% {
+    background-color: #f0ad4e;
+  }
+  50% {
+    background-color: #5bc0de;
+  }
+  75% {
+    width: %;
+    background-color: #5bc0de;
+  }
+  100% {
+    background-color: #5bc0de;
+  }
+}
+#progreso75 {
+  animation: barraProgreso 5s linear;
+  width: 50&;
+}
+@keyframes barraProgreso {
+  0% {
+    background-color: #d9534f;
+
+    width: 0%;
+  }
+  25% {
+    width: 25%;
+    background-color: #f0ad4e;
+  }
+  51% {
+    width: 50%;
+    background-color: #5bc0de;
+  }
+  75% {
+    width: 75%;
+    background-color: #5cb85c;
+  }
+  100% {
+    background-color: #f0ad4e;
+
+    width: 100%;
+  }
+}
+#progreso100 {
+  animation: barraProgreso 5s linear;
+  max-width: 20%;
+}
+@keyframes barraProgreso {
+  0% {
+    // background-color: #d9534f;
+
+    width: 0%;
+  }
+  25% {
+    width: 25%;
+    background-color: #f0ad4e;
+  }
+  50% {
+    width: 50%;
+    background-color: #5bc0de;
+  }
+  75% {
+    width: 75%;
+    background-color: #5cb85c;
+  }
+  100% {
+    background-color: #5cb85c;
+
+    width: 100%;
   }
 }
