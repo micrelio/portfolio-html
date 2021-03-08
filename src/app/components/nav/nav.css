@@ -8,6 +8,7 @@
          social media menu
 ------------------------------------------ */
 .social-media {
+  padding: 0.2rem;
   z-index: 2;
   position: relative;
   width: 100%;
@@ -44,7 +45,7 @@
 }
 
 .social-media .social-links a {
-  font-size: 2.4rem;
+  font-size: 1.9rem;
   display: inline-block;
   color: black;
   line-height: 1;
@@ -76,13 +77,14 @@
 }
 
 .stick .nav {
+  padding: 1.9rem 2rem 1.9rem 2rem;
+  width: 100%;
   -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
   background-color: black;
 }
 
-.stick .nav .navbar {
-  padding: 0rem 3rem 0rem 3rem;
+.stick .nav .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,58 +101,33 @@
       justify-content: space-around;
 }
 
-.stick .nav .navbar .foto {
-  position: relative;
-  cursor: pointer;
-}
-
-.stick .nav .navbar .foto img {
-  height: 100%;
-  margin-left: calc(10px + 1vw);
-  border-radius: 75%;
-  border: 0.05rem solid #3c97bf;
-  width: calc(3vw + 3rem);
-}
-
-.stick .nav .navbar .foto img:hover {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
-  overflow: hidden;
-  overflow: hidden;
-}
-
-.stick .nav .navbar .logotipo {
-  /* Other styles */
+.stick .nav .navBar .logotipo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   cursor: pointer;
   text-transform: uppercase;
   width: 100%;
-  margin: 0rem 0rem 0rem 1rem;
-  height: 5rem;
   color: #3c97bf;
 }
 
-.stick .nav .navbar .logotipo #palabras {
+.stick .nav .navBar .logotipo #palabras {
   position: relative;
 }
 
-.stick .nav .navbar .logotipo .palabras {
+.stick .nav .navBar .logotipo .palabras {
   font-size: 3rem;
   letter-spacing: -5px;
   --interval: 1s;
@@ -188,7 +165,7 @@
   }
 }
 
-.stick .nav .navbar .logotipo .palabras span {
+.stick .nav .navBar .logotipo .palabras span {
   cursor: pointer;
   display: inline-block;
   -webkit-user-select: none;
@@ -198,38 +175,38 @@
   line-height: 0.8;
 }
 
-.stick .nav .navbar .logotipo span:nth-child(1):hover {
+.stick .nav .navBar .logotipo span:nth-child(1):hover {
   -webkit-animation: balance 1.5s ease-out;
           animation: balance 1.5s ease-out;
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
 }
 
-.stick .nav .navbar .logotipo span:nth-child(2):hover {
+.stick .nav .navBar .logotipo span:nth-child(2):hover {
   -webkit-animation: shrinkjump 1s ease-in-out;
           animation: shrinkjump 1s ease-in-out;
   -webkit-transform-origin: bottom center;
           transform-origin: bottom center;
 }
 
-.stick .nav .navbar .logotipo span:nth-child(3):hover {
+.stick .nav .navBar .logotipo span:nth-child(3):hover {
   -webkit-animation: falling 2s ease-out;
           animation: falling 2s ease-out;
   -webkit-transform-origin: bottom center;
           transform-origin: bottom center;
 }
 
-.stick .nav .navbar .logotipo span:nth-child(4):hover {
+.stick .nav .navBar .logotipo span:nth-child(4):hover {
   -webkit-animation: rotate 1s ease-out;
           animation: rotate 1s ease-out;
 }
 
-.stick .nav .navbar .logotipo span:nth-child(5):hover {
+.stick .nav .navBar .logotipo span:nth-child(5):hover {
   -webkit-animation: toplong 1.5s linear;
           animation: toplong 1.5s linear;
 }
 
-.stick .nav .navbar .logotipo .palabras span:nth-child(1).active {
+.stick .nav .navBar .logotipo .palabras span:nth-child(1).active {
   -webkit-animation: balance 1.5s ease-out;
           animation: balance 1.5s ease-out;
   -webkit-transform-origin: bottom left;
@@ -262,14 +239,14 @@
   }
 }
 
-.stick .nav .navbar .logotipo .palabras span:nth-child(2).active {
+.stick .nav .navBar .logotipo .palabras span:nth-child(2).active {
   -webkit-animation: shrinkjump 1s ease-in-out;
           animation: shrinkjump 1s ease-in-out;
   -webkit-transform-origin: bottom center;
           transform-origin: bottom center;
 }
 
-.stick .nav .navbar .logotipo .fixed {
+.stick .nav .navBar .logotipo .fixed {
   position: fixed;
   top: 4rem;
   left: 50%;
@@ -277,7 +254,7 @@
           transform: translateX(-50%);
 }
 
-.stick .nav .navbar .logotipo .logotipo {
+.stick .nav .navBar .logotipo .logotipo {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -286,11 +263,11 @@
   letter-spacing: 0.1rem;
 }
 
-.stick .nav .navbar .logotipo .logotipo i {
+.stick .nav .navBar .logotipo .logotipo i {
   color: red;
 }
 
-.stick .nav .navbar .logotipo .logotipo a {
+.stick .nav .navBar .logotipo .logotipo a {
   color: #3c97bf;
   text-decoration: none;
 }
@@ -329,7 +306,7 @@
   }
 }
 
-.stick .nav .navbar .logotipo .palabras span:nth-child(3).active {
+.stick .nav .navBar .logotipo .palabras span:nth-child(3).active {
   -webkit-animation: falling 2s ease-out;
           animation: falling 2s ease-out;
   -webkit-transform-origin: bottom center;
@@ -392,7 +369,7 @@
   }
 }
 
-.stick .nav .navbar .logotipo .palabras span:nth-child(4).active {
+.stick .nav .navBar .logotipo .palabras span:nth-child(4).active {
   -webkit-animation: rotate 1s ease-out;
           animation: rotate 1s ease-out;
 }
@@ -421,7 +398,7 @@
   }
 }
 
-.stick .nav .navbar .logotipo .palabras span:nth-child(5).active {
+.stick .nav .navBar .logotipo .palabras span:nth-child(5).active {
   -webkit-animation: toplong 1.5s linear;
           animation: toplong 1.5s linear;
 }
@@ -450,7 +427,7 @@
   }
 }
 
-.stick .nav .navbar .logotipo:hover {
+.stick .nav .navBar .logotipo:hover {
   -webkit-animation: squiggly-anim 0.34s linear infinite;
   animation: squiggly-anim 0.34s linear infinite;
 }
@@ -501,25 +478,7 @@
   }
 }
 
-.stick .nav .navbar .menu {
-  padding: 3rem 0 3rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  width: 100%;
-}
-
-.stick .nav .navbar .menu .links {
+.stick .nav .navBar .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,37 +492,53 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  /* ANIMATIONS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
 }
 
-.stick .nav .navbar .menu .links a {
+.stick .nav .navBar .menu .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* ANIMATIONS
+                 ––––––––––––––––––––––––––––––––––––– */
+}
+
+.stick .nav .navBar .menu .links a {
   text-decoration: none;
 }
 
-.stick .nav .navbar .menu .links a:hover span:first-child {
+.stick .nav .navBar .menu .links a:hover span:first-child {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
 }
 
-.stick .nav .navbar .menu .links a:hover span:last-child,
-.stick .nav .navbar .menu .links .links[data-animation] a:hover span:last-child {
+.stick .nav .navBar .menu .links a:hover span:last-child,
+.stick .nav .navBar .menu .links .links[data-animation] a:hover span:last-child {
   -webkit-transform: none;
           transform: none;
 }
 
-.stick .nav .navbar .menu .links .links[data-animation="to-top"] a span:last-child {
+.stick .nav .navBar .menu .links .links[data-animation="to-top"] a span:last-child {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
 }
 
-.stick .nav .navbar .menu .links .menuCSS3 {
+.stick .nav .navBar .menu .links .menuCSS3 {
   list-style: none;
   /* Rounded Corners */
   border-radius: 1rem;
 }
 
-.stick .nav .navbar .menu .links .menuCSS3 ul {
+.stick .nav .navBar .menu .links .menuCSS3 ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -573,17 +548,17 @@
   list-style: none;
 }
 
-.stick .nav .navbar .menu .links .menuCSS3 ul li ul {
+.stick .nav .navBar .menu .links .menuCSS3 ul li ul {
   display: none;
 }
 
-.stick .nav .navbar .menu .links .menuCSS3 ul li a:hover + ul,
-.stick .nav .navbar .menu .links .menuCSS3 ul li ul:hover {
+.stick .nav .navBar .menu .links .menuCSS3 ul li a:hover + ul,
+.stick .nav .navBar .menu .links .menuCSS3 ul li ul:hover {
   display: block;
   position: absolute;
 }
 
-.stick .nav .navbar .menu .links .enlace {
+.stick .nav .navBar .menu .links .enlace {
   position: relative;
   display: block;
   overflow: hidden;
@@ -604,19 +579,19 @@
   font-weight: bold;
 }
 
-.stick .nav .navbar .menu .links .enlace span {
+.stick .nav .navBar .menu .links .enlace span {
   -webkit-transition: -webkit-transform 0.2s ease-out;
   transition: -webkit-transform 0.2s ease-out;
   transition: transform 0.2s ease-out;
   transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
 }
 
-.stick .nav .navbar .menu .links .enlace span:first-child {
+.stick .nav .navBar .menu .links .enlace span:first-child {
   display: inline-block;
   padding: 1rem 0rem 1rem 0rem;
 }
 
-.stick .nav .navbar .menu .links .enlace span:last-child {
+.stick .nav .navBar .menu .links .enlace span:last-child {
   position: absolute;
   top: 0;
   right: 0;
@@ -635,32 +610,32 @@
           transform: translateY(-100%);
 }
 
-.stick .nav .navbar .menu .links .enlace i {
+.stick .nav .navBar .menu .links .enlace i {
   font-size: 3rem;
 }
 
-.stick .nav .navbar .menu .links .enlace p {
+.stick .nav .navBar .menu .links .enlace p {
   color: #3c97bf;
 }
 
-.stick .nav .navbar .menu .links .active span:first-child {
+.stick .nav .navBar .menu .links .active span:first-child {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   color: #eeeeee;
 }
 
-.stick .nav .navbar .menu .links .active span:last-child {
+.stick .nav .navBar .menu .links .active span:last-child {
   color: #eeeeee;
   -webkit-transform: none;
           transform: none;
 }
 
-.stick .nav .navbar .menu .links .mode .noche {
+.stick .nav .navBar .menu .links .mode .noche {
   display: none;
   font-size: 3rem;
 }
 
-.stick .nav .navbar .menu .links .mode .dia {
+.stick .nav .navBar .menu .links .mode .dia {
   display: none;
   font-size: 3rem;
 }
@@ -747,15 +722,15 @@
   }
 }
 
-.stick .nav .navbar .menu .links .brushEstilos .selecEstilosDesplegar {
+.stick .nav .navBar .menu .links .brushEstilos .selecEstilosDesplegar {
   font-size: 3rem;
 }
 
-.stick .nav .navbar .menu .links .brushEstilos .selecEstilosPlegar {
+.stick .nav .navBar .menu .links .brushEstilos .selecEstilosPlegar {
   font-size: 3rem;
 }
 
-.stick .nav .navbar .menu .links .brushEstilos:hover {
+.stick .nav .navBar .menu .links .brushEstilos:hover {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   -webkit-transform: rotateY(180deg);
@@ -764,22 +739,22 @@
   transform-style: preserve-3d;
 }
 
-.stick .nav .navbar .menu .links .irInicio:hover,
-.stick .nav .navbar .menu .links .irBiografia:hover,
-.stick .nav .navbar .menu .links .irWebs:hover,
-.stick .nav .navbar .menu .links .irGaleria:hover,
-.stick .nav .navbar .menu .links .irCurriculum:hover,
-.stick .nav .navbar .menu .links .irContacto:hover,
-.stick .nav .navbar .menu .links .irDisenos:hover,
-.stick .nav .navbar .menu .links .irHover:hover,
-.stick .nav .navbar .menu .links .irInicio:focus,
-.stick .nav .navbar .menu .links .irBiografia:focus,
-.stick .nav .navbar .menu .links .irWebs:focus,
-.stick .nav .navbar .menu .links .irGaleria:focus,
-.stick .nav .navbar .menu .links .irCurriculum:focus,
-.stick .nav .navbar .menu .links .irDisenos:focus,
-.stick .nav .navbar .menu .links .irHover:focus,
-.stick .nav .navbar .menu .links .irContacto:focus {
+.stick .nav .navBar .menu .links .irInicio:hover,
+.stick .nav .navBar .menu .links .irBiografia:hover,
+.stick .nav .navBar .menu .links .irWebs:hover,
+.stick .nav .navBar .menu .links .irGaleria:hover,
+.stick .nav .navBar .menu .links .irCurriculum:hover,
+.stick .nav .navBar .menu .links .irContacto:hover,
+.stick .nav .navBar .menu .links .irDisenos:hover,
+.stick .nav .navBar .menu .links .irHover:hover,
+.stick .nav .navBar .menu .links .irInicio:focus,
+.stick .nav .navBar .menu .links .irBiografia:focus,
+.stick .nav .navBar .menu .links .irWebs:focus,
+.stick .nav .navBar .menu .links .irGaleria:focus,
+.stick .nav .navBar .menu .links .irCurriculum:focus,
+.stick .nav .navBar .menu .links .irDisenos:focus,
+.stick .nav .navBar .menu .links .irHover:focus,
+.stick .nav .navBar .menu .links .irContacto:focus {
   background-color: rgba(78, 78, 32, 0.582);
 }
 
@@ -800,7 +775,6 @@
     display: none;
   }
   .stick {
-    margin: 0rem 0rem 5rem 0rem;
     position: relative;
     z-index: 2;
   }

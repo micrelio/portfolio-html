@@ -194,6 +194,12 @@ footer .footerContainer .segundaFila .footerPresentacion .presentacion .titulo h
   height: 2px;
   width: 50px;
   background: #ff5e14;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer .footerContainer .segundaFila .footerPresentacion .presentacion .titulo h3:hover:before {
+  width: 100%;
 }
 
 footer .footerContainer .segundaFila .footerPresentacion .presentacion .texto {
@@ -316,7 +322,7 @@ footer .footerContainer .segundaFila .footerPresentacion .presentacion .logo {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 0rem;
+  padding: 2rem;
 }
 
 footer .footerContainer .segundaFila .footerPresentacion .presentacion .logo a {
@@ -331,6 +337,8 @@ footer .footerContainer .segundaFila .footerPresentacion .presentacion .logo a h
   text-align: center;
   -webkit-text-stroke: 0rem;
   text-shadow: none;
+  -webkit-text-stroke: 0.06rem black;
+  text-shadow: 0.4rem 0.4rem 0.3rem black;
   font-family: PiratesBlackbeard;
   font-size: 12rem;
 }
@@ -338,9 +346,9 @@ footer .footerContainer .segundaFila .footerPresentacion .presentacion .logo a h
 footer .footerContainer .segundaFila .footerPresentacion .presentacion .logo h1:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  -webkit-text-stroke: 0.05rem black;
-  color: #ffe402;
-  text-shadow: 0px 10px 50px #ffe402;
+  -webkit-text-stroke: 0.06rem black;
+  color: #ff1177;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1177, 0 0 70px #ff1177, 0 0 80px #ff1177, 0 0 100px #ff1177, 0 0 150px #ff1177;
 }
 
 footer .footerContainer .segundaFila .footerPresentacion .presentacion .logo a img {

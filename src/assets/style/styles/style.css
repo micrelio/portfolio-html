@@ -1,4 +1,3 @@
-/* ---------------hovers--------------*/
 @font-face {
   font-family: "supercell";
   src: url("/src/assets/fonts/fuentes/supercell-magic-webfont.ttf") format("truetype");
@@ -152,20 +151,6 @@
   }
 }
 
-.head {
-  width: 100%;
-  position: relative;
-  background-color: pink;
-  background-image: url("../../../assets/images/banners/vinewood.jpg");
-  background-position: center;
-  background-size: cover;
-  border-bottom: 0.05rem solid #3c97bf;
-}
-
-.head img {
-  width: 100%;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -276,7 +261,7 @@ body a {
 html p,
 body p {
   font-size: 1.3rem;
-  color: blanchedalmond;
+  color: #0a0a0a;
 }
 
 html ul,

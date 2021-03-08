@@ -6,170 +6,117 @@ class miNav extends HTMLElement {
     this.innerHTML = `
     <style>
     @import "/src/app/components/nav/nav.css";
-  </style>
+</style>
 <section class="social-media">
     <div class="social-links">
         <a class="bx bxl-youtube" href="https://www.youtube.com/channel/UCMEv1Jj16ypsAXmZXOkKrQA/"
             target="_blank"></a>
         <a class="bx bxl-instagram" href="https://www.instagram.com/micrelio.dev/" target="_blank"></a>
         <a class="bx bxl-twitter" href="https://twitter.com/Micrelio/" target="_blank"></a>
-        <a class="bx bxl-facebook" href="href=" https://www.facebook.com/micro6/" target="_blank"></a>
+        <a class="bx bxl-facebook" href="href=https://www.facebook.com/micro6/" target="_blank"></a>
         <a class="bx bxl-whatsapp" href="https://wa.me/34653251983/" target="_blank"></a>
         <a class="bx bxl-linkedin" href="https://www.linkedin.com/in/jos%C3%A9-antonio-l%C3%B3pez-baena-65833016a/"
             target="_blank"></a>
         <a class="bx bxl-github" href="https://github.com/Micrelio/" target="_blank"></a>
     </div>
 </section>
-<section class="stick" id="stick">
-<div class="nav" id="nav">
-  <div class="navbar">
-    <div id="foto" class="foto">
-      <!--<img src="/src/assets/images/dracula-man.jpg">-->
-    </div>
-    <div class="logotipo">
-    <div id="palabras" class="palabras">
-   <span>M</span>
-      <span>i</span>
-      <span>c</span>
-      <span>r</span>
-      <span>o</span>
-     <!--  <br><small>Micro</small>-->
-    </div>
-    </div>
-    <div class="menu">
-      <div id="links" class="links">
-        <a class="enlace irInicio" href="/"><span>Inicio</span><span><i class="fas fa-home"
-              aria-hidden="true"></i></span></a>
-        <a class="enlace irBiografia" href="/src/app/pages/biografia/biografia.html"><span>Biografía</span><span><i class="fab fa-leanpub"
-              aria-hidden="true"></i></span></a>
-        <a class="enlace irWebs" href="/src/app/pages/webs/webs.html"><span>Webs</span><span><i class="fas fa-globe"
-              aria-hidden="true"></i></span></a>
-        <a class="enlace irGaleria" href="/src/app/pages/galeria/galeria.html"><span>Galería</span><span><i class="far fa-images"
-              aria-hidden="true"></i></span></a>
-        <a class="enlace irCurriculum" href="/src/app/pages/curriculum/curriculum.html"><span>Currículum</span><span><i class="far fa-id-badge"
-              aria-hidden="true"></i></span></a>
-        <a class="enlace irContacto" target="_blank" href="/src/app/pages/contacto/contacto.php"><span>Contacto</span><span><i class="far fa-envelope"
-              aria-hidden="true"></i></span></a>
-       <!--
-              <div class="menuCSS3">
-          <ul>
-            <li><a href="#" class="enlace"><span>Diseños</span><span><i class="fas fa-mouse"
-                    aria-hidden="true"></i></span></a>
-              <ul>
-                <li>
-                  <a class="enlace irHover" href="#hover"><span>Hover</span><span><i class="fab fa-suse"
-                        aria-hidden="true"></i></span></a>
-                </li>
-                <li>
-                  <a class="enlace irEfectos" href="#efectos"><span>Efectos</span><span><i class="far fa-star"
-                        aria-hidden="true"></i></span></a>
-                </li>
-                <li>
-                  <a class="enlace irgaleriaPruebas" href="#galeriaPruebas"><span>Pruebas</span><span><i
-                        class="far fa-images" aria-hidden="true"></i></span></a>
-                </li>
-              
-              </ul>
-            </li>
-          </ul>
+<nav class="stick" id="stick">
+    <div class="nav" id="nav">
+        <div class="navBar">
+            <div id="foto" class="foto">
+                <!--<img src="/src/assets/images/dracula-man.jpg">-->
+            </div>
+            <div class="logotipo">
+                <div id="palabras" class="palabras">
+                    <span>M</span>
+                    <span>i</span>
+                    <span>c</span>
+                    <span>r</span>
+                    <span>o</span>
+                    <!--  <br><small>Micro</small>-->
+                </div>
+            </div>
+            <div class="menu">
+                <div id="links" class="links">
+                    <a class="enlace irInicio" href="/"><span>Inicio</span><span><i class="fas fa-home"
+                                aria-hidden="true"></i></span></a>
+                    <a class="enlace irBiografia"
+                        href="/src/app/pages/biografia/biografia.html"><span>Biografía</span><span><i
+                                class="fab fa-leanpub" aria-hidden="true"></i></span></a>
+                    <a class="enlace irWebs" href="/src/app/pages/webs/webs.html"><span>Webs</span><span><i
+                                class="fas fa-globe" aria-hidden="true"></i></span></a>
+                    <a class="enlace irGaleria"
+                        href="/src/app/pages/galeria/galeria.html"><span>Galería</span><span><i
+                                class="far fa-images" aria-hidden="true"></i></span></a>
+                    <a class="enlace irCurriculum"
+                        href="/src/app/pages/curriculum/curriculum.html"><span>Currículum</span><span><i
+                                class="far fa-id-badge" aria-hidden="true"></i></span></a>
+                    <a class="enlace irContacto" target="_blank"
+                        href="/src/app/pages/contacto/contacto.php"><span>Contacto</span><span><i
+                                class="far fa-envelope" aria-hidden="true"></i></span></a>
+                    <div id="mode" class=" mode">
+                        <p id="noche" class="noche enlace bx bxs-moon" onclick="modoNoche('dia');"></p>
+                        <p id="dia" class="dia enlace bx bxs-sun" onclick="modoNoche('noche');"></p>
+                    </div>
+                    <div class=" brushEstilos">
+                        <p id="selecEstilosDesplegar" class="selecEstilosDesplegar enlace bx bxs-brush"></p>
+                        <p style="display:none;" id="selecEstilosPlegar"
+                            class="selecEstilosPlegar enlace bx bxs-brush-alt"></p>
+                    </div>
+                </div>
+            </div>
         </div>
-        -->
-        <div id="mode" class=" mode">
-          <p id="noche" class="noche enlace bx bxs-moon" onclick="modoNoche('dia');"></p>
-          <p id="dia" class="dia enlace bx bxs-sun" onclick="modoNoche('noche');"></p>
+    </div>
+
+
+    <div class="movil">
+        <div class="imagenes">
+            <div id="foto" class="foto">
+                <!--<img src="/src/assets/images/dracula-man.jpg">-->
+                <img src="/src/assets/images/transparente.png">
+            </div>
+            <div class="logotipo">
+                <div class="palabras">
+                    <span>M</span>
+                    <span>i</span>
+                    <span>c</span>
+                    <span>r</span>
+                    <span>o</span>
+                </div>
+
+            </div>
+            <div class="botones">
+                <div class="botonMenu">
+                    <a id="pull"> <span></span></a>
+                </div>
+            </div>
         </div>
-        <div class=" brushEstilos">
-          <p id="selecEstilosDesplegar" class="selecEstilosDesplegar enlace bx bxs-brush"></p>
-          <p style="display:none;" id="selecEstilosPlegar" class="selecEstilosPlegar enlace bx bxs-brush-alt"></p>
+        <div style="display:none" class="desplegable nuevo" id="desplegable">
+            <a class="enlace" href="/" onclick="seleccionado(); toggleMenu();">Inicio</a>
+            <a class="enlace" href="/src/app/pages/biografia/biografia.html" onclick="seleccionado();">Biografía</a>
+            <a class="enlace" href="/src/app/pages/webs/webs.html" onclick="seleccionado();">Webs</a>
+            <a class="enlace" href="/src/app/pages/galeria/galeria.html" onclick="seleccionado();">Galería</a>
+            <a class="enlace" href="/src/app/pages/curriculum/curriculum.html"
+                onclick="seleccionado();">Currículum</a>
+            <a class="enlace irContacto" target="_blank" href="/src/app/pages/contacto/contacto.php">Contacto</a>
+            <div class="brushMode">
+                <div class="brushEstilos">
+                    <p onclick="navegar('panelEstilos');" id="selecEstilosDesplegar"
+                        class="selecEstilosDesplegar bx bxs-brush">
+                    </p>
+                    <p style="display:none;" id="selecEstilosPlegar" class="selecEstilosPlegar bx bxs-brush-alt">
+                    </p>
+                </div>
+                <div id="mode" class="mode">
+                    <p id="noche" class="noche bx bxs-moon" onclick="modoNoche('dia');"></p>
+                    <p id="dia" class="dia bx bxs-sun" onclick="modoNoche('noche');"></p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-
-<div class="movil">
-  <div class="imagenes">
-    <div id="foto" class="foto">
-      <!--<img src="/src/assets/images/dracula-man.jpg">-->
-      <img src="/src/assets/images/transparente.png">
     </div>
-    <div class="logotipo">
-      <!--          <div class="dos letritas" id="dos" onclick="efectos('dos');">          -->
-     <div class="palabras">
-        <span>M</span>
-        <span>i</span>
-        <span>c</span>
-        <span>r</span>
-        <span>o</span>
-         <!--  <br><small>Micro</small>-->
-      </div>
-      <!--
-      <svg>
-        <defs>
-          <filter id="squiggly-0">
-            <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0" />
-            <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
-          </filter>
-          <filter id="squiggly-1">
-            <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1" />
-            <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
-          </filter>
-
-          <filter id="squiggly-2">
-            <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2" />
-            <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
-          </filter>
-          <filter id="squiggly-3">
-            <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3" />
-            <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
-          </filter>
-
-          <filter id="squiggly-4">
-            <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4" />
-            <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
-          </filter>
-        </defs>
-      </svg>
-      -->
-      <!-- </div>-->
-    </div>
-    <div class="botones">
-      <div class="botonMenu">
-        <a id="pull"> <span></span></a>
-      </div>
-      <!-- <span id="boton1"><img src="/src/assets/images/icons/menu.png" id="pull" href="#" alt="menu"></span> -->
-      <!--   <p id="pull" href="#" class="botonMenu bx bx-menu" alt="menu"></p>-->
-    </div>
-  </div>
-  <div style="display:none" class="desplegable nuevo" id="desplegable">
-    <a class="enlace" href="/" onclick="seleccionado(); toggleMenu();">Inicio</a>
-    <a class="enlace" href="/src/app/pages/biografia/biografia.html" onclick="seleccionado();">Biografía</a>
-    <a class="enlace" href="/src/app/pages/webs/webs.html" onclick="seleccionado();">Webs</a>
-    <a class="enlace" href="/src/app/pages/galeria/galeria.html" onclick="seleccionado();">Galería</a>
-    <a class="enlace" href="/src/app/pages/curriculum/curriculum.html" onclick="seleccionado();">Currículum</a>
-    <a class="enlace irContacto" target="_blank" href="/src/app/pages/contacto/contacto.php"><span>Contacto</span><span>
-    <!--
-    <a class="enlace " href="#disenos" onclick="seleccionado();">Diseños</a>
-    <a class="enlace " href="#hover" onclick="seleccionado();">Hover</a>
-    <a class="enlace " href="#efectos" onclick="seleccionado();">Efectos</a>
-    -->
-    <div class="brushMode">
-      <div class="brushEstilos">
-        <p onclick="navegar('panelEstilos');" id="selecEstilosDesplegar" class="selecEstilosDesplegar bx bxs-brush">
-        </p>
-        <p style="display:none;" id="selecEstilosPlegar" class="selecEstilosPlegar bx bxs-brush-alt">
-        </p>
-      </div>
-      <div id="mode" class="mode">
-        <p id="noche" class="noche bx bxs-moon" onclick="modoNoche('dia');"></p>
-        <p id="dia" class="dia bx bxs-sun" onclick="modoNoche('noche');"></p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- <audio src="../sonidos/ping.mp4" autoplay loop></audio> -->
-</section>
+    <!-- <audio src="../sonidos/ping.mp4" autoplay loop></audio> -->
+</nav>
       `;
     //---logotipo---LETRAS QUE SE MUEVEN
     const spans = document.querySelectorAll(".palabras span");

@@ -30,8 +30,9 @@ $dark: #343a40;
 
 /*Carousel*/
 .containerCarousel {
-    text-shadow: -0.1rem -0.1rem rgba(0,0,0,.2);
-    box-shadow: 0.8rem 0.8rem 0.4rem rgba(8, 8, 8, 0.4),  0.3rem 0.3rem 0.3rem rgba(2, 0, 0, 0.4);
+  text-shadow: -0.1rem -0.1rem rgba(0, 0, 0, 0.2);
+  // box-shadow: 0rem 1rem 0.4rem rgba(8, 8, 8, 0.4);
+  // box-shadow: 0rem 1rem 0.4rem rgba(8, 8, 8, 0.4);
   // position: absolute;
   //   margin-top: -20rem;
   .carousel-caption {
@@ -147,9 +148,11 @@ $dark: #343a40;
   }
 }
 /*End Section carousel*/
+.presentacion {
+  // background-color: green;
+  box-shadow: inset 0rem 1rem 0.5rem rgba(0, 0, 0, 0.39), inset 0rem -1rem 0.5rem rgba(0, 0, 0, 0.39);
 
-
-.carousel-title {
+  .titulo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,213 +162,219 @@ $dark: #343a40;
     width: 100%;
     height: 100%;
     // background-color: $negro;
+    .neonTitulo {
+      h1 {
+        font-weight: lighter;
+        padding: 0rem;
+        margin: 0rem 0rem -3.5rem 0rem;
+        color: #f82249;
+        // color: $blanco;
+        text-align: center;
+        -webkit-text-stroke: 0.06rem rgb(0, 0, 0);
+        text-shadow: 0.4rem 0.4rem 0.3rem black;
 
-    h1 {
-      font-weight: lighter;
-      padding: 0rem;
-      margin: 0rem 0rem -3.5rem 0rem;
-      color: #f82249;
-      // color: $blanco;
-      text-align: center;
-      -webkit-text-stroke: 0rem;
-      text-shadow: none;
-
-      font: {
-        family: "PiratesBlackbeard";
-        size: 8rem;
+        font: {
+          family: "PiratesBlackbeard";
+          size: 12rem;
+        }
       }
-    }
-    h1:hover {
-      transition: 0.5s;
-      -webkit-text-stroke: 0.05rem rgb(0, 0, 0);
-      // text-shadow: 0.3rem 0.3rem 0.3rem gray;
+      h1:hover {
+        transition: 0.5s;
+        -webkit-text-stroke: 0.05rem rgb(0, 0, 0);
+        // text-shadow: 0.3rem 0.3rem 0.3rem gray;
 
-      color: #ffe402;
-      text-shadow: 0px 10px 50px rgb(255, 228, 2);
-    }
-    h2 {
-      font-weight: lighter;
-      padding: 0rem;
-      margin: -2.5rem 0rem 0rem 0rem;
-      color: #f82249;
-      // color: $blanco;
-      text-align: center;
-      -webkit-text-stroke: 0rem;
-      text-shadow: none;
-
-      font: {
-        // Londrina Outline, Monoton, PressStart,
-        family: "Vampiro One";
-        size: 3rem;
+        color: #ff1177;
+        // text-shadow: 0px 10px 50px rgb(255, 228, 2);
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
+          0 0 40px #ff1177, 0 0 70px #ff1177, 0 0 80px #ff1177,
+          0 0 100px #ff1177, 0 0 150px #ff1177;
       }
-    }
-    hr {
-      width: 100%;
-      margin: 2rem 0rem 2.5rem 0rem;
-      border: 1px solid #f82249;
+      h2 {
+        font-weight: lighter;
+        padding: 0rem;
+        margin: -2.5rem 0rem 0rem 0rem;
+        color: #f82249;
+        // color: $blanco;
+        text-align: center;
+        -webkit-text-stroke: 0.06rem rgb(0, 0, 0);
+        text-shadow: 0.3rem 0.3rem 0.3rem black;
+
+        font: {
+          // Londrina Outline, Monoton, PressStart,
+          family: "Vampiro One";
+          size: 5rem;
+        }
+      }
+      .borde {
+        width: 100%;
+        height: 0.2rem;
+        margin: 2rem 0rem 2.5rem 0rem;
+        -webkit-text-stroke: 0.6rem rgb(0, 0, 0);
+        border-bottom: 3px solid #f82249;
+        text-shadow: -0.1rem -0.1rem rgba(0, 0, 0, 0.2);
+        box-shadow: 0rem 1rem 0.9rem rgba(8, 8, 8, 0.4);
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+      }
     }
   }
-
-
-
-.salidaIzquierda {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  //   background-color: salmon;
-  margin: 0rem 0rem 0rem -3rem;
-  margin-right: 50rem;
-  width: 100%;
-  height: calc(1vw + 20rem);
-  // background-color: skyblue;
-
-  overflow: hidden;
-  border-radius: 0rem 5rem 5rem 0rem;
-  width: 100%;
-  height: calc(11vw + 1rem);
-  padding: 1rem;
-
-  border: 0.1rem solid #00cc00; /* Color del borde, debe ser más claro que fondo */
-  background: #00d800; /* Fondo */
-box-shadow: inset 0.2rem 0.2rem 0.4rem rgba(120, 120, 120, 0.4),
-    inset -0.3rem -0.3rem 0.1rem rgba(255, 255, 255, 0.4);
-
-
-  
-// transition-duration: 20s;
-  background: #2323ff;  /* Fondo, debe ser más claro que el borde */
-  border: 1rem inset #4444ff;  /* Grosor del Borde */  /* Color del Borde */
-  border-left: 0rem;
-  border-radius: 1rem;
-  color: white;  /* Color del texto */
-  text-align: center;  /* Alineación del texto */
-  text-shadow: -0.1rem -0.1rem rgba(0,0,0,.2);
-  box-shadow: 0.8rem 0.8rem 0.4rem rgba(8, 8, 8, 0.4),  0.3rem 0.3rem 0.3rem rgba(2, 0, 0, 0.4);
-
-  // box-shadow: 3px 4px 0.6rem rgb(4, 4, 5), 0 0 0 #000, 0.1rem 4px 0.6rem rgb(4, 4, 5);
-
-  //     border: 0.1rem solid #00cc00; /* Color del borde, debe ser más oscuro que fondo */
-  // background: #00f400; /* Fondo */
-  // border-radius: 0.6rem;  /* Bordes redondos */
-  // box-shadow: inset 0.3rem 0.3rem 0.3rem rgba(255,255,255,.7), inset -0.2rem -0.2rem 0.3rem rgba(0,0,0,.1), 0.2rem 0.2rem 10px rgba(0,0,0,.1);
-  // text-shadow: 0.1rem 0.1rem 0.1rem rgba(255,255,255,.9);  /* Sombra del texto */
-  // text-align: center;  /* Alineación del texto */
-
-  
-  .global {
+  .salidaIzquierda {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    // padding: 1rem;
-    //   background-color: $info;
+    justify-content: flex-end;
+    //   background-color: salmon;
+    margin: 0rem 0rem 0rem -8rem;
+    margin-right: 50rem;
+    width: 100%;
+    height: calc(1vw + 20rem);
+    // background-color: skyblue;
 
-    .descripcion {
-      overflow: hidden;
-      // width: 70%;
-      // border-radius: 0rem 5rem 5rem 0rem;
-      padding: 0rem 2rem 0rem 5rem;
+    overflow: hidden;
+    border-radius: 0rem 5rem 5rem 0rem;
+    width: 100%;
+    height: calc(11vw + 1rem);
+    padding: 1rem;
+    background-color: green;
 
-      //   margin: 0rem 3rem 0rem 0rem;
-      // width: 70%;
-      // background-color: skyblue;
-      p {
-        //   padding: 3rem;
-        //   width: 70%;
-      }
-    }
-    .grafico {
+    //   border: 0.1rem solid #00cc00; /* Color del borde, debe ser más claro que fondo */
+    //   background: #00d800; /* Fondo */
+    // box-shadow: inset 0.2rem 0.2rem 0.4rem rgba(120, 120, 120, 0.4),
+    //     inset -0.3rem -0.3rem 0.1rem rgba(255, 255, 255, 0.4);
+
+    // transition-duration: 20s;
+    background: #ff8d23; /* Fondo, debe ser más claro que el borde */
+    border: 1rem inset #ff6923; /* Grosor del Borde */ /* Color del Borde */
+    border-left: 0rem;
+    border-radius: 1rem;
+    color: white; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    text-shadow: -0.1rem -0.1rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0.8rem 0.8rem 0.4rem rgba(8, 8, 8, 0.4),
+      0.3rem 0.3rem 0.3rem rgba(2, 0, 0, 0.4);
+
+    // box-shadow: 3px 4px 0.6rem rgb(4, 4, 5), 0 0 0 #000, 0.1rem 4px 0.6rem rgb(4, 4, 5);
+
+    //     border: 0.1rem solid #00cc00; /* Color del borde, debe ser más oscuro que fondo */
+    // background: #00f400; /* Fondo */
+    // border-radius: 0.6rem;  /* Bordes redondos */
+    // box-shadow: inset 0.3rem 0.3rem 0.3rem rgba(255,255,255,.7), inset -0.2rem -0.2rem 0.3rem rgba(0,0,0,.1), 0.2rem 0.2rem 10px rgba(0,0,0,.1);
+    // text-shadow: 0.1rem 0.1rem 0.1rem rgba(255,255,255,.9);  /* Sombra del texto */
+    // text-align: center;  /* Alineación del texto */
+
+    .global {
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: flex-end;
-      //   width: 100rem;
-      //   border-radius: 0rem 5rem 5rem 0rem;
-      //   overflow: hidden;
-      // width: 20rem;
-      // height: 15rem;
-      //   height: 100%;
-      //   width: 100%;
-      background-color: seagreen;
-      // height: 20rem;
-      // width: 30rem;
-      // overflow: hidden;
-      // width: 30%;
-      // height: calc(20vw + 1rem);
-      border-radius: 0rem 0.6rem 0.6rem 0rem;
-      // border-radius: 0rem 2rem 2rem 0rem;
-      // overflow: hidden;
-      img {
-        // width: 20rem;
-        // height: 222rem;
-        height: calc(10vw + 1rem);
+      justify-content: space-between;
+      // padding: 1rem;
+      //   background-color: $info;
+
+      .descripcion {
+        overflow: hidden;
+        // width: 70%;
         // border-radius: 0rem 5rem 5rem 0rem;
-        width: calc(10vw + 1rem);
+        padding: 0rem 2rem 0rem 10rem;
+
+        //   margin: 0rem 3rem 0rem 0rem;
+        // width: 70%;
+        // background-color: skyblue;
+        p {
+          //   padding: 3rem;
+          //   width: 70%;
+        }
+      }
+      .grafico {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        //   width: 100rem;
+        //   border-radius: 0rem 5rem 5rem 0rem;
+        //   overflow: hidden;
+        // width: 20rem;
+        // height: 15rem;
+        //   height: 100%;
+        //   width: 100%;
+        // background-color: seagreen;
+        // height: 20rem;
+        // width: 30rem;
+        // overflow: hidden;
+        // width: 30%;
+        // height: calc(20vw + 1rem);
+        border-radius: 0rem 0.6rem 0.6rem 0rem;
+        // border-radius: 0rem 2rem 2rem 0rem;
+        // overflow: hidden;
+        img {
+          // width: 20rem;
+          // height: 222rem;
+          height: calc(10vw + 1rem);
+          // border-radius: 0rem 5rem 5rem 0rem;
+          width: calc(10vw + 1rem);
+        }
       }
     }
   }
 }
+.principal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  // margin: 5rem 0rem 5rem 0rem;
+  padding: 10rem 10rem 10rem 10rem;
+  background-color: rgb(249, 249, 249);
+  background: {
+    // image: url("../../../assets/images/fondos/tecnologia.jpg");
+    size: cover;
+attachment: fixed;
+position: center;
+repeat: no-repeat;
+size: cover;
+  }
+  .textoPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 5rem;
 
-// .salidaDrecha {
-//   display: flex;
-//   flex-direction: row;
-//   align-items: center;
-//   justify-content: flex-end;
-//   background-color: rgb(97, 45, 39);
-//   // padding: 20rem;
-//   margin: 5rem 0rem 5rem 0rem;
-//   .global {
-//       padding: 1rem;
-//     .conoceme {
-//       display: flex;
-//       flex-direction: row;
-//       align-items: center;
-//       justify-content: flex-end;
-//       background-color: $info;
-//       width: 90%;
-//       // height: 20rem;
-//       border-radius: 5rem 0rem 0rem 5rem;
-//       // margin: 5rem 0rem 5rem 0rem;
-//       .descripcion {
-//         //   margin: 0rem 0rem 0rem 3rem;
-//         p {
-//           padding: 3rem;
-//         }
-//       }
-//       .grafico {
-//         //   border-radius: 5rem 0rem 0rem 5rem;
-//         // overflow: hidden;
-//         // width: 20rem;
-//         // height: 15rem;
-
-//         img {
-//           width: 30rem;
-//           border-radius: 2rem 0rem 0rem 2rem;
-//         }
-//       }
-//     }
-//   }
-// }
-
-// .inicio {
-//   transition-duration: 3s;
-//   padding: 0rem 5rem 0rem 5rem;
-//   strong {
-//     //color: black;
-//     font-size: 2.4rem;
-//     -webkit-text-stroke: 0.1rem rgb(10, 9, 49);
-//     text-shadow: 0rem 0rem 0.3rem rgba(252, 252, 252, 0.479);
-//   }
-//   e {
-//     color: $azul;
-//     cursor: pointer;
-//   }
-//   a {
-//     color: $azul;
-//     text-decoration: none;
-//   }
-//   p {
-//     text-shadow: 0.1rem 0.1rem 0.1rem gray;
-//   }
-// }
+    .tituloPrincipal {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      .borde {
+          width: 9rem;
+        margin: 0.2rem 0rem 0.5rem 0rem;
+               border: 0.1rem solid #f82249;
+      }
+      h2 {
+        margin: 0rem;
+        cursor: pointer;
+      }
+         h2:hover + .borde {
+        transition: 1s;
+        width: 100%;
+      }
+         }
+         p{
+          // color: white;
+          font-size: 1.8rem;
+        }
+      }
+   .imagenPrincipal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: chocolate;
+    width: 50%;
+    img {
+      width: 40%;
+    }
+  }
+}

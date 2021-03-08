@@ -60,15 +60,15 @@
         }
     </script>
     <!-- Efectos -->
-    <link rel="stylesheet" href="/src/assets/efectos/efectos/animate.min.css" media="screen" />
-    <script src="/src/assets/efectos/efectos/wow.min.js"></script>
+    <link rel="stylesheet" href="/src/assets/efectos/animaciones/animate.min.css" media="screen" />
+    <script src="/src/assets/efectos/animaciones/wow.min.js"></script>
     <script>new WOW().init();</script>
     <!-- Enlazado a funcion cambio de  styles -->
     <link id="cssArchivo" href="" rel="stylesheet" media="screen" />
     <!-- para mover objetos por la pantalla -->
     <script type="text/javascript" src="/src/assets/funciones/dom-drag.js"></script>
     <script type="text/javascript">
-        Drag.init(document.getElementById("foto")); 
+        Drag.init(document.getElementById("foto"));
     </script>
     <!-- Para galeria nueva -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -151,7 +151,7 @@ $bg-color: #df0174;
                 <li data-target="#myslide" data-slide-to="2"></li>
                 <li data-target="#myslide" data-slide-to="3"></li>
             </ol>
-                       <!-- Wrapper for slides -->
+            <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
                     <img src="/src/assets/images/banners/header/haway.jpg" alt="Pic 1">
@@ -207,45 +207,23 @@ $bg-color: #df0174;
         </div>
     </div>
     <!--End Carousel-->
+    <section class="presentacion">
+        <div class="separador5"></div>
 
-    <div class="carousel-title">
-        <div>
-            <h1>Micro</h1>
-            <hr>
-            <h2>desarrollo web</h2>
+        <div class="titulo">
+            <div class="neonTitulo wow bounceIn" data-wow-duration="1s" data-wow-offset="100" >
+                <h1>Micro</h1>
+                <!-- <hr> -->
+                <div class="borde neonTitulo wow zoomIn" data-wow-duration="1.5s" data-wow-offset="100" ></div>
+
+                <h2>desarrollador web</h2>
+            </div>
         </div>
-    </div>
+        <div class="separador5"></div>
 
 
-    <section class="salidaIzquierda wow bounceInLeft" data-wow-duration="1s" data-wow-offset="100">
-        <div class="global">
-            <span class="descripcion">
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                    the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                    type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also
-                    the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-                    1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-                    desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-            </span>
-            <span class="grafico">
-                <!-- <img id="" class="dni" src="src/assets/images/logoEmpresa/electricidad.jpg" alt="Micro Micrelio" /> -->
-            </span>
-        </div>
-    </section>
-
-    <!-- <section class="salidaDrecha">
-        <div class="global">
-            <div class="conoceme">
-                <span class="grafico">
-                    <img id="" class="dni" src="src/assets/images/logoEmpresa/electricidad.jpg" alt="Micro Micrelio" />
-                </span>
+        <div class="salidaIzquierda wow fadeInLeft" data-wow-duration="s" data-wow-offset="100">
+            <div class="global">
                 <span class="descripcion">
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -261,22 +239,105 @@ $bg-color: #df0174;
                         publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                     </p>
                 </span>
+                <span class="grafico">
+                    <!-- <img id="" class="dni" src="src/assets/images/logoEmpresa/electricidad.jpg" alt="Micro Micrelio" /> -->
+                </span>
             </div>
         </div>
-    </section> -->
+        <div class="separador5"></div>
+        <div class="separador5"></div>
 
+    </section>
 
+    <section class="principal">
+        <div class="textoPrincipal wow fadeIn" data-wow-duration="2s" data-wow-offset="100">
+            <div class="tituloPrincipal">
+                <h2>Micro</h2>
+                <div class="borde"></div>
 
-
-
-
-
-
-
-
-
-
-
+            </div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                type
+                and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                the
+                leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                1960s
+            </p>
+        </div>
+        <div class="imagenPrincipal wow fadeInRight " data-wow-duration="1s" data-wow-offset="10">
+            <img id="" class="dni" src="src/assets/images/logoEmpresa/electricidad.jpg" alt="Micro Micrelio" />
+        </div>
+    </section>
+    <section class="our-skills">
+        <div class="container">
+            <h2 class="h1 text-center">Conocimientos de desarrollo</h2>
+            <div class="row">
+                <!--Start Progress Skills-->
+                <div class="col-md-5">
+                    <div class="skills-progress">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active"
+                                role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                style="width:90%">
+                                HTML / CSS
+                            </div>
+                        </div>
+                        <!--progress-bar-striped,   -->
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info progress-bar-striped active"
+                                role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                style="width:90%">
+                                SASS
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar"
+                                aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                Javascript / JQuery
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning progress-bar-striped active"
+                                role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                                style="width:50%">
+                                PHP / MySQL
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:95%">
+                                Wordpress  / DIVI
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar"
+                                aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                Angular
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Progress Skills-->
+                <!--Start Team Info-->
+                <div class="col-md-6 col-md-offset-1">
+                    <div class="skills-info" >
+                        <h3>About The Team</h3>
+                        <p class="lead">Transition animations not supported in Internet Explorer 8 & 9 Bootstrap
+                            exclusively uses CSS3 for its animations, but Internet Explorer 8 & 9 don't support the
+                            necessary CSS properties. Thus, there are no slide transition animations when using these
+                            browsers. We have intentionally decided not to include jQuery-based fallbacks for the
+                            transitions.</p>
+                        <button type="button" class="btn btn-primary">Talk With A Professional</button>
+                        <div>
+                        </div>
+                        <!--End Team Info-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="inicio">
         <div class="separador5">
@@ -334,7 +395,7 @@ $bg-color: #df0174;
         </div>
     </section>
 
-
+    <!-- <mi-galeriaPruebas></mi-galeriaPruebas> -->
 
     <mi-footer2></mi-footer2>
 

@@ -1,4 +1,4 @@
-@import "../mixins/mixins.scss";
+// @import "../mixins/mixins.scss";
 @import "../variables/variables.scss";
 @import "../funciones/funciones.scss";
 
@@ -146,10 +146,7 @@
     transform: rotate(360deg);
   }
 }
-.head {
-  @include head;
-  border-bottom: 0.05rem solid $corporativo;
-}
+
 * {
   margin: 0;
   padding: 0;
@@ -184,20 +181,25 @@ body {
     color: $gris;
   }
   .separador5 {
-    @include separador5;
-  }
+    width: 100%;
+    height: 5rem;
+    }
   .separador4 {
-    @include separador4;
-  }
+    width: 100%;
+    height: 4rem;
+    }
   .separador3 {
-    @include separador3;
-  }
+    width: 100%;
+    height: 3rem;
+    }
   .separador2 {
-    @include separador2;
-  }
+    width: 100%;
+    height: 2rem;
+    }
   .separador1 {
-    @include separador1;
-  }
+    width: 100%;
+    height: 1rem;
+    }
   font: {
     // family: Arial;
     // family: Asap;
@@ -236,7 +238,7 @@ body {
   }
   p {
     font-size: 1.3rem;
-    color: blanchedalmond;
+    color: $negro;
   }
   ul {
     margin: 2rem 0rem 2rem 2rem;

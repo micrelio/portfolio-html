@@ -2,8 +2,6 @@
 /*Carousel*/
 .containerCarousel {
   text-shadow: -0.1rem -0.1rem rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0.8rem 0.8rem 0.4rem rgba(8, 8, 8, 0.4), 0.3rem 0.3rem 0.3rem rgba(2, 0, 0, 0.4);
-          box-shadow: 0.8rem 0.8rem 0.4rem rgba(8, 8, 8, 0.4), 0.3rem 0.3rem 0.3rem rgba(2, 0, 0, 0.4);
   /**********End Overriding Bootstrap********/
   /*Start Section About*/
   /*End Section About*/
@@ -137,7 +135,12 @@
 }
 
 /*End Section carousel*/
-.carousel-title {
+.presentacion {
+  -webkit-box-shadow: inset 0rem 1rem 0.5rem rgba(0, 0, 0, 0.39), inset 0rem -1rem 0.5rem rgba(0, 0, 0, 0.39);
+          box-shadow: inset 0rem 1rem 0.5rem rgba(0, 0, 0, 0.39), inset 0rem -1rem 0.5rem rgba(0, 0, 0, 0.39);
+}
+
+.presentacion .titulo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,45 +159,53 @@
   height: 100%;
 }
 
-.carousel-title h1 {
+.presentacion .titulo .neonTitulo h1 {
   font-weight: lighter;
   padding: 0rem;
   margin: 0rem 0rem -3.5rem 0rem;
   color: #f82249;
   text-align: center;
-  -webkit-text-stroke: 0rem;
-  text-shadow: none;
+  -webkit-text-stroke: 0.06rem black;
+  text-shadow: 0.4rem 0.4rem 0.3rem black;
   font-family: "PiratesBlackbeard";
-  font-size: 8rem;
+  font-size: 12rem;
 }
 
-.carousel-title h1:hover {
+.presentacion .titulo .neonTitulo h1:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-text-stroke: 0.05rem black;
-  color: #ffe402;
-  text-shadow: 0px 10px 50px #ffe402;
+  color: #ff1177;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1177, 0 0 70px #ff1177, 0 0 80px #ff1177, 0 0 100px #ff1177, 0 0 150px #ff1177;
 }
 
-.carousel-title h2 {
+.presentacion .titulo .neonTitulo h2 {
   font-weight: lighter;
   padding: 0rem;
   margin: -2.5rem 0rem 0rem 0rem;
   color: #f82249;
   text-align: center;
-  -webkit-text-stroke: 0rem;
-  text-shadow: none;
+  -webkit-text-stroke: 0.06rem black;
+  text-shadow: 0.3rem 0.3rem 0.3rem black;
   font-family: "Vampiro One";
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
-.carousel-title hr {
+.presentacion .titulo .neonTitulo .borde {
   width: 100%;
+  height: 0.2rem;
   margin: 2rem 0rem 2.5rem 0rem;
-  border: 1px solid #f82249;
+  -webkit-text-stroke: 0.6rem black;
+  border-bottom: 3px solid #f82249;
+  text-shadow: -0.1rem -0.1rem rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0rem 1rem 0.9rem rgba(8, 8, 8, 0.4);
+          box-shadow: 0rem 1rem 0.9rem rgba(8, 8, 8, 0.4);
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.salidaIzquierda {
+.presentacion .salidaIzquierda {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,7 +219,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin: 0rem 0rem 0rem -3rem;
+  margin: 0rem 0rem 0rem -8rem;
   margin-right: 50rem;
   width: 100%;
   height: calc(1vw + 20rem);
@@ -217,15 +228,10 @@
   width: 100%;
   height: calc(11vw + 1rem);
   padding: 1rem;
-  border: 0.1rem solid #00cc00;
-  /* Color del borde, debe ser más claro que fondo */
-  background: #00d800;
-  /* Fondo */
-  -webkit-box-shadow: inset 0.2rem 0.2rem 0.4rem rgba(120, 120, 120, 0.4), inset -0.3rem -0.3rem 0.1rem rgba(255, 255, 255, 0.4);
-          box-shadow: inset 0.2rem 0.2rem 0.4rem rgba(120, 120, 120, 0.4), inset -0.3rem -0.3rem 0.1rem rgba(255, 255, 255, 0.4);
-  background: #2323ff;
+  background-color: green;
+  background: #ff8d23;
   /* Fondo, debe ser más claro que el borde */
-  border: 1rem inset #4444ff;
+  border: 1rem inset #ff6923;
   /* Grosor del Borde */
   /* Color del Borde */
   border-left: 0rem;
@@ -239,7 +245,7 @@
           box-shadow: 0.8rem 0.8rem 0.4rem rgba(8, 8, 8, 0.4), 0.3rem 0.3rem 0.3rem rgba(2, 0, 0, 0.4);
 }
 
-.salidaIzquierda .global {
+.presentacion .salidaIzquierda .global {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -255,12 +261,12 @@
           justify-content: space-between;
 }
 
-.salidaIzquierda .global .descripcion {
+.presentacion .salidaIzquierda .global .descripcion {
   overflow: hidden;
-  padding: 0rem 2rem 0rem 5rem;
+  padding: 0rem 2rem 0rem 10rem;
 }
 
-.salidaIzquierda .global .grafico {
+.presentacion .salidaIzquierda .global .grafico {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -274,12 +280,111 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background-color: seagreen;
   border-radius: 0rem 0.6rem 0.6rem 0rem;
 }
 
-.salidaIzquierda .global .grafico img {
+.presentacion .salidaIzquierda .global .grafico img {
   height: calc(10vw + 1rem);
   width: calc(10vw + 1rem);
+}
+
+.principal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10rem 10rem 10rem 10rem;
+  background-color: #f9f9f9;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.principal .textoPrincipal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  padding: 5rem;
+}
+
+.principal .textoPrincipal .tituloPrincipal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+}
+
+.principal .textoPrincipal .tituloPrincipal .borde {
+  width: 9rem;
+  margin: 0.2rem 0rem 0.5rem 0rem;
+  border: 0.1rem solid #f82249;
+}
+
+.principal .textoPrincipal .tituloPrincipal h2 {
+  margin: 0rem;
+  cursor: pointer;
+}
+
+.principal .textoPrincipal .tituloPrincipal h2:hover + .borde {
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: 100%;
+}
+
+.principal .textoPrincipal p {
+  font-size: 1.8rem;
+}
+
+.principal .imagenPrincipal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: chocolate;
+  width: 50%;
+}
+
+.principal .imagenPrincipal img {
+  width: 40%;
 }
 /*# sourceMappingURL=inicio.css.map */
