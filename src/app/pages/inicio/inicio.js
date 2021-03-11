@@ -19,11 +19,4 @@ $(document).ready(function () {
 });
 
 //---BARRAS-------
-function animacionBarras() { 
-
-  
-}
-
-
-
-
+function animacionBarras() {}
