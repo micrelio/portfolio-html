@@ -87,7 +87,7 @@ class miFooter2 extends HTMLElement {
                                 elit,Lorem ipsum dolor sit amet.</p>
                         </div>
                         <div class="socialMedia">
-                            <h4>Sigueme</h4>
+                            <h4>Sígueme</h4>
                             <div class="redes">
                                 <div class="iconoSocial  github-bg"><a target="blank" href="https://github.com/micrelio"><i class="fab fa-github"></i></a></div>
                                 <div class="iconoSocial"><a class="linkedin-bg" target="blank" href="https://www.linkedin.com/in/jos%C3%A9-antonio-l%C3%B3pez-baena-65833016a/"><i class="fab fa-linkedin"></i></a></div>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for http://microdeveloper.es/</title>
+  <link>http://microdeveloper.es/</link>
+
+<item>
+     <link>https://microdeveloper.es/</link>
+     <title>Micro | Desarrollador web</title>
+     <description>Portfolio y curriculum Jose Antonio Lopez Baena, Micro, Micrelio. En ella muestro mi pericia como programador y control de servidores</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://microdeveloper.es/src/app/pages/biografia/biografia.html</link>
+     <title>Micro | Desarrollador web</title>
+     <description>Portfolio y curriculum Jose Antonio Lopez Baena, Micro, Micrelio. En ella muestro mi pericia como programador y control de servidores</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://microdeveloper.es/src/app/pages/webs/webs.html</link>
+     <title>Micro | Desarrollador web</title>
+     <description>Portfolio y curriculum Jose Antonio Lopez Baena, Micro, Micrelio. En ella muestro mi pericia como programador y control de servidores</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://microdeveloper.es/src/app/pages/galeria/galeria.html</link>
+     <title>Micro | Desarrollador web</title>
+     <description>Portfolio y curriculum Jose Antonio Lopez Baena, Micro, Micrelio. En ella muestro mi pericia como programador y control de servidores</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://microdeveloper.es/src/app/pages/curriculum/curriculum.html</link>
+     <title>Micro | Desarrollador web</title>
+     <description>Portfolio y curriculum Jose Antonio Lopez Baena, Micro, Micrelio. En ella muestro mi pericia como programador y control de servidores</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://microdeveloper.es/src/app/pages/contacto/contacto.php</link>
+     <title>Micro | Desarrollador web</title>
+     <description>Portfolio y curriculum Jose Antonio Lopez Baena, Micro, Micrelio. En ella muestro mi pericia como programador y control de servidores</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  

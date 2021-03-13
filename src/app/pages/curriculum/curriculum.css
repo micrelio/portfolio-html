@@ -1,4 +1,8 @@
 @charset "UTF-8";
+section {
+  overflow: hidden;
+}
+
 .descripcion {
   display: -webkit-box;
   display: -ms-flexbox;
