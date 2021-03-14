@@ -150,6 +150,7 @@ $dark: #343a40;
 /*End Section carousel*/
 .titular {
   overflow: hidden;
+  background-color: rgb(249, 249, 249);
 
   // background-color: green;
   box-shadow: inset 0rem 1rem 0.5rem rgba(0, 0, 0, 0.39),
@@ -327,8 +328,7 @@ $dark: #343a40;
   align-items: center;
   justify-content: space-around;
   padding: 10rem 10rem 10rem 10rem;
-  background-color: rgb(249, 249, 249);
-
+  // background-color: rgb(249, 249, 249);
   background: {
     // image: url("../../../assets/images/fondos/tecnologia.jpg");
     size: cover;
@@ -382,31 +382,76 @@ $dark: #343a40;
   }
 }
 
-.muestrario{
+.muestrario {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  background-color: black;
-  .filaMuestrario{
-width: 33.3333%;
-overflow: hidden;
-img{
-  width: 100%;
-}
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // width: 100%;
+  // background-color: black;
+  // .titulo{
+  // background-color: black;
+  .borde {
+    width: 6rem;
+    margin: 0.2rem 0rem 0.5rem 0rem;
+    border: 0.2rem solid #f82249;
+  }
+  h2:hover + .borde {
+    width: 45rem;
+    margin: 0.2rem 0rem 0.5rem 0rem;
+    border: 0.2rem solid #f82249;
+    transition-duration: 2s;
+  }
+  // }
+  .composicion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // width: 100%;
+
+    .filaMuestrario {
+      width: 33.3333%;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+      p {
+        color: black;
+        padding: 5rem;
+      }
+    }
   }
 }
-
 .conocimientos {
+ 
+  background-color: rgb(249, 249, 249);
   // box-shadow: -0.1rem -0.1rem rgba(0, 0, 0, 0.2);
   box-shadow: inset 0rem 1rem 0.5rem rgba(0, 0, 0, 0.39),
     inset 0rem -1rem 0.5rem rgba(0, 0, 0, 0.39);
   // box-shadow:
   //   inset 0rem -1rem 0.5rem rgba(0, 0, 0, 0.39);
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  .borde {
+    width: 6rem;
+    margin: 0.2rem 0rem 0.5rem 0rem;
+    border: 0.2rem solid #f82249;
+  }
+  h2:hover + .borde {
+    width: 45rem;
+    margin: 0.2rem 0rem 0.5rem 0rem;
+    border: 0.2rem solid #f82249;
+    transition-duration: 2s;
+  }
+  .contenido{
+    // background-color: blue;
   p {
     //   padding: 3rem;
-color: black;        
-}
+    color: black;
+  }
   .lenguaje {
     width: 100%;
     position: absolute;
@@ -415,6 +460,7 @@ color: black;
       // color: black;
     }
   }
+}
 
   .progreso {
     height: 20px;
@@ -436,6 +482,7 @@ color: black;
     background-color: #f0ad4e;
     height: 20px;
   }
+}
   @keyframes barraProgreso50 {
     0% {
       width: 0%;
