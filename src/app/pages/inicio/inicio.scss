@@ -366,6 +366,7 @@ $dark: #343a40;
     }
     p {
       font-size: 1.8rem;
+      color: black;
     }
   }
   .imagenPrincipal {
@@ -381,17 +382,37 @@ $dark: #343a40;
   }
 }
 
+.muestrario{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: black;
+  .filaMuestrario{
+width: 33.3333%;
+overflow: hidden;
+img{
+  width: 100%;
+}
+  }
+}
+
 .conocimientos {
   // box-shadow: -0.1rem -0.1rem rgba(0, 0, 0, 0.2);
   box-shadow: inset 0rem 1rem 0.5rem rgba(0, 0, 0, 0.39),
     inset 0rem -1rem 0.5rem rgba(0, 0, 0, 0.39);
   // box-shadow:
   //   inset 0rem -1rem 0.5rem rgba(0, 0, 0, 0.39);
+  p {
+    //   padding: 3rem;
+color: black;        
+}
   .lenguaje {
     width: 100%;
     position: absolute;
     p {
       font-weight: bold;
+      // color: black;
     }
   }
 
