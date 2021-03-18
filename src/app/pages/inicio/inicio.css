@@ -46,6 +46,18 @@
   }
 }
 
+.chevron-left::before {
+  font-family: "FontAwesome";
+  content: "\f053";
+  color: wheat;
+}
+
+.chevron-right::before {
+  font-family: "FontAwesome";
+  content: "\f054";
+  color: wheat;
+}
+
 /*Carousel*/
 .containerCarousel {
   text-shadow: -0.1rem -0.1rem rgba(0, 0, 0, 0.2);
@@ -750,6 +762,9 @@
           flex-direction: column;
   width: 100%;
   padding: 2.5rem;
+  background-color: #f9f9f9;
+  -webkit-box-shadow: inset 0rem 1rem 0.5rem rgba(0, 0, 0, 0.39), inset 0rem -1rem 0.5rem rgba(0, 0, 0, 0.39);
+          box-shadow: inset 0rem 1rem 0.5rem rgba(0, 0, 0, 0.39), inset 0rem -1rem 0.5rem rgba(0, 0, 0, 0.39);
 }
 
 .sobreMi p {

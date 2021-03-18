@@ -103,7 +103,31 @@ $dark: #343a40;
 // $breakpoint-md: 768px;
 // $breakpoint-lg: 990.2rem;
 // $breakpoint-xl: 1200px;
+// .errr{
+//   font-family: "FontAwesome";
+//   content: "\f053";
+// }
 
+.chevron-left::before {
+  font-family: "FontAwesome";
+  content: "\f053"; 
+
+  color: wheat;
+  // margin-left: -2rem;
+  // content: "\f057";
+  // content: "\f01a";
+  // margin-right: 8px;
+}
+.chevron-right::before {
+  font-family: "FontAwesome";
+  content: "\f054";
+
+  color: wheat;
+  // margin-left: -2rem;
+  // content: "\f057";
+  // content: "\f01a";
+  // margin-right: 8px;
+}
 /*Carousel*/
 .containerCarousel {
   text-shadow: -0.1rem -0.1rem rgba(0, 0, 0, 0.2);
@@ -176,6 +200,7 @@ $dark: #343a40;
     line-height: 2em;
   }
   .features .feat span.glyphicon {
+    
     font-size: 20px;
     margin-bottom: 10px;
     color: #666;
@@ -773,6 +798,10 @@ $dark: #343a40;
   
   width: 100%;
   padding:2.5rem;
+  background-color: rgb(249, 249, 249);
+  // box-shadow: -0.1rem -0.1rem rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0rem 1rem 0.5rem rgba(0, 0, 0, 0.39),
+    inset 0rem -1rem 0.5rem rgba(0, 0, 0, 0.39);
   p{
     color:black;
   }
