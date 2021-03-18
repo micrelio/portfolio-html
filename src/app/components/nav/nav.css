@@ -4,6 +4,30 @@
   src: url(../../../assets/fuentes/letrasEfectos/LondrinaOutline-Regular.ttf) format("truetype");
 }
 
+@-webkit-keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* -----------------------------------------
          social media menu
 ------------------------------------------ */
@@ -1259,7 +1283,6 @@
     transform-style: preserve-3d;
   }
   .stick .movil .desplegable .brushMode .selecEstilosDesplegar {
-    margin: 0;
     -webkit-animation-name: parpadeo;
             animation-name: parpadeo;
     -webkit-animation-duration: 2s;

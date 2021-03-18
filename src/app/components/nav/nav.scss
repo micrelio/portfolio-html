@@ -26,11 +26,22 @@
   //border: none;
   //background-color: transparent;
   //font-size: 4rem;
-  margin: 0;
+  // margin: 0;
   animation-name: parpadeo;
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+}
+@keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* -----------------------------------------
