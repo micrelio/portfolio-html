@@ -299,12 +299,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 10rem 10rem 10rem 10rem;
+  padding: 2.5rem 2.5rem 2.5rem 2.5rem;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -326,8 +328,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 80%;
-  padding: 5rem;
+  width: 60%;
+  margin: 2.5rem;
+  min-width: 30rem;
 }
 
 .principal .textoPrincipal .tituloPrincipal {
@@ -345,6 +348,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 50%;
+  margin-bottom: 2.5rem;
 }
 
 .principal .textoPrincipal .tituloPrincipal .borde {
@@ -385,10 +389,14 @@
           justify-content: center;
   background-color: chocolate;
   width: 50%;
+  margin: 2.5rem;
+  min-width: 30rem;
+  width: 20%;
 }
 
 .principal .imagenPrincipal img {
-  width: 40%;
+  width: 100%;
+  height: auto;
 }
 
 .muestrario {
@@ -405,17 +413,16 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 2.5rem 2.5rem 2.5rem 2.5rem;
 }
 
 .muestrario .borde {
   width: 6rem;
-  margin: 0.2rem 0rem 0.5rem 0rem;
   border: 0.2rem solid #f82249;
 }
 
 .muestrario h2:hover + .borde {
   width: 45rem;
-  margin: 0.2rem 0rem 0.5rem 0rem;
   border: 0.2rem solid #f82249;
   -webkit-transition-duration: 2s;
           transition-duration: 2s;

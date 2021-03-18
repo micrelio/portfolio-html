@@ -325,10 +325,11 @@ $dark: #343a40;
   overflow: hidden;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  padding: 10rem 10rem 10rem 10rem;
-  // background-color: rgb(249, 249, 249);
+  padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+  // background-color: green;
   background: {
     // image: url("../../../assets/images/fondos/tecnologia.jpg");
     size: cover;
@@ -342,14 +343,19 @@ $dark: #343a40;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
-    padding: 5rem;
+    width: 60%;
+    margin: 2.5rem;
+    min-width: 30rem;
+    // background-color: aqua;
+    // padding: 5rem;
     .tituloPrincipal {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       width: 50%;
+      margin-bottom: 2.5rem;
+      // background-color: blue;
       .borde {
         width: 9rem;
         margin: 0.2rem 0rem 0.5rem 0rem;
@@ -376,10 +382,23 @@ $dark: #343a40;
     justify-content: center;
     background-color: chocolate;
     width: 50%;
-    img {
-      width: 40%;
-    }
+    margin: 2.5rem;
+    min-width: 30rem;
+    // background-color: blue;
+    width: 20%;
+    img{
+      width: 100%;
+      height: auto;
+    }   
   }
+//   @supports(object-fit: cover){
+//     .imagenPrincipal{ img{
+//       height: 100%;
+//       object-fit: cover;
+//       object-position: center center;
+//     }
+// }
+//   }
 }
 
 .muestrario {
@@ -391,14 +410,16 @@ $dark: #343a40;
   // background-color: black;
   // .titulo{
   // background-color: black;
+  padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+
   .borde {
     width: 6rem;
-    margin: 0.2rem 0rem 0.5rem 0rem;
+    // margin: 0.2rem 0rem 0.5rem 0rem;
     border: 0.2rem solid #f82249;
   }
   h2:hover + .borde {
     width: 45rem;
-    margin: 0.2rem 0rem 0.5rem 0rem;
+    // margin: 0.2rem 0rem 0.5rem 0rem;
     border: 0.2rem solid #f82249;
     transition-duration: 2s;
   }
