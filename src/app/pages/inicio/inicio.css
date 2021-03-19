@@ -275,6 +275,10 @@
   color: #e41b17;
 }
 
+.containerCarousel p {
+  color: white;
+}
+
 .containerCarousel .features {
   overflow: hidden;
   background-color: #eee;
@@ -577,7 +581,6 @@
 
 .principal .textoPrincipal p {
   font-size: 1.8rem;
-  color: black;
 }
 
 .principal .imagenPrincipal {
@@ -671,10 +674,6 @@
   width: 100%;
 }
 
-.muestrario .composicion .filaMuestrario p {
-  color: black;
-}
-
 .conocimientos {
   background-color: #f9f9f9;
   -webkit-box-shadow: inset 0rem 1rem 0.5rem rgba(0, 0, 0, 0.39), inset 0rem -1rem 0.5rem rgba(0, 0, 0, 0.39);
@@ -753,10 +752,6 @@
   width: 40%;
   min-width: 20rem;
   margin: 2.5rem;
-}
-
-.conocimientos .container .contenido .barras p {
-  color: black;
 }
 
 .conocimientos .container .contenido .barras .progreso {
@@ -887,10 +882,6 @@
   margin: 2.5rem;
 }
 
-.conocimientos .container .descripcion p {
-  color: black;
-}
-
 @media only screen and (max-width: 700px) {
   .conocimientos .container .contenido .barras {
     width: 90%;
@@ -941,10 +932,6 @@
   border: 0.2rem solid #f82249;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
-}
-
-.sobreMi p {
-  color: black;
 }
 
 .sobreMi .imagenMi {

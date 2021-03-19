@@ -257,6 +257,9 @@ $dark: #343a40;
   .about h2 span {
     color: #e41b17;
   }
+   p {
+    color:white;
+  }
   /*End Section About*/
   /*Start Section Features*/
   .features {
@@ -549,7 +552,6 @@ $dark: #343a40;
     }
     p {
       font-size: 1.8rem;
-      color: black;
     }
   }
   .imagenPrincipal {
@@ -640,7 +642,6 @@ $dark: #343a40;
         width: 100%;
       }
       p {
-        color: black;
         // padding: 5rem;
       }
     }
@@ -699,7 +700,6 @@ $dark: #343a40;
         margin: 2.5rem;
         p {
           //   padding: 3rem;
-          color: black;
         }
         .progreso {
           // display: flex;
@@ -809,7 +809,6 @@ $dark: #343a40;
       width: 40%;
       margin: 2.5rem;
       p {
-        color: black;
       }
     }
   }
@@ -886,7 +885,6 @@ $dark: #343a40;
     transition-duration: 1s;
   }
   p {
-    color: black;
   }
   .imagenMi {
     display: flex;
