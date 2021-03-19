@@ -28,9 +28,85 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+@mixin shake {
+  // transition: all 0.4s ease-in-out;
+  // -webkit-transform: rotate(360deg);
+  // transform: rotate(360deg);
+  //border: none;
+  // background-color: transparent;
+  //font-size: 4rem;
+  // margin: 0;
+  // animation-name: loco;
+  animation-name: shake;
+  // animation-duration: 2s;
+  // animation-timing-function: linear;
+  // animation-iteration-count: infinite;
+
+  animation-duration: 1s;
+  // animation-timing-function: ease-in;
+  // animation-delay: 0.4s;
+  animation-direction: linear;
+  animation-iteration-count: infinite;
+  // animation-fill-mode: infinite;
+  // animation-play-state: running;
+  // animation-fill-mode: forwards;
+
+}
+@keyframes loco {
+  0% {
+    transform: rotate(0deg); 
+   }
+  25%{
+    transform: rotate(-90deg);
+  }
+  50%{
+    transform: rotate(90deg);
+
+  }
+  75%{
+    transform: rotate(0deg);
+  }
+ 
+  // 80%{
+  //   transform: rotate(0deg);
+
+  // }
+  // 85%{
+  //   transform: rotate(0deg);
+
+  // }
+  // 90%{
+  //   transform: rotate(0deg);
+
+  // }
+  // 95%{
+  //   transform: rotate(0deg);
+
+  // }
+  100% {
+    transform: scale(1.3);
+    overflow: hidden;
+    animation-name: loco;
+  }
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
 
 @mixin viturbo {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
   //border: none;
@@ -40,11 +116,11 @@
   animation-name: viturbo;
   // animation-duration: 2s;
   // animation-timing-function: linear;
-  // animation-iteration-count: infinite;  
+  // animation-iteration-count: infinite;
 
   animation-duration: 0.3s;
   // animation-timing-function: ease-in;
-  animation-delay: 0.5s;
+  animation-delay: 0.4s;
   animation-direction: linear;
   // animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -53,17 +129,13 @@
 @keyframes viturbo {
   0% {
     transform: scale(100%);
+  }
 
-  } 
- 
   100% {
     transform: scale(1.3);
     overflow: hidden;
   }
-
- 
 }
-
 
 @keyframes parpadeo {
   0% {
@@ -110,7 +182,7 @@ $dark: #343a40;
 
 .chevron-left::before {
   font-family: "FontAwesome";
-  content: "\f053"; 
+  content: "\f053";
 
   color: wheat;
   // margin-left: -2rem;
@@ -200,7 +272,6 @@ $dark: #343a40;
     line-height: 2em;
   }
   .features .feat span.glyphicon {
-    
     font-size: 20px;
     margin-bottom: 10px;
     color: #666;
@@ -277,22 +348,12 @@ $dark: #343a40;
         text-align: center;
         -webkit-text-stroke: 0.06rem rgb(0, 0, 0);
         text-shadow: 0.4rem 0.4rem 0.3rem black;
+        cursor: pointer;
 
         font: {
           family: "PiratesBlackbeard";
           size: 12rem;
         }
-      }
-      h1:hover {
-        transition: 0.5s;
-        -webkit-text-stroke: 0.05rem rgb(0, 0, 0);
-        // text-shadow: 0.3rem 0.3rem 0.3rem gray;
-
-        color: #ff1177;
-        // text-shadow: 0px 10px 50px rgb(255, 228, 2);
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
-          0 0 40px #ff1177, 0 0 70px #ff1177, 0 0 80px #ff1177,
-          0 0 100px #ff1177, 0 0 150px #ff1177;
       }
       h2 {
         font-weight: lighter;
@@ -303,6 +364,7 @@ $dark: #343a40;
         text-align: center;
         -webkit-text-stroke: 0.06rem rgb(0, 0, 0);
         text-shadow: 0.3rem 0.3rem 0.3rem black;
+        cursor: pointer;
 
         font: {
           // Londrina Outline, Monoton, PressStart,
@@ -310,14 +372,28 @@ $dark: #343a40;
           size: 5rem;
         }
       }
+     h1:hover,
+      h1:hover ~  h2
+      {
+        transition: 0.5s;
+        -webkit-text-stroke: 0.05rem rgb(0, 0, 0);
+        // text-shadow: 0.3rem 0.3rem 0.3rem gray;
+
+        color: #ff1177;
+        // text-shadow: 0px 10px 50px rgb(255, 228, 2);
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
+          0 0 40px #ff1177, 0 0 70px #ff1177, 0 0 80px #ff1177,
+          0 0 100px #ff1177, 0 0 150px #ff1177;
+      }
+     
+      
       .borde {
         width: 100%;
         height: 0.2rem;
         margin: 2rem 0rem 2.5rem 0rem;
-        -webkit-text-stroke: 0.6rem rgb(0, 0, 0);
         border-bottom: 3px solid #f82249;
-        text-shadow: -0.1rem -0.1rem rgba(0, 0, 0, 0.2);
-        box-shadow: 0rem 1rem 0.9rem rgba(8, 8, 8, 0.4);
+        -webkit-box-stroke: 0.06rem rgb(0, 0, 0);
+        box-shadow: 0.3rem 0.3rem 0.3rem black;
         width: 90%;
         margin-right: auto;
         margin-left: auto;
@@ -462,11 +538,11 @@ $dark: #343a40;
         margin: 0.2rem 0rem 0.5rem 0rem;
         border: 0.1rem solid #f82249;
       }
-      h2 {
+      h3 {
         margin: 0rem;
         cursor: pointer;
       }
-      h2:hover + .borde {
+      h3:hover + .borde {
         transition: 1s;
         width: 100%;
       }
@@ -541,8 +617,11 @@ $dark: #343a40;
     margin: 0.2rem 0rem 0.5rem 0rem;
     border: 0.2rem solid #f82249;
   }
+  h2 {
+    cursor: pointer;
+  }
   h2:hover + .borde {
-    width: 45rem;
+    width: 95%;
     margin: 0.2rem 0rem 0.5rem 0rem;
     border: 0.2rem solid #f82249;
     transition-duration: 2s;
@@ -555,7 +634,7 @@ $dark: #343a40;
     // width: 100%;
 
     .filaMuestrario {
-      width: 33.3333%;
+      width: 25%;
       overflow: hidden;
       img {
         width: 100%;
@@ -569,18 +648,6 @@ $dark: #343a40;
 }
 @media only screen and (max-width: 700px) {
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .conocimientos {
   background-color: rgb(249, 249, 249);
@@ -604,8 +671,11 @@ $dark: #343a40;
       margin: 0.2rem 0rem 0rem 0rem;
       border: 0.2rem solid #f82249;
     }
+    h2 {
+      cursor: pointer;
+    }
     h2:hover + .borde {
-      width: 45rem;
+      width: 100%;
       // margin: 0.2rem 0rem 0.5rem 0rem;
       border: 0.2rem solid #f82249;
       transition-duration: 2s;
@@ -754,13 +824,13 @@ $dark: #343a40;
       }
       .contenido {
         .barras {
-          width: 100%;
+          width: 90%;
           p {
           }
           .progreso {
             .lenguaje {
               position: absolute;
-              width: 90%;
+              width: 80%;
               p {
                 animation-duration: 4s;
               }
@@ -790,35 +860,53 @@ $dark: #343a40;
   }
 }
 
-
-
-.sobreMi{
-  display: flex; 
+.sobreMi {
+  display: flex;
   flex-direction: column;
-  
+  align-items: center;
+
   width: 100%;
-  padding:2.5rem;
+  padding: 2.5rem;
   background-color: rgb(249, 249, 249);
   // box-shadow: -0.1rem -0.1rem rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0rem 1rem 0.5rem rgba(0, 0, 0, 0.39),
-    inset 0rem -1rem 0.5rem rgba(0, 0, 0, 0.39);
-  p{
-    color:black;
+  box-shadow: inset 0rem 1rem 0.5rem rgba(0, 0, 0, 0.39),;
+    // inset 0rem -1rem 0.5rem rgba(0, 0, 0, 0.39);
+  .borde {
+    width: 6rem;
+    margin: 0.2rem 0rem 2.5rem 0rem;
+    border: 0.2rem solid #f82249;
   }
-  .imagenMi{
+  h2 {
+    cursor: pointer;
+  }
+  h2:hover + .borde {
+    width: 100%;
+    // margin: 0.2rem 0rem 0.5rem 0rem;
+    border: 0.2rem solid #f82249;
+    transition-duration: 1s;
+  }
+  p {
+    color: black;
+  }
+  .imagenMi {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     padding: 2.5rem;
-    img{
-    // display: block;
-    // margin: 2rem auto;
-    // margin-bottom: 2em;
-    width: 15rem;
-    height: 15rem;
-    border-radius: 50%;
+
+    img {
+      // display: block;
+      // margin: 2rem auto;
+      // margin-bottom: 2em;
+      width: 18rem;
+      height: 18rem;
+      border-radius: 50%;
+      cursor:pointer;
+    }
+    img:hover {
+         @include shake;
     }
   }
   .redes {
@@ -829,15 +917,14 @@ $dark: #343a40;
     justify-content: center;
     .iconoSocial {
       margin: 0.3rem;
-        border-radius: 50%;
+      border-radius: 50%;
       display: inline-block;
       display: block;
-       // display: flex;
-          // flex-direction: column;
-          // align-items: center;
-          // justify-content: center;
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
+      // justify-content: center;
       a {
-        
         width: 5rem;
         height: 5rem;
         color: white;
@@ -928,18 +1015,15 @@ $dark: #343a40;
     }
     .whatsapp-bg {
       background: #4dc247;
-    
-
     }
   }
-  .iconoSocial:hover{
+  .iconoSocial:hover {
     // @include rotacion;
     // @include voltear;
     // @include new;
     // @include estilos;
     @include viturbo;
     // transform: scale(1.3);
-
   }
 }
 //--------------------------------------------
