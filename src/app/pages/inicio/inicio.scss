@@ -41,7 +41,6 @@
   // animation-duration: 2s;
   // animation-timing-function: linear;
   // animation-iteration-count: infinite;
-
   animation-duration: 1s;
   // animation-timing-function: ease-in;
   // animation-delay: 0.4s;
@@ -50,23 +49,20 @@
   // animation-fill-mode: infinite;
   // animation-play-state: running;
   // animation-fill-mode: forwards;
-
 }
 @keyframes loco {
   0% {
-    transform: rotate(0deg); 
-   }
-  25%{
-    transform: rotate(-90deg);
-  }
-  50%{
-    transform: rotate(90deg);
-
-  }
-  75%{
     transform: rotate(0deg);
   }
- 
+  25% {
+    transform: rotate(-90deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
   // 80%{
   //   transform: rotate(0deg);
 
@@ -89,22 +85,41 @@
     animation-name: loco;
   }
 }
-
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
-
-
 @mixin viturbo {
   transition: all 0.4s ease-in-out;
   -webkit-transform: rotate(360deg);
@@ -117,7 +132,6 @@
   // animation-duration: 2s;
   // animation-timing-function: linear;
   // animation-iteration-count: infinite;
-
   animation-duration: 0.3s;
   // animation-timing-function: ease-in;
   animation-delay: 0.4s;
@@ -130,13 +144,11 @@
   0% {
     transform: scale(100%);
   }
-
   100% {
     transform: scale(1.3);
     overflow: hidden;
   }
 }
-
 @keyframes parpadeo {
   0% {
     opacity: 1;
@@ -148,7 +160,6 @@
     opacity: 1;
   }
 }
-
 $blue: #007bff;
 $indigo: #6610f2;
 $purple: #6f42c1;
@@ -179,11 +190,9 @@ $dark: #343a40;
 //   font-family: "FontAwesome";
 //   content: "\f053";
 // }
-
 .chevron-left::before {
   font-family: "FontAwesome";
   content: "\f053";
-
   color: wheat;
   // margin-left: -2rem;
   // content: "\f057";
@@ -193,7 +202,6 @@ $dark: #343a40;
 .chevron-right::before {
   font-family: "FontAwesome";
   content: "\f054";
-
   color: wheat;
   // margin-left: -2rem;
   // content: "\f057";
@@ -257,8 +265,8 @@ $dark: #343a40;
   .about h2 span {
     color: #e41b17;
   }
-   p {
-    color:white;
+  p {
+    color: white;
   }
   /*End Section About*/
   /*Start Section Features*/
@@ -317,7 +325,6 @@ $dark: #343a40;
     background: none;
     border: 0.2rem solid #e41b17;
   }
-
   .testimonials .carousel-indicators li img {
     max-width: 100%;
   }
@@ -326,11 +333,9 @@ $dark: #343a40;
 .titular {
   overflow: hidden;
   background-color: rgb(249, 249, 249);
-
   // background-color: green;
   box-shadow: inset 0rem 1rem 0.5rem rgba(0, 0, 0, 0.39),
     inset 0rem -1rem 0.5rem rgba(0, 0, 0, 0.39);
-
   .titulo {
     display: flex;
     flex-direction: column;
@@ -352,7 +357,6 @@ $dark: #343a40;
         -webkit-text-stroke: 0.06rem rgb(0, 0, 0);
         text-shadow: 0.4rem 0.4rem 0.3rem black;
         cursor: pointer;
-
         font: {
           family: "PiratesBlackbeard";
           size: 12rem;
@@ -368,32 +372,27 @@ $dark: #343a40;
         -webkit-text-stroke: 0.06rem rgb(0, 0, 0);
         text-shadow: 0.3rem 0.3rem 0.3rem black;
         cursor: pointer;
-
         font: {
           // Londrina Outline, Monoton, PressStart,
           family: "Vampiro One";
-          size: 5rem;
+          size: 4rem;
         }
       }
-     h1:hover,
-      h1:hover ~  h2
-      {
+      h1:hover,
+      h1:hover ~ h2 {
         transition: 0.5s;
         -webkit-text-stroke: 0.05rem rgb(0, 0, 0);
         // text-shadow: 0.3rem 0.3rem 0.3rem gray;
-
         color: #ff1177;
         // text-shadow: 0px 10px 50px rgb(255, 228, 2);
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
           0 0 40px #ff1177, 0 0 70px #ff1177, 0 0 80px #ff1177,
           0 0 100px #ff1177, 0 0 150px #ff1177;
       }
-     
-      
       .borde {
         width: 100%;
         height: 0.2rem;
-        margin: 2rem 0rem 2.5rem 0rem;
+        margin: -2rem 0rem 3.5rem 0rem;
         border-bottom: 3px solid #f82249;
         -webkit-box-stroke: 0.06rem rgb(0, 0, 0);
         box-shadow: 0.3rem 0.3rem 0.3rem black;
@@ -414,19 +413,16 @@ $dark: #343a40;
     width: 100%;
     height: calc(1vw + 20rem);
     // background-color: skyblue;
-
     overflow: hidden;
     border-radius: 0rem 5rem 5rem 0rem;
     width: 100%;
     height: calc(11vw + 1rem);
     padding: 1rem;
     background-color: green;
-
     //   border: 0.1rem solid #00cc00; /* Color del borde, debe ser más claro que fondo */
     //   background: #00d800; /* Fondo */
     // box-shadow: inset 0.2rem 0.2rem 0.4rem rgba(120, 120, 120, 0.4),
     //     inset -0.3rem -0.3rem 0.1rem rgba(255, 255, 255, 0.4);
-
     // transition-duration: 20s;
     background: #ff8d23; /* Fondo, debe ser más claro que el borde */
     border: 1rem inset #ff6923; /* Grosor del Borde */ /* Color del Borde */
@@ -437,16 +433,13 @@ $dark: #343a40;
     text-shadow: -0.1rem -0.1rem rgba(0, 0, 0, 0.2);
     box-shadow: 0.8rem 0.8rem 0.4rem rgba(8, 8, 8, 0.4),
       0.3rem 0.3rem 0.3rem rgba(2, 0, 0, 0.4);
-
     // box-shadow: 3px 4px 0.6rem rgb(4, 4, 5), 0 0 0 #000, 0.1rem 4px 0.6rem rgb(4, 4, 5);
-
     //     border: 0.1rem solid #00cc00; /* Color del borde, debe ser más oscuro que fondo */
     // background: #00f400; /* Fondo */
     // border-radius: 0.6rem;  /* Bordes redondos */
     // box-shadow: inset 0.3rem 0.3rem 0.3rem rgba(255,255,255,.7), inset -0.2rem -0.2rem 0.3rem rgba(0,0,0,.1), 0.2rem 0.2rem 10px rgba(0,0,0,.1);
     // text-shadow: 0.1rem 0.1rem 0.1rem rgba(255,255,255,.9);  /* Sombra del texto */
     // text-align: center;  /* Alineación del texto */
-
     .global {
       display: flex;
       flex-direction: row;
@@ -454,13 +447,11 @@ $dark: #343a40;
       justify-content: space-between;
       // padding: 1rem;
       //   background-color: $info;
-
       .descripcion {
         overflow: hidden;
         // width: 70%;
         // border-radius: 0rem 5rem 5rem 0rem;
         padding: 0rem 2rem 0rem 10rem;
-
         //   margin: 0rem 3rem 0rem 0rem;
         // width: 70%;
         // background-color: skyblue;
@@ -649,7 +640,6 @@ $dark: #343a40;
 }
 @media only screen and (max-width: 700px) {
 }
-
 .conocimientos {
   background-color: rgb(249, 249, 249);
   // box-shadow: -0.1rem -0.1rem rgba(0, 0, 0, 0.2);
@@ -813,7 +803,6 @@ $dark: #343a40;
     }
   }
 }
-
 @media only screen and (max-width: 700px) {
   .conocimientos {
     .container {
@@ -858,18 +847,16 @@ $dark: #343a40;
     }
   }
 }
-
 .sobreMi {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   width: 100%;
   padding: 2.5rem;
   background-color: rgb(249, 249, 249);
   // box-shadow: -0.1rem -0.1rem rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0rem 1rem 0.5rem rgba(0, 0, 0, 0.39),;
-    // inset 0rem -1rem 0.5rem rgba(0, 0, 0, 0.39);
+  box-shadow: inset 0rem 1rem 0.5rem rgba(0, 0, 0, 0.39);
+  // inset 0rem -1rem 0.5rem rgba(0, 0, 0, 0.39);
   .borde {
     width: 6rem;
     margin: 0.2rem 0rem 2.5rem 0rem;
@@ -893,7 +880,6 @@ $dark: #343a40;
     justify-content: center;
     width: 100%;
     padding: 2.5rem;
-
     img {
       // display: block;
       // margin: 2rem auto;
@@ -901,10 +887,10 @@ $dark: #343a40;
       width: 18rem;
       height: 18rem;
       border-radius: 50%;
-      cursor:pointer;
+      cursor: pointer;
     }
     img:hover {
-         @include shake;
+      @include shake;
     }
   }
   .redes {
@@ -1006,7 +992,6 @@ $dark: #343a40;
       a {
         i {
           // margin-bottom: 0.5rem;
-
           font-size: 4rem;
         }
       }
@@ -1026,7 +1011,6 @@ $dark: #343a40;
 }
 //--------------------------------------------
 //------------------------------
-
 @-webkit-keyframes progress-bar-stripes {
   from {
     background-position: 40px 0;
@@ -1107,7 +1091,6 @@ $dark: #343a40;
   -o-animation: progress-bar-stripes 2s linear infinite;
   animation: progress-bar-stripes 2s linear infinite;
 }
-
 //---@keyframes barras
 @keyframes barraProgreso50 {
   0% {
