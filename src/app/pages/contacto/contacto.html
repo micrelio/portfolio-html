@@ -12,7 +12,8 @@
     <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
     <meta name="twitter:site" content="@micrelio">
     <meta name="Title" content="Micro desrrollador" />
-    <meta name="Description" content="Portfolio y curriculum Jose Antonio Lopez Baena, Micro, Micrelio. En ella muestro mi pericia como programador y control de servidores" />
+    <meta name="Description"
+        content="Portfolio y curriculum Jose Antonio Lopez Baena, Micro, Micrelio. En ella muestro mi pericia como programador y control de servidores" />
     <meta name="Keywords" content="diseños, web, micro, micrelio, pagina, programador" />
     <meta name="Distribution" content="Global" />
     <meta name="googlebot" content="index, follow">
@@ -43,7 +44,6 @@
     include('./php/envio.php');
     include('./php/configuracion.php');
     ?>
-    <link rel="stylesheet" href="./styles/contacto.css">
     <link rel="stylesheet" href="/src/assets/fonts/font-awesome/font-awesome.min.css">
     <link rel="stylesheet" href="/src/assets/fonts/font-awesome/fontawesome-webfont.svg">
     <link rel="stylesheet" href="/src/assets/fonts/font-awesome/fontawesome-webfont.eot">
@@ -55,6 +55,8 @@
     <link href="/src/assets/boxicons/css/boxicons.min.css" rel="stylesheet">
     <!-- estilos -->
     <link rel="stylesheet" href="/src/assets/style/styles/style.css" media="screen" />
+    <link rel="stylesheet" href="./styles/contacto.css">
+    
     <link rel="stylesheet" href="/src/app/pages/webs/webs.css" media="screen" />
     <script type="text/javascript" src="/src/app/pages/webs/webs.js"></script>
     <!-- TRANSICIONES -->
@@ -94,6 +96,7 @@
 <script type="text/javascript">
     modoNoche();
 </script>
+
 <body id="body">
     <div id="preloader"></div>
     <div id="panelEstilos" class="panelEstilos"></div>
@@ -113,56 +116,60 @@
         </script>
     </div>
     <mi-button></mi-button>
-    <div class="separador5">
-        <div class="container">
-            <!-- partial:index.partial.html -->
-            <div class='form-overlay'></div>
-            <div class='icon fa fa-pencil' id='form-container'>
-                <!-- <span class='icon feo fa fa-close' id='form-close'></span> -->
-                <div id='form-content'>
-                    <div id='form-head'>
-                        <h2 class='pre'>CONTACTO</h2>
-                        <h1 class='pre'>Micro Developer</h1>
-                        <h2 class='post'>Gracias!</h2>
-                        <h1 class='post'>Le contestaré con mayor brevedad posible.</h1>
-                    </div>
-                    <form role="form" action="" method="post" id="formulario" name="formulario" class="">
-                        <input class="input name" id="nombre" placeholder="&#xf007;  Nombre" type="text" name="Nombre" />
-                        <!-- <input type="text"  name="direccion" id="direccion"/><br/>
+    <!-- partial:index.partial.html -->
+    <div class="container">
+        <div class="separador5"></div>
+
+        <div class='icon fa fa-pencil' id='form-container'>
+            <!-- <span class='icon feo fa fa-close' id='form-close'></span> -->
+            <div id='form-content'>
+                <div id='form-head'>
+                    <h2 class='pre'>CONTACTO</h2>
+                    <h1 class='pre'>Micro Developer</h1>
+                    <h2 class='post'>Gracias!</h2>
+                    <h1 class='post'>Le contestaré con mayor brevedad posible.</h1>
+                </div>
+                <form role="form" action="" method="post" id="formulario" name="formulario" class="">
+                    <input class="input name" id="nombre" placeholder="&#xf007;  Nombre" type="text" name="Nombre" />
+                    <!-- <input type="text"  name="direccion" id="direccion"/><br/>
                 <input type="text"  name="pais" id="pais"/><br/>
                 <input type="text"  name="web-site" id="web-site"/><br/> -->
-                        <input class="input email" placeholder="&#xf003;  Email" id="email" type="email" name="Email" />
-                        <input class="input phone fa fa-phone" placeholder="&#xf095;  Teléfono" id="telefono" type="tel" name="Telefono" />
-                        <textarea class="input message" placeholder="&#xf0e5;  Mensaje" rows="10" cols="40" maxlength="1000" id="comentario" name="comentario" onkeypress="calcular()" onkeyup="calcular()"></textarea>
-                        <p>Le quedan <span id="contador-char">1000</span> de 1000 caracteres.</p>
-                        <!--pueden cambiar el lenguaje con el parametro hl-->
-                        <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
-                        <!--El site key de su sitio-->
-                        <!-- <input type="checkbox" id="terms">
+                    <input class="input email" placeholder="&#xf003;  Email" id="email" type="email" name="Email" />
+                    <input class="input phone fa fa-phone" placeholder="&#xf095;  Teléfono" id="telefono" type="tel"
+                        name="Telefono" />
+                    <textarea class="input message" placeholder="&#xf0e5;  Mensaje" rows="10" cols="40" maxlength="1000"
+                        id="comentario" name="comentario" onkeypress="calcular()" onkeyup="calcular()"></textarea>
+                    <p>Le quedan <span id="contador-char">1000</span> de 1000 caracteres.</p>
+                    <!--pueden cambiar el lenguaje con el parametro hl-->
+                    <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
+                    <!--El site key de su sitio-->
+                    <!-- <input type="checkbox" id="terms">
                 <label for="terms">
                     <p>He leído y acepto <a href="">los terminos y condiciones.</a></p>
                 </label> -->
-                        <div class="inputRecaptcha  g-recaptcha" id="recaptcha" data-sitekey="<?php echo $publicKey; ?>"></div>
-                        </br>
-                        <button class="button btn-animate" type="button" name="enviar" id="enviar">
-                            <span class="submit"><i class="fa fa-paper-plane"></i></span>
-                            <span class="loading"><i class="fa fa-refresh"></i></span>
-                            <span class="check"><i class="fa fa-check"></i></span>
-                            <span class="bad"><i class="fa fa-close"></i></span>
-                        </button>
-                        <button class='borrar ' type="button" name="limpiar" id="limpiar"><span><i class="fa fa-eraser"></i></span></button>
-                    </form>
-                </div>
+                    <div class="inputRecaptcha  g-recaptcha" id="recaptcha" data-sitekey="<?php echo $publicKey; ?>">
+                    </div>
+                    </br>
+                    <button class="button btn-animate" type="button" name="enviar" id="enviar">
+                        <span class="submit"><i class="fa fa-paper-plane"></i></span>
+                        <span class="loading"><i class="fa fa-refresh"></i></span>
+                        <span class="check"><i class="fa fa-check"></i></span>
+                        <span class="bad"><i class="fa fa-close"></i></span>
+                    </button>
+                    <button class='borrar ' type="button" name="limpiar" id="limpiar"><span><i
+                                class="fa fa-eraser"></i></span></button>
+                </form>
             </div>
-            <div class="">
-                <?php
+        </div>
+        <div class="separador5"></div>
+    </div>
+    <div class="">
+        <?php
                 // if ($showMessage) {
                 //     echo !$error ? '<div class="bs-example-bg-classes"><p class="bg-success text-center">' . $message . '</p></div>' : '';
                 //     echo $error ? ' <div class="bs-example-bg-classes"><p class="bg-danger text-center">' . $message . '</p></div>' : '';
                 // }
                 ?>
-            </div>
-        </div>
     </div>
 
 

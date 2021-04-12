@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: "Roboto-Regular";
+  src: url("/src/assets/fonts/fuentes/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "FontAwesome";
   src: url("/src/assets/fonts/font-awesome/fontawesome-webfont.woff");
 }
@@ -174,12 +179,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   bottom: 0;
   margin: 0;
   border: 0;
