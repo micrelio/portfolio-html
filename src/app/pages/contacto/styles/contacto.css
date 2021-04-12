@@ -62,7 +62,6 @@ body {
 h1,
 h2 {
   color: #fff;
-  font-weight: 700;
   font-size: 15rem;
   margin: 0;
 }
@@ -118,7 +117,7 @@ p {
           box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.19), 0 0.6rem 0.6rem rgba(0, 0, 0, 0.17);
   border-radius: 0;
   width: 70%;
-  padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+  padding: 5rem 1.5rem 5rem 1.5rem;
   -webkit-transition: all 0.2s, max-width 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.1s, height 0.3s ease 0.25s;
   transition: all 0.2s, max-width 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.1s, height 0.3s ease 0.25s;
 }
@@ -229,7 +228,7 @@ p {
   display: block;
   height: 5rem;
   width: 100%;
-  margin: 1rem 0;
+  margin: 2rem 0;
   padding: 0 1rem;
   border-width: 0;
   -webkit-box-sizing: border-box;
@@ -444,8 +443,8 @@ input:-webkit-autofill {
           justify-content: center;
   float: left;
   width: 10rem;
-  margin: 0.1rem 0.1rem 0.1rem 0rem;
-  padding: 1.5rem 3.125rem;
+  margin: 3rem 1rem 1rem 0rem;
+  padding: 2rem 3rem;
   background-color: whitesmoke;
   color: #2c3e50;
   font-size: 3.5rem;
