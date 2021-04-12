@@ -362,11 +362,7 @@ $lg: new-breakpoint(min-width 1024px);
   -moz-box-shadow: 0rem 0.5rem 0rem 0rem rgba(0, 0, 0, 0.7);
   -webkit-box-shadow: 0rem 0.5rem 0rem 0rem rgba(0, 0, 0, 0.7);
   box-shadow: 0rem 0.5rem 0rem 0rem rgba(0, 0, 0, 0.7);
-  /*añadimos un efecto de transición para que el efecto sea progresivo*/
-  // transition: all 0.1s ease-in-out;
-  // -webkit-transition: all 0.1s ease-in-out;
-  // position: relative;
-  text-align: center;
+   text-align: center;
   vertical-align: middle;
   &:before {
     position: absolute;
@@ -403,7 +399,8 @@ $lg: new-breakpoint(min-width 1024px);
 }
 .button:active,
 .borrar:active {
-  // background-color: $color-4;
+  background-color: $color-1;
+  color: $color-4;
   /*Gracias a que el elemento está en posición relativa, podemos bajarlo 4 px sin alterar el HTML*/
   top: 0.4rem;
   /*bajamos el tamaño de la sombra para conseguir el efecto de profundidad*/

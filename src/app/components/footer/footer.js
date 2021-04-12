@@ -7,99 +7,121 @@ class miFooter extends HTMLElement {
     <style>
       @import "/src/app/components/footer/footer.css";
     </style>
-<footer id="footer" class="footer" >
-  <div class="separator">
-  </div>
-  <div  class="footerContainer">
-    <div class="contacto">
-      <h3>Contactar</h3>
-      <span class="">
-        <input type="email" placeholder="Escriba su Correo">
-        <input type="submit" value=" Suscribirse">
-      </span>
-    </div>
-    <div class="direccion"> 
-      <h3>Dirección</h3>
-      <div class="datos">
-        <div>        
-          <p><a href="https://goo.gl/maps/9UUDsgCz7YnERqvD6" target="_blank"><i class="fa fa-map-marker"></i>  Valencia - España</a></p> 
-          <p><a href="https://wa.me/34653251983/"><i class="fa fa-whatsapp"></i> (+34) 653 251 983</a> </p>
-          <p><a href="tel:+34653251983"><i class="fa fa-phone"></i> (+34) 653 251 983</a> </p>
-          <p><i class="fa fa-envelope"></i> info@microdeveloper.es</p>
+    <footer>
+        <div class="footerContainer">
+            <div class="primeraFila">
+                <div class="footerContact">
+                    <div class="contactoInfo">
+                        <div class="icono">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="texto">
+                            <h4>Teléfono</h4>
+                            <p>34 653 25 19 83</p>
+                        </div>
+                    </div>
+                    <div class="contactoInfo">
+                        <div class="icono">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="texto">
+                            <h4>Dirección</h4>
+                            <p>Valencia - España</p>
+                        </div>
+                    </div>
+                    <div class="contactoInfo">
+                        <div class="icono">
+                            <i class="far fa-envelope-open"></i>
+                        </div>
+                        <div class="texto">
+                            <h4>Email</h4>
+                            <p>info@microdeveloper.es</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <div class="segundaFila">
+                <div class="footerPresentacion">
+                    <div class="presentacion">
+                        <div class="titulo">
+                            <h3>Suscribete</h3>
+                        </div>
+                        <div class="texto">
+                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                        </div>
+                        <div class="suscripcion">
+                            <form action="#">
+                                <input type="text" placeholder="&#xf003; Email Address">
+                                <button><i class="fab fa-telegram-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="presentacion">
+                        <div class="titulo">
+                            <h3>Enlaces de interés</h3>
+                        </div>
+                        <div class="menuFooter">
+                            
+                                <p><a class="enlace irInicio" href="/"><i class="fas fa-home" aria-hidden="true"></i> Inicio</a></p>
+                                <p><a class="enlace irBiografia" href="/src/app/pages/biografia/biografia.html"><i class="fab fa-leanpub" aria-hidden="true"></i> Biografía</a></p>
+                                <p> <a class="enlace irWebs" href="/src/app/pages/webs/webs.html"><i class="fas fa-globe" aria-hidden="true"></i> Webs</a></p>
+                                <p><a class="enlace irGaleria" href="/src/app/pages/galeria/galeria.html"><i class="far fa-images" aria-hidden="true"></i> Galería</a></p>
+                                <p> <a class="enlace irCurriculum" href="/src/app/pages/curriculum/curriculum.html"><i class="far fa-id-badge" aria-hidden="true"></i> Currículum</a></p>
+                                <p> <a class="enlace irContacto" target="_blank" href="/src/app/pages/contacto/contacto.php"><i class="far fa-envelope" aria-hidden="true"></i> Contacto</a></p>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="presentacion">
+                        <div class="logo">
+                        
+                            <a href="index.html"><h1>Micro</h1></a>
+                                    
+                                    
+                        </div>
+                        <div class="texto">
+                            <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
+                                incididuntut consec tetur adipisicing
+                                elit,Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="socialMedia">
+                            <h4>Sígueme</h4>
+                            <div class="redes">
+                                <div class="iconoSocial  github-bg"><a target="blank" href="https://github.com/micrelio"><i class="fab fa-github"></i></a></div>
+                                <div class="iconoSocial"><a class="linkedin-bg" target="blank" href="https://www.linkedin.com/in/jos%C3%A9-antonio-l%C3%B3pez-baena-65833016a/"><i class="fab fa-linkedin"></i></a></div>
+                                <div class="iconoSocial"><a class="whatsapp-bg" target="blank" href="https://wa.me/34653251983/" target="_blank"><i class="fab fa-whatsapp"></i></a></div>
+                                <div class="iconoSocial"><a class="facebook-bg" target="blank" title="Facebook" href="https://www.facebook.com/micro6"><i class="fab fa-facebook-f"></i></a></div>
+                                <div class="iconoSocial"><a class="twitter-bg" target="blank" href="https://twitter.com/Micrelio"><i class="fab fa-twitter"></i></a></div>
+                                <div class="iconoSocial"><a class="instagram-bg" target="blank" href="https://www.instagram.com/micrelio.dev/"><i class="fab fa-instagram"></i></a></div>
+                                <div class="iconoSocial"><a class="youtube-bg" target="blank" href="https://www.youtube.com/channel/UCMEv1Jj16ypsAXmZXOkKrQA"><i class="fab fa-youtube"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="paginas">
-      <h3>Diseños</h3>
-      <span class="diseños">
-        <div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur repellat autem, error iste
-          odio atque eum assumenda rem aliquam, consequatur excepturi reiciendis corrupti velit aperiam?</p>
+
+        <div class="terceraFila">
+            <div class="copyright">
+                <div class="texto">
+                    <p>Copyright &copy; 2021, All Right Reserved <a href="https://microdeveloper.es/">Micro</a></p>
+                    <hr>
+                </div>
+                <div class="textosLegales">
+                
+                    <a href="/src/app/pages/textosLegales/politicaDePrivacidad.html"><p> Política de privacidad</p></a>
+                    <a href="/src/app/pages/textosLegales/avisoLegal.html"><p> Aviso Legal</p></a>
+                    <a href="/src/app/pages/textosLegales/politicaDeCookies.html"><p> Política de Cookies</p></a>
+                 
+                </div>
+            </div>
         </div>
-      </span>
-    </div>
-  </div>
-  <div class="redes">
-    <div class="propiedad">
-      <div class="socialmedia">
-        <a target="blank" class="iconSocial" href="https://www.youtube.com/channel/UCMEv1Jj16ypsAXmZXOkKrQA" target="_blank"><img style="" src="/src/assets/images/icons/social/youtube.png" alt="Youtube" /></a>
-        <a target="blank" class="iconSocial" href="https://www.instagram.com/micrelio.dev/" target="_blank"><img style="" src="/src/assets/images/icons/social/instagram.png"></a>
-        <a target="blank" class="iconSocial" href="https://twitter.com/Micrelio" target="_blank"><img style="" src="/src/assets/images/icons/social/twitter.png"></a>
-        <a target="blank" class="iconSocial" title="Facebook" href="https://www.facebook.com/micro6" target="_blank"><img style="" src="/src/assets/images/icons/social/facebook.png"></a>
-        <a target="blank" class="iconSocial" href="https://wa.me/34653251983/" target="_blank"><img style="" src="/src/assets/images/icons/social/whatsapp.png"></a>                    
-        <a target="blank" class="iconSocial" href="https://www.linkedin.com/in/jos%C3%A9-antonio-l%C3%B3pez-baena-65833016a/" target="_blank"><img style="" src="/src/assets/images/icons/social/linkedin.png"></a>
-        <a target="blank" class="iconSocial" href="https://github.com/micrelio" target="_blank"><img style="" src="/src/assets/images/icons/social/github.png"></a>
-      </div>
-      <div class="copy">
-        &copy; 2020, Todos los derechos reservados - | Micro |
-      </div>
-      <div class="politicas" id="politicas">
-        <a href="/src/app/pages/textosLegales/politicaDePrivacidad.html"><p class="privacidad" id="privacidad"> Política de privacidad</p></a>
-        <a href="/src/app/pages/textosLegales/avisoLegal.html"><p class="privacidad" id="aviso"> Aviso Legal</p></a>
-        <a href="/src/app/pages/textosLegales/politicaDeCookies.html"><p class="privacidad" id="cookies"> Política de Cookies</p></a>
-      </div>
-    </div>
-  </div>
-</footer>
+    </footer>
+
   `;
-    // var multimedia = document.querySelector("#politicas");
-    // multimedia.addEventListener("click", function (seleccion) {
-    //   console.log(seleccion);
-    //   var h = seleccion.target.id;
-    //   console.log("h es", h);
-    //   // if (seleccion.target !== this) {
-    //   switch (h) {
-    //     case "privacidad":
-    //       console.log("politicadeprivacidad");
-    //       document.getElementById("componente").innerHTML =
-    //         "<mi-politicadeprivacidad></mi-politicadeprivacidad>";
-    //       break;
-    //     case "aviso":
-    //       console.log("aviso");
-    //       document.getElementById("componente").innerHTML =
-    //         "<mi-avisolegal></mi-avisolegal>";
-    //       break;
-    //     case "cookies":
-    //       console.log("cookies");
-    //       document.getElementById("componente").innerHTML =
-    //         "<mi-politicadecookies></mi-politicadecookies>";
-    //       break;
-    //   }
-    //   // }
-    // });
-  }
+     }
 }
-//  window.customElements.define('mi-menu', miFooter);
 customElements.define("mi-footer", miFooter);
-/*************************\
-        funciones
-/*************************/
-// class MiBoton extends HTMLElement {
-//   constructor() {
-//     super();
-//     this.addEventListener("click", function (e) {
-//       alert("hola");
-//     });
-//   }
-// }
-// customElements.define("mi-boton", MiBoton);
+
