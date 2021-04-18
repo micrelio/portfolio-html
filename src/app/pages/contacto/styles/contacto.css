@@ -241,6 +241,19 @@ p {
           transform: translateX(0);
 }
 
+.fieldset {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1rem;
+  margin: 0.5rem 0rem 0.5rem 0rem;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
 .inputRecaptcha {
   font-family: FontAwesome;
   display: block;
@@ -315,6 +328,11 @@ textarea {
   resize: none;
   height: 15rem;
   padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.contador {
+  margin: 1rem 0rem  2rem 0rem;
 }
 
 .input.submit {
@@ -383,6 +401,16 @@ select option:disabled {
   transition: all 0.5s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s, -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
+.form-submitted .salida {
+  -webkit-transform: translateX(150%);
+          transform: translateX(150%);
+  opacity: 0;
+  -webkit-transition: all 0.5s, -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  transition: all 0.5s, -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  transition: all 0.5s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  transition: all 0.5s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s, -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+
 .form-submitted .input:nth-child(1) {
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
@@ -403,7 +431,12 @@ select option:disabled {
           transition-delay: 0.4s;
 }
 
-.form-submitted .input:nth-child(5) {
+.form-submitted .salida:nth-child(5) {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.form-submitted .salida:nth-child(7) {
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s;
 }

@@ -301,7 +301,7 @@ function validarFormulario() {
     $("#form-head").addClass("form-submitted");
     setTimeout(function () {
       document.formulario.submit();
-    }, 3500);
+    }, 13500);
     // $(form).trigger("reset");
     // setTimeout(function () {
     //      $(form).trigger("reset");

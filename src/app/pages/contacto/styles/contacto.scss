@@ -186,6 +186,23 @@ p {
   box-shadow: none;
   transform: translateX(0);
 }
+.fieldset {
+  // font-family: FontAwesome;
+  // background: rgba(0, 0, 0, 0.2);
+  display: block;
+  // height: 50px;
+  // width: 100%;
+  // margin: 1rem 0;
+  // padding: 0 1rem;
+  // border-width: 0;
+  box-sizing: border-box;
+  // border: none;
+  font-size: 1rem;
+  margin: 0.5rem 0rem 0.5rem 0rem;
+  outline: none;
+  box-shadow: none;
+  transform: translateX(0);
+}
 .inputRecaptcha {
   font-family: FontAwesome;
 
@@ -250,6 +267,12 @@ textarea {
   resize: none;
   height: 15rem;
   padding: 1rem;
+  margin-bottom: 0.5rem;
+
+}
+.contador {
+  margin: 1rem 0rem  2rem 0rem;
+  // font-size: 10rem;
 }
 .input.submit {
   background-color: #fff;
@@ -295,6 +318,13 @@ select option:disabled {
   opacity: 0;
   transition: all 0.5s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
+.form-submitted .salida {
+  transform: translateX(150%);
+  opacity: 0;
+  transition: all 0.5s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    // display: none;
+
+}
 .form-submitted .input:nth-child(1) {
   transition-delay: 0.1s;
 }
@@ -307,7 +337,10 @@ select option:disabled {
 .form-submitted .input:nth-child(4) {
   transition-delay: 0.4s;
 }
-.form-submitted .input:nth-child(5) {
+.form-submitted .salida:nth-child(5) {
+  transition-delay: 0.4s;
+}
+.form-submitted .salida:nth-child(7) {
   transition-delay: 0.5s;
 }
 input:-webkit-autofill {

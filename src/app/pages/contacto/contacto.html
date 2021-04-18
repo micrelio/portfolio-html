@@ -56,7 +56,7 @@
     <!-- estilos -->
     <link rel="stylesheet" href="/src/assets/style/styles/style.css" media="screen" />
     <link rel="stylesheet" href="./styles/contacto.css">
-    
+
     <link rel="stylesheet" href="/src/app/pages/webs/webs.css" media="screen" />
     <script type="text/javascript" src="/src/app/pages/webs/webs.js"></script>
     <!-- TRANSICIONES -->
@@ -137,9 +137,11 @@
                     <input class="input email" placeholder="&#xf003;  Email" id="email" type="email" name="Email" />
                     <input class="input phone fa fa-phone" placeholder="&#xf095;  Teléfono" id="telefono" type="tel"
                         name="Telefono" />
+
                     <textarea class="input message" placeholder="&#xf0e5;  Mensaje" rows="10" cols="40" maxlength="1000"
                         id="comentario" name="comentario" onkeypress="calcular()" onkeyup="calcular()"></textarea>
-                    <p>Le quedan <span id="contador-char">1000</span> de 1000 caracteres.</p>
+                        <p class="contador salida">Le quedan <span id="contador-char">1000</span> de 1000 caracteres.</p>
+
                     <!--pueden cambiar el lenguaje con el parametro hl-->
                     <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
                     <!--El site key de su sitio-->
@@ -147,7 +149,8 @@
                 <label for="terms">
                     <p>He leído y acepto <a href="">los terminos y condiciones.</a></p>
                 </label> -->
-                    <div class="inputRecaptcha  g-recaptcha" id="recaptcha" data-sitekey="<?php echo $publicKey; ?>">
+                    <div class="inputRecaptcha  g-recaptcha salida" id="recaptcha"
+                        data-sitekey="<?php echo $publicKey; ?>">
                     </div>
                     </br>
                     <button class="button btn-animate" type="button" name="enviar" id="enviar">
