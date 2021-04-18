@@ -275,22 +275,22 @@ function validarFormulario() {
     verificar = false;
     return false;
   }
-  // var response = grecaptcha.getResponse();
-  // if (response.length == 0) {
-  //   //   alert("Captcha no verificado");
-  //   addClassNo();
-  //   $(recaptcha).addClass("form-error");
-  //   // $(recaptcha).addClass("color-error");
-  //   setTimeout(function () {
-  //     //   alert("Escriba su recaptcha por favor.");
-  //   }, 1000);
-  //   setTimeout(function () {
-  //     $(recaptcha).removeClass("form-error");
-  //   }, 1000);
-  //   recaptcha.focus();
-  //   verificar = false;
-  //   return false;
-  // }
+  var response = grecaptcha.getResponse();
+  if (response.length == 0) {
+    //   alert("Captcha no verificado");
+    addClassNo();
+    $(recaptcha).addClass("form-error");
+    // $(recaptcha).addClass("color-error");
+    setTimeout(function () {
+      //   alert("Escriba su recaptcha por favor.");
+    }, 1000);
+    setTimeout(function () {
+      $(recaptcha).removeClass("form-error");
+    }, 1000);
+    recaptcha.focus();
+    verificar = false;
+    return false;
+  }
   // else {
   //   alert("Captcha verificado");
   // }
@@ -301,7 +301,7 @@ function validarFormulario() {
     $("#form-head").addClass("form-submitted");
     setTimeout(function () {
       document.formulario.submit();
-    }, 13500);
+    }, 3500);
     // $(form).trigger("reset");
     // setTimeout(function () {
     //      $(form).trigger("reset");
