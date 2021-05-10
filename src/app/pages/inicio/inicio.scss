@@ -282,6 +282,7 @@ $dark: #343a40;
   .features .feat p {
     line-height: 2em;
   }
+  
   .features .feat span.glyphicon {
     font-size: 20px;
     margin-bottom: 10px;
@@ -295,6 +296,7 @@ $dark: #343a40;
   }
   .testimonials .lead {
     line-height: 2em;
+
     margin-bottom: 10px;
   }
   .testimonials span {
@@ -305,6 +307,7 @@ $dark: #343a40;
   .testimonials .carousel-indicators {
     //postion: static;
     //width: 100%;
+
     //margin-left: auto;
     padding-top: 20px;
   }
@@ -319,6 +322,7 @@ $dark: #343a40;
     margin: 5px;
   }
   .testimonials .carousel-indicators li.activo {
+
     width: 80px;
     height: 80px;
     opacity: 1;
@@ -332,6 +336,7 @@ $dark: #343a40;
 /*End Section carousel*/
 .titular {
   overflow: hidden;
+
   background-color: rgb(249, 249, 249);
   // background-color: green;
   box-shadow: inset 0rem 1rem 0.5rem rgba(0, 0, 0, 0.39),
@@ -340,6 +345,7 @@ $dark: #343a40;
     display: flex;
     flex-direction: column;
     align-items: center;
+
     justify-content: center;
     // position: absolute;
     z-index: 10;
@@ -357,9 +363,10 @@ $dark: #343a40;
 
 
         -webkit-text-stroke: 0.06rem rgb(0, 0, 0);
+
         text-shadow: 0.4rem 0.4rem 0.3rem black;
 
-        
+
         cursor: pointer;
         font: {
           family: "PiratesBlackbeard";
