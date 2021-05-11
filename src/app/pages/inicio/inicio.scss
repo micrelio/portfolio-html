@@ -240,6 +240,7 @@ $dark: #343a40;
   /**********End Overriding Bootstrap********/
   /*Start Section About*/
   .about {
+    
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -248,6 +249,7 @@ $dark: #343a40;
     font-size: 25px;
     margin-top: 15px;
   }
+
   .about .about-paragraph2 {
     color: #888;
     font-size: 17px;
@@ -257,6 +259,7 @@ $dark: #343a40;
     font-weight: bold;
   }
   .about h2 {
+
     font-weight: bold;
   }
   .about h1 span {
@@ -274,7 +277,11 @@ $dark: #343a40;
     overflow: hidden;
     background-color: #eee;
     padding-top: 50px;
+
+
     padding-bottom: 50px;
+
+
   }
   .features .feat {
     margin-bottom: 30px;
@@ -285,13 +292,19 @@ $dark: #343a40;
   
   .features .feat span.glyphicon {
     font-size: 20px;
+
+
     margin-bottom: 10px;
     color: #666;
   }
+
+
   /*End Section Features*/
   /*Start Section Testimonials*/
   .testimonials {
     padding-top: 50px;
+
+
     padding-bottom: 50px;
   }
   .testimonials .lead {
