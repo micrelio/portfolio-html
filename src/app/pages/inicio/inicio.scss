@@ -240,7 +240,7 @@ $dark: #343a40;
   /**********End Overriding Bootstrap********/
   /*Start Section About*/
   .about {
-    
+
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -248,11 +248,14 @@ $dark: #343a40;
     color: #888;
     font-size: 25px;
     margin-top: 15px;
+
+
   }
 
   .about .about-paragraph2 {
     color: #888;
     font-size: 17px;
+
     margin-top: 15px;
   }
   .about h1 {
@@ -261,6 +264,7 @@ $dark: #343a40;
   .about h2 {
 
     font-weight: bold;
+
   }
   .about h1 span {
     color: #e41b17;
@@ -271,6 +275,7 @@ $dark: #343a40;
   p {
     color: white;
   }
+
   /*End Section About*/
   /*Start Section Features*/
   .features {
@@ -283,6 +288,8 @@ $dark: #343a40;
 
 
   }
+
+  
   .features .feat {
     margin-bottom: 30px;
   }
