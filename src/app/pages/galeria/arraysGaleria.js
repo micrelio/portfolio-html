@@ -1,5 +1,7 @@
 var count = 0;
 var res = 0;
+
+
 // var todos = [
 //   logos = ["/src/assets/images/logos/igr.jpg",
 //     "/src/assets/images/logos/igre.png",
