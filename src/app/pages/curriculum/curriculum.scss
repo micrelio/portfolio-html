@@ -36,6 +36,9 @@ a:visited {
     align-items: center;
     justify-content: center;
     width: 100%;
+    p {
+        color: $amarillento;
+    }
     .datosPersonales {
         display: flex;
         flex-direction: row;
@@ -58,6 +61,9 @@ a:visited {
             -webkit-text-stroke: 0.04rem rgb(0, 0, 0);
             text-shadow: 0.3rem 0.3rem 0.1rem gray;
         }
+        p {
+            color: $amarillento;
+        }
         .foto {
             .dni {
                 width: calc(7rem + 10vw);
@@ -74,7 +80,6 @@ a:visited {
             padding: 3rem;
             p {
                 margin-top: 1.5rem;
-                color: $amarillento;
             }
             .fa {
                 color: red;
@@ -157,9 +162,6 @@ a:visited {
         }
         background: {
             color: black;
-        }
-        p {
-            margin-top: 1.5rem;
         }
     }
     a:link {

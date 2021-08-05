@@ -52,6 +52,10 @@ a:visited {
   width: 100%;
 }
 
+.datos p {
+  color: blanchedalmond;
+}
+
 .datos .datosPersonales {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -83,6 +87,10 @@ a:visited {
   text-shadow: 0.3rem 0.3rem 0.1rem gray;
 }
 
+.datos .datosPersonales p {
+  color: blanchedalmond;
+}
+
 .datos .datosPersonales .foto .dni {
   width: calc(7rem + 10vw);
   border-radius: 0.5rem;
@@ -105,7 +113,6 @@ a:visited {
 
 .datos .datosPersonales .direccion p {
   margin-top: 1.5rem;
-  color: blanchedalmond;
 }
 
 .datos .datosPersonales .direccion .fa {
@@ -201,10 +208,6 @@ a:visited {
   padding: 2rem;
   border-radius: 1rem;
   background-color: black;
-}
-
-.datos .interes p {
-  margin-top: 1.5rem;
 }
 
 .datos a:link {
