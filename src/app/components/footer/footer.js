@@ -25,9 +25,7 @@ class miFooter extends HTMLElement {
                             </a>
                         </div>
                     </div>
-                   
-
-                    
+                                       
                     <div class="contactoInfo">
                         <div class="icono">
                         <a href="https://goo.gl/maps/9UUDsgCz7YnERqvD6" target="_blank">
@@ -40,10 +38,8 @@ class miFooter extends HTMLElement {
                             <p>Valencia - España</p>
                             </a>
                         </div>
-                    </div>
-                    
+                    </div>             
                       
-
                     <div class="contactoInfo">
                         <div class="icono">
                         <a href="https://www.microdeveloper.es/src/app/pages/contacto/contacto.php">
