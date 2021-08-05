@@ -1,9 +1,9 @@
 class miFooter extends HTMLElement {
-  constructor() {
-    super();
-  }
-  connectedCallback() {
-    this.innerHTML = `
+    constructor() {
+        super();
+    }
+    connectedCallback() {
+        this.innerHTML = `
     <style>
       @import "/src/app/components/footer/footer.css";
     </style>
@@ -11,31 +11,50 @@ class miFooter extends HTMLElement {
         <div class="footerContainer">
             <div class="primeraFila">
                 <div class="footerContact">
+                    
                     <div class="contactoInfo">
                         <div class="icono">
+                        <a href="tel:+34653251983">
                             <i class="fas fa-phone"></i>
+                            </a>
                         </div>
                         <div class="texto">
+                        <a href="tel:+34653251983">
                             <h4>Teléfono</h4>
                             <p>34 653 25 19 83</p>
+                            </a>
                         </div>
                     </div>
+                   
+
+                    
                     <div class="contactoInfo">
                         <div class="icono">
+                        <a href="https://goo.gl/maps/9UUDsgCz7YnERqvD6" target="_blank">
                             <i class="fas fa-map-marker-alt"></i>
+                            </a>
                         </div>
                         <div class="texto">
+                        <a href="https://goo.gl/maps/9UUDsgCz7YnERqvD6" target="_blank">
                             <h4>Dirección</h4>
                             <p>Valencia - España</p>
+                            </a>
                         </div>
                     </div>
+                    
+                      
+
                     <div class="contactoInfo">
                         <div class="icono">
+                        <a href="https://www.microdeveloper.es/src/app/pages/contacto/contacto.php">
                             <i class="far fa-envelope-open"></i>
+                            </a>
                         </div>
                         <div class="texto">
+                        <a href="https://www.microdeveloper.es/src/app/pages/contacto/contacto.php">
                             <h4>Email</h4>
                             <p>info@microdeveloper.es</p>
+                        </a>
                         </div>
                     </div>
                 </div>
@@ -121,7 +140,6 @@ class miFooter extends HTMLElement {
     </footer>
 
   `;
-     }
+    }
 }
 customElements.define("mi-footer", miFooter);
-
