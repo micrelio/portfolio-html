@@ -21,6 +21,36 @@ footer .footerContainer {
           justify-content: space-between;
 }
 
+footer .footerContainer a {
+  outline: none;
+  text-decoration: none;
+}
+
+footer .footerContainer a:link {
+  outline: none;
+  text-decoration: none;
+}
+
+footer .footerContainer a:visited {
+  outline: none;
+  text-decoration: none;
+}
+
+footer .footerContainer a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+footer .footerContainer a:hover {
+  outline: none;
+  text-decoration: none;
+}
+
+footer .footerContainer a:active {
+  outline: none;
+  text-decoration: none;
+}
+
 footer .footerContainer .primeraFila {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -350,7 +380,7 @@ footer .footerContainer .segundaFila .footerPresentacion .presentacion .logo h1:
   transition: 0.5s;
   -webkit-text-stroke: 0.06rem black;
   color: #ff1177;
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1177, 0 0 70px #ff1177, 0 0 80px #ff1177, 0 0 100px #ff1177, 0 0 150px #ff1177;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1177, 0 0 70px #ff1177, 0 0 80px #ff1177, 0 0 100px #ff1177, 0 0 150px #ff1177;
 }
 
 footer .footerContainer .segundaFila .footerPresentacion .presentacion .logo a img {
@@ -436,7 +466,6 @@ footer .footerContainer .segundaFila .footerPresentacion .presentacion .socialMe
 footer .footerContainer .segundaFila .footerPresentacion .presentacion .socialMedia .redes .instagram-bg {
   background: #f09433;
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
 
 footer .footerContainer .segundaFila .footerPresentacion .presentacion .socialMedia .redes .linkedin-bg {
