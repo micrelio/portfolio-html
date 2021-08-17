@@ -1,298 +1,308 @@
 // @import "../mixins/mixins.scss";
 @import "../variables/variables.scss";
 @import "../funciones/funciones.scss";
-
 @font-face {
-  font-family: "supercell";
-  src: url("/src/assets/fonts/fuentes/supercell-magic-webfont.ttf")
-    format("truetype");
-}
-@font-face {
-  font-family: "Roboto-Regular";
-  src: url("/src/assets/fonts/fuentes/Roboto-Regular.ttf")
-    format("truetype");
-}
-@font-face {
-  font-family: "FontAwesome";
-  src: url("/src/assets/fonts/font-awesome/fontawesome-webfont.woff");
-}
-@font-face {
-  font-family: "FontAwesome";
-  src: url("/src/assets/fonts/font-awesome/fontawesome-webfont.woff2");
-}
-@font-face {
-  font-family: "titanium";
-  src: url("/src/assets/fonts/fuentes/pricedow.ttf") format("truetype");
-}
-@font-face {
-  font-family: "PiratesBlackbeard";
-  src: url("/src/assets/fonts/fuentes/PiratesBlackbeard.ttf");
-}
-@font-face {
-  font-family: "Audiowide";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Audiowide"), local("Audiowide-Regular"),
-    url("/src/assets/fonts/fuentes/Audiowide.woff") format("woff");
-}
-@font-face {
-  font-family: "Bad Script";
-  src: url("/src/assets/fonts/fuentes/BadScript-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Sriracha";
-  src: url("/src/assets/fonts/fuentes/Sriracha-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Kumar One outline";
-  src: url("/src/assets/fonts/fuentes/KumarOneOutline-Regular.ttf")
-    format("truetype");
-}
-@font-face {
-  font-family: "Gruppo";
-  src: url("/src/assets/fonts/fuentes/Gruppo-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Yellowtail";
-  src: url("/src/assets/fonts/fuentes/Yellowtail-Regular.ttf")
-    format("truetype");
-}
-@font-face {
-  font-family: "Londrina";
-  src: url("/src/assets/fonts/fuentes/Yellowtail-Regular.ttf")
-    format("truetype");
-}
-@font-face {
-  font-family: "Londrina Outline";
-  src: url("/src/assets/fonts/fuentes/LondrinaOutline-Regular.ttf")
-    format("truetype");
-}
-@font-face {
-  font-family: "Monoton";
-  src: url("/src/assets/fonts/fuentes/Monoton-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "frozen";
-  src: url("/src/assets/fonts/fuentes/Ice-kingdom.woff");
-}
-@font-face {
-  font-family: "Iceland";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Iceland"), local("Iceland-Regular"),
-    src url("/src/assets/fonts/fuentes/Iceland-Regular.woff") format("woff");
-}
-@font-face {
-  font-family: "Pacifico";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Pacifico Regular"), local("Pacifico-Regular"),
-    url("/src/assets/fonts/fuentes/PiratesBlackbeard.ttf") format("woff");
-}
-@font-face {
-  font-family: "PressStart";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Press Start 2P"), local("PressStart2P-Regular"),
-    url("/src/assets/fonts/fuentes/PressStart.woff") format("woff");
+    font-family: "supercell";
+    src: url("/src/assets/fonts/fuentes/supercell-magic-webfont.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Vampiro One";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Vampiro One"), local("VampiroOne-Regular"),
-    url("/src/assets/fonts/fuentes/VampiroOne.woff") format("woff");
+    font-family: "Roboto-Regular";
+    src: url("/src/assets/fonts/fuentes/Roboto-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Asap";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Vampiro One"), local("VampiroOne-Regular"),
-    url("/src/assets/fonts/fuentes/Asap-Regular.ttf") format("woff");
+    font-family: "FontAwesome";
+    src: url("/src/assets/fonts/font-awesome/fontawesome-webfont.woff");
 }
+
+@font-face {
+    font-family: "FontAwesome";
+    src: url("/src/assets/fonts/font-awesome/fontawesome-webfont.woff2");
+}
+
+@font-face {
+    font-family: "titanium";
+    src: url("/src/assets/fonts/fuentes/pricedow.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "PiratesBlackbeard";
+    src: url("/src/assets/fonts/fuentes/PiratesBlackbeard.ttf");
+}
+
+@font-face {
+    font-family: "Audiowide";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Audiowide"), local("Audiowide-Regular"), url("/src/assets/fonts/fuentes/Audiowide.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Bad Script";
+    src: url("/src/assets/fonts/fuentes/BadScript-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Sriracha";
+    src: url("/src/assets/fonts/fuentes/Sriracha-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Kumar One outline";
+    src: url("/src/assets/fonts/fuentes/KumarOneOutline-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Gruppo";
+    src: url("/src/assets/fonts/fuentes/Gruppo-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Yellowtail";
+    src: url("/src/assets/fonts/fuentes/Yellowtail-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Londrina";
+    src: url("/src/assets/fonts/fuentes/Yellowtail-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Londrina Outline";
+    src: url("/src/assets/fonts/fuentes/LondrinaOutline-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Monoton";
+    src: url("/src/assets/fonts/fuentes/Monoton-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "frozen";
+    src: url("/src/assets/fonts/fuentes/Ice-kingdom.woff");
+}
+
+@font-face {
+    font-family: "Iceland";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Iceland"), local("Iceland-Regular"), src url("/src/assets/fonts/fuentes/Iceland-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Pacifico";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Pacifico Regular"), local("Pacifico-Regular"), url("/src/assets/fonts/fuentes/PiratesBlackbeard.ttf") format("woff");
+}
+
+@font-face {
+    font-family: "PressStart";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Press Start 2P"), local("PressStart2P-Regular"), url("/src/assets/fonts/fuentes/PressStart.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Vampiro One";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Vampiro One"), local("VampiroOne-Regular"), url("/src/assets/fonts/fuentes/VampiroOne.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Asap";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Vampiro One"), local("VampiroOne-Regular"), url("/src/assets/fonts/fuentes/Asap-Regular.ttf") format("woff");
+}
+
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
+
 #preloader {
-  content: "";
-  position: fixed;
-  z-index: 9999;
-  top: calc(50% - 3rem);
-  left: calc(50% - 3rem);
-  border: 6px solid orangered;
-  border-top-color: transparent;
-  border-bottom-color: transparent;
-  border-radius: 50%;
-  width: 6rem;
-  height: 6rem;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
+    content: "";
+    position: fixed;
+    z-index: 9999;
+    top: calc(50% - 3rem);
+    left: calc(50% - 3rem);
+    border: 6px solid orangered;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
 }
+
 @-webkit-keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
+
 @keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  margin: 0rem 0rem 0rem 0rem;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 section {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 html,
 body {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-items: stretch;
-  justify-content: center;
-  // align-self: flex-end;
-  bottom: 0;
-  margin: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  // vertical-align: baseline;
-  width: 100%;
-  // min-height: 100%;
-  // background-image: url("../../images/backgrounds/0.jpg");
-  // background-image: url("../../../images/gifs/liquido.gif")  ;
-  background: {
-    attachment: fixed;
-    size: cover;
-    color: $gris;
-  }
-  .separador5 {
-    width: 100%;
-    height: 5rem;
-  }
-  .separador4 {
-    width: 100%;
-    height: 4rem;
-  }
-  .separador3 {
-    width: 100%;
-    height: 3rem;
-  }
-  .separador2 {
-    width: 100%;
-    height: 2rem;
-  }
-  .separador1 {
-    width: 100%;
-    height: 1rem;
-  }
-  font: {
-    // family: Arial;
-    // family: Asap;
-    family: Roboto, sans-serif;
-
-    size: 62.5%;
-  }
-
-  h1 {
-    font-size: 4rem;
-    color: $blanco;
-    text-align: center;
-    -webkit-text-stroke: 0.05rem rgb(0, 0, 0);
-    text-shadow: 0.3rem 0.3rem 0.3rem gray;
-  }
-  h2 {
-    font-size: 3rem;
-    color: $blanco;
-    -webkit-text-stroke: 0.05rem rgb(0, 0, 0);
-    text-shadow: 0.3rem 0.3rem 0.2rem gray;
-  }
-  h3 {
-    font-size: 2rem;
-    color: $blanco;
-    -webkit-text-stroke: 0.04rem rgb(0, 0, 0);
-    text-shadow: 0.3rem 0.3rem 0.1rem gray;
-  }
-  h4 {
-    font-size: 1.5rem;
-    color: $blanco;
-    -webkit-text-stroke: 0.03rem rgb(0, 0, 0);
-    text-shadow: 0.3rem 0.3rem 0.1rem gray;
-  }
-  a {
-    color: $azul;
-  }
-  p {
-    font-size: 1.5rem;
-    color: $negro;
-  }
-  
-  ul {
-    margin: 2rem 0rem 2rem 2rem;
-    li {
-      color: $blanco;
-      font-size: 1.5rem;
-      margin: 0rem 0rem 0rem 1rem;
-      a {
-        strong {
-          color: blue;
-        }
-      }
-      a > p {
-        //color: $corporativo;
-      }
-    }
-  }
-  .primera {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-items: stretch;
     justify-content: center;
+    // align-self: flex-end;
+    bottom: 0;
+    margin: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    // vertical-align: baseline;
     width: 100%;
-    // padding: 5%;
-    img {
-      width: 50vh;
-    }
-  }
-  .fa-arrow-alt-circle-up {
-    opacity: 0.5;
-    z-index: 1000;
-    color: $corporativo;
-    font-size: 5rem;
-    display: block;
-    display: none;
-    cursor: pointer;
-    position: fixed;
-    bottom: 15rem;
-    right: 2rem;
-    border-radius: 10rem;
-    -webkit-text-stroke: 0.1rem gray;
-    text-shadow: 0.2rem 0.2rem 0.5rem black;
+    // min-height: 100%;
+    // background-image: url("../../images/backgrounds/0.jpg");
+    // background-image: url("../../../images/gifs/liquido.gif")  ;
     background: {
-      color: white;
+        attachment: fixed;
+        size: cover;
+        // color: $gris;
     }
-  }
+    .separador5 {
+        width: 100%;
+        height: 5rem;
+    }
+    .separador4 {
+        width: 100%;
+        height: 4rem;
+    }
+    .separador3 {
+        width: 100%;
+        height: 3rem;
+    }
+    .separador2 {
+        width: 100%;
+        height: 2rem;
+    }
+    .separador1 {
+        width: 100%;
+        height: 1rem;
+    }
+    font: {
+        // family: Arial;
+        // family: Asap;
+        family: Roboto, sans-serif;
+        size: 62.5%;
+    }
+    h1 {
+        font-size: 4rem;
+        color: $blanco;
+        text-align: center;
+        -webkit-text-stroke: 0.05rem rgb(0, 0, 0);
+        text-shadow: 0.3rem 0.3rem 0.3rem gray;
+    }
+    h2 {
+        font-size: 3rem;
+        color: $blanco;
+        -webkit-text-stroke: 0.05rem rgb(0, 0, 0);
+        text-shadow: 0.3rem 0.3rem 0.2rem gray;
+    }
+    h3 {
+        font-size: 2rem;
+        color: $blanco;
+        -webkit-text-stroke: 0.04rem rgb(0, 0, 0);
+        text-shadow: 0.3rem 0.3rem 0.1rem gray;
+    }
+    h4 {
+        font-size: 1.5rem;
+        color: $blanco;
+        -webkit-text-stroke: 0.03rem rgb(0, 0, 0);
+        text-shadow: 0.3rem 0.3rem 0.1rem gray;
+    }
+    a {
+        color: $azul;
+    }
+    p {
+        font-size: 1.5rem;
+        color: $negro;
+    }
+    ul {
+        margin: 2rem 0rem 2rem 2rem;
+        li {
+            color: $blanco;
+            font-size: 1.5rem;
+            margin: 0rem 0rem 0rem 1rem;
+            a {
+                strong {
+                    color: blue;
+                }
+            }
+            a>p {
+                //color: $corporativo;
+            }
+        }
+    }
+    .primera {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        // padding: 5%;
+        img {
+            width: 50vh;
+        }
+    }
+    .fa-arrow-alt-circle-up {
+        opacity: 0.5;
+        z-index: 1000;
+        color: $corporativo;
+        font-size: 5rem;
+        display: block;
+        display: none;
+        cursor: pointer;
+        position: fixed;
+        bottom: 15rem;
+        right: 2rem;
+        border-radius: 10rem;
+        -webkit-text-stroke: 0.1rem gray;
+        text-shadow: 0.2rem 0.2rem 0.5rem black;
+        background: {
+            color: white;
+        }
+    }
 }
+
+
 /*----------------------
       responsive
 ----------------------*/
-@media only screen and (max-width: 700px) {
-}
+
+@media only screen and (max-width: 700px) {}
